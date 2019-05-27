@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="plugin.video.dokumenty.tv" version="0.0.3" name="Dokumenty.tv" provider-name="cache">
+<addon id="plugin.video.dokumenty.tv" version="1.0.0" name="Dokumenty.tv" provider-name="cache-sk">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
         <import addon="script.module.resolveurl" version="5.0.00"/>
@@ -12,10 +12,12 @@
     </extension>
     <extension point="xbmc.addon.metadata">
         <summary lang="en">Dokumenty.tv</summary>
-        <description lang="en">prototyp</description>
-        <description lang="sk">prototyp</description>
-        <description lang="cs">prototyp</description>
+        <description lang="en">Documentary videos from Dokumenty.tv page</description>
+        <description lang="sk">Dokumentárne videá zo stránky Dokumenty.tv</description>
+        <description lang="cs">Dokumentární videa ze stránky Dokumenty.tv</description>
         <news>
+[B]0.0.4[/B]
+- added to repository
 [B]0.0.3[/B]
 - regex name suffix removal
 [B]0.0.2[/B]
