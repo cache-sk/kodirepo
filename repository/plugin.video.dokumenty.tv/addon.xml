@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="plugin.video.dokumenty.tv" version="0.0.3" name="Dokumenty.tv" provider-name="cache">
+    <requires>
+        <import addon="xbmc.python" version="2.19.0" />
+        <import addon="script.module.resolveurl" version="5.0.00"/>
+        <import addon="script.module.urlresolver" version="5.0.00"/>
+        <import addon="script.module.requests" version="2.18.4"/>
+        <import addon="script.module.beautifulsoup4" version="4.5.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="main.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Dokumenty.tv</summary>
+        <description lang="en">prototyp</description>
+        <description lang="sk">prototyp</description>
+        <description lang="cs">prototyp</description>
+        <news>
+[B]0.0.3[/B]
+- regex name suffix removal
+[B]0.0.2[/B]
+- beta, plot, better searching
+[B]0.0.1[/B]
+- alpha
+        </news>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+    </extension>
+</addon>
