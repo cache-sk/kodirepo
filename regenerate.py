@@ -1,8 +1,10 @@
-import os
+import os, tempfile, urllib, create_repository
 
 PLUGINS = ['repository.cache-sk',
            'https://github.com/cache-sk/plugin.video.dokumenty.tv.git',
            'https://github.com/cache-sk/YABoP.git#master:plugin.video.yabop']
+
+EXTERNAL = ['https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/zips/repository.tva.common/repository.tva.common-2.0.0.zip']
 
 def delete_all_files(folder,skip):
     print('processing '+folder)
@@ -24,4 +26,15 @@ def delete_all_files(folder,skip):
             print('skipping '+file_path)
 
 delete_all_files('repository',[])
-os.system("python create_repository.py --datadir repository " + " ".join(PLUGINS))
+externals = []
+for path in EXTERNAL:
+    tmpf = tempfile.NamedTemporaryFile()
+    tempname = tmpf.name + '.zip'
+    tmpf.close
+    urllib.urlretrieve(path,tempname) 
+    externals.append(tempname)
+
+os.system("python create_repository.py --no-parallel --datadir repository " + " ".join(PLUGINS) + " " + " ".join(externals))
+
+for tempname in externals:
+    os.unlink(tempname)

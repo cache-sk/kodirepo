@@ -96,4 +96,15 @@
 - lokalizácia en, sk, cz
         </news>
     </extension>
+</addon><addon id="repository.tva.common" name="TVADDONS.CO Resolvers Repository" provider-name="tvaddons" version="2.0.0">
+    <extension name="TVADDONS.CO Resolvers Repository" point="xbmc.addon.repository">
+        <info compressed="false">https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/addons.xml</info>
+        <checksum>https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/zips/</datadir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Unofficial Resolvers for the Kodi Media Center</summary>
+        <description>Unofficial Resolvers for the Kodi Media Center. Please visit www.tvaddons.co for support!</description>
+        <platform>all</platform>
+    </extension>
 </addon></addons>

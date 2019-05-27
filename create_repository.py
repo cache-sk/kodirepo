@@ -145,6 +145,13 @@ def generate_checksum(archive_path, is_binary=True, checksum_path_opt=None):
     with io.open(checksum_path, 'w', newline='\n') as sig:
         sig.write(u'{} {}{}\n'.format(digest, binary_marker, archive_relpath))
 
+def issamefile(filea, fileb):
+    if 'win' in platform.system().lower():
+        samefile = os.stat(filea) == os.stat(fileb)
+    else:
+        samefile = os.path.samefile(filea, fileb)
+
+    return samefile
 
 def copy_metadata_files(source_folder, addon_target_folder, addon_metadata):
     for (source_basename, target_basename) in get_metadata_basenames(
@@ -225,10 +232,7 @@ def fetch_addon_from_folder(raw_addon_location, target_folder):
                     os.path.join(relative_root, relative_path))
     generate_checksum(archive_path)
     
-    if 'win' in platform.system().lower():
-        samefile = os.stat(addon_location) == os.stat(addon_target_folder)
-    else:
-        samefile = os.path.samefile(addon_location, addon_target_folder)
+    samefile = issamefile(addon_location, addon_target_folder)
     
     if not samefile:
         copy_metadata_files(
@@ -242,14 +246,15 @@ def fetch_addon_from_zip(raw_addon_location, target_folder):
     with zipfile.ZipFile(
             addon_location, compression=zipfile.ZIP_DEFLATED) as archive:
         # Find out the name of the archive's root folder.
+        separator = '/' #because zip internally use unx separator and not os.path.sep
         roots = frozenset(
-            next(iter(path.split(os.path.sep)), '')
+            next(iter(path.split(separator)), '')
             for path in archive.namelist())
         if len(roots) != 1:
             raise RuntimeError('Archive should contain one directory')
         root = next(iter(roots))
 
-        metadata_file = archive.open(os.path.join(root, INFO_BASENAME))
+        metadata_file = archive.open(root + separator + INFO_BASENAME)
         addon_metadata = parse_metadata(metadata_file)
         addon_target_folder = os.path.join(target_folder, addon_metadata.id)
 
@@ -266,16 +271,15 @@ def fetch_addon_from_zip(raw_addon_location, target_folder):
                     os.path.join(addon_target_folder, target_basename),
                     'wb') as target_file:
                 shutil.copyfileobj(source_file, target_file)
-
     # Copy the archive.
     archive_basename = get_archive_basename(addon_metadata)
     archive_path = os.path.join(addon_target_folder, archive_basename)
-    if (not os.path.samefile(
-            os.path.dirname(addon_location), addon_target_folder) or
-            os.path.basename(addon_location) != archive_basename):
+
+    samefile = issamefile(os.path.dirname(addon_location),addon_target_folder)
+
+    if (not samefile or os.path.basename(addon_location) != archive_basename):
         shutil.copyfile(addon_location, archive_path)
     generate_checksum(archive_path)
-
     return addon_metadata
 
 
