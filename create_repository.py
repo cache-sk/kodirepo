@@ -66,6 +66,7 @@ import tempfile
 import threading
 import xml.etree.ElementTree
 import zipfile
+import platform
 
 
 AddonMetadata = collections.namedtuple(
@@ -219,8 +220,13 @@ def fetch_addon_from_folder(raw_addon_location, target_folder):
                     os.path.join(root, relative_path),
                     os.path.join(relative_root, relative_path))
     generate_checksum(archive_path)
-
-    if not os.path.samefile(addon_location, addon_target_folder):
+    
+    if 'win' in platform.system().lower():
+        samefile = os.stat(addon_location) == os.stat(addon_target_folder)
+    else:
+        samefile = os.path.samefile(addon_location, addon_target_folder)
+    
+    if not samefile:
         copy_metadata_files(
             addon_location, addon_target_folder, addon_metadata)
 
