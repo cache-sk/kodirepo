@@ -67,6 +67,7 @@ import threading
 import xml.etree.ElementTree
 import zipfile
 import platform
+import stat
 
 
 AddonMetadata = collections.namedtuple(
@@ -154,6 +155,9 @@ def copy_metadata_files(source_folder, addon_target_folder, addon_metadata):
                 source_path,
                 os.path.join(addon_target_folder, target_basename))
 
+def del_rw(action, name, exc):
+    os.chmod(name, stat.S_IWRITE)
+    os.remove(name)
 
 def fetch_addon_from_git(addon_location, target_folder):
     # Parse the format "REPOSITORY_URL#BRANCH:PATH". The colon is a delimiter
@@ -195,7 +199,7 @@ def fetch_addon_from_git(addon_location, target_folder):
 
         return addon_metadata
     finally:
-        shutil.rmtree(clone_folder, ignore_errors=False)
+        shutil.rmtree(clone_folder, ignore_errors=False, onerror=del_rw)
 
 
 def fetch_addon_from_folder(raw_addon_location, target_folder):
