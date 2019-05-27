@@ -1,7 +1,8 @@
 import os
 
-PLUGINS = ['https://github.com/cache-sk/plugin.video.dokumenty.tv.git',
-        'https://github.com/cache-sk/YABoP.git#master:plugin.video.yabop']
+PLUGINS = ['repository.cache-sk',
+           'https://github.com/cache-sk/plugin.video.dokumenty.tv.git',
+           'https://github.com/cache-sk/YABoP.git#master:plugin.video.yabop']
 
 def delete_all_files(folder,skip):
     print('processing '+folder)
