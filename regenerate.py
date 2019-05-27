@@ -1,4 +1,4 @@
-import os, tempfile, urllib, create_repository
+import os, tempfile, urllib
 
 PLUGINS = ['repository.cache-sk',
            'https://github.com/cache-sk/plugin.video.dokumenty.tv.git',
