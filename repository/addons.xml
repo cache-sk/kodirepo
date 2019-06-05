@@ -43,7 +43,7 @@
             <icon>icon.png</icon>
         </assets>
     </extension>
-</addon><addon id="plugin.video.yabop" name="YABoP" provider-name="cache-sk" version="1.1.5">
+</addon><addon id="plugin.video.yabop" name="YABoP" provider-name="cache-sk" version="1.1.6">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
         <import addon="script.module.resolveurl" version="5.0.00" />
@@ -66,6 +66,9 @@
             <fanart>fanart.jpg</fanart>
         </assets>
         <news>
+[B]1.1.6[/B]
+- update serialovej casti
+- openload fix titulkov
 [B]1.1.5[/B]
 - verystream fix titulkov
 [B]1.1.4[/B]
