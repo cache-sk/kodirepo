@@ -112,4 +112,15 @@
         <description>Unofficial Resolvers for the Kodi Media Center. Please visit www.tvaddons.co for support!</description>
         <platform>all</platform>
     </extension>
+</addon><addon id="repository.jsergio" name="jsergio repo" provider-name="jsergio" version="1.0.4">
+	<extension name="jsergio repo" point="xbmc.addon.repository">
+        <info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/jsergio123/zips/master/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Repo for jsergio Add-ons</summary>
+		<description>Repo for jsergio Add-ons</description>
+		<platform>all</platform>
+	</extension>
 </addon></addons>
