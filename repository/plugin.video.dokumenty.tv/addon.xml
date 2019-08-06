@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="plugin.video.dokumenty.tv" version="1.0.0" name="Dokumenty.tv" provider-name="cache-sk">
+<addon id="plugin.video.dokumenty.tv" version="1.0.1" name="Dokumenty.tv" provider-name="cache-sk">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
         <import addon="script.module.resolveurl" version="5.0.00"/>
@@ -16,6 +16,10 @@
         <description lang="sk">Dokumentárne videá zo stránky Dokumenty.tv</description>
         <description lang="cs">Dokumentární videa ze stránky Dokumenty.tv</description>
         <news>
+[B]1.0.1[/B]
+- removed unused settings
+[B]1.0.0[/B]
+- release
 [B]0.0.4[/B]
 - added to repository
 [B]0.0.3[/B]
