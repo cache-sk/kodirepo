@@ -3,7 +3,8 @@ import os, tempfile, urllib
 PLUGINS = ['repository.cache-sk',
            'https://github.com/cache-sk/plugin.video.dokumenty.tv.git',
            'https://github.com/cache-sk/YABoP.git#master:plugin.video.yabop',
-           'https://github.com/cache-sk/SkTonline.git#master:plugin.video.sktonline']
+           'https://github.com/cache-sk/SkTonline.git#master:plugin.video.sktonline',
+           'https://github.com/cache-sk/plugin.video.topserialy.to']
 
 EXTERNAL = ['https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/zips/repository.tva.common/repository.tva.common-2.0.0.zip',
             'https://github.com/jsergio123/zips/raw/master/repository.jsergio/repository.jsergio-1.0.4.zip']

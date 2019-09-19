@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="plugin.video.topserialy.to" version="0.0.1" name="Topserialy.to" provider-name="cache-sk">
+    <requires>
+        <import addon="xbmc.python" version="2.19.0" />
+        <import addon="script.module.resolveurl" version="5.0.00"/>
+        <import addon="script.module.requests" version="2.18.4"/>
+        <import addon="script.module.beautifulsoup4" version="4.5.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="main.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Topserialy.to</summary>
+        <news>
+[B]0.0.1[/B]
+- first release
+        </news>
+        <assets>
+            <icon>logo.png</icon>
+        </assets>
+    </extension>
+</addon>

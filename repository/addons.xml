@@ -135,6 +135,26 @@
 - first release
         </news>
     </extension>
+</addon><addon id="plugin.video.topserialy.to" name="Topserialy.to" provider-name="cache-sk" version="0.0.1">
+    <requires>
+        <import addon="xbmc.python" version="2.19.0" />
+        <import addon="script.module.resolveurl" version="5.0.00" />
+        <import addon="script.module.requests" version="2.18.4" />
+        <import addon="script.module.beautifulsoup4" version="4.5.0" />
+    </requires>
+    <extension library="main.py" point="xbmc.python.pluginsource">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Topserialy.to</summary>
+        <news>
+[B]0.0.1[/B]
+- first release
+        </news>
+        <assets>
+            <icon>logo.png</icon>
+        </assets>
+    </extension>
 </addon><addon id="repository.tva.common" name="TVADDONS.CO Resolvers Repository" provider-name="tvaddons" version="2.0.0">
     <extension name="TVADDONS.CO Resolvers Repository" point="xbmc.addon.repository">
         <info compressed="false">https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/addons.xml</info>
