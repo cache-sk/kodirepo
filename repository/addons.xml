@@ -47,7 +47,7 @@
             <icon>icon.png</icon>
         </assets>
     </extension>
-</addon><addon id="plugin.video.yabop" name="YABoP" provider-name="cache-sk" version="1.1.8">
+</addon><addon id="plugin.video.yabop" name="YABoP" provider-name="cache-sk" version="1.1.9">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
         <import addon="script.module.resolveurl" version="5.0.00" />
@@ -70,6 +70,9 @@
             <fanart>fanart.jpg</fanart>
         </assets>
         <news>
+[B]1.1.9[/B]
+- fix titulkov na mixdrop.co
+- fix serialov
 [B]1.1.8[/B]
 - doplnenie rozoznavania mixdrop.co
 [B]1.1.7[/B]
