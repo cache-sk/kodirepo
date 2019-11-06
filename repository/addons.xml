@@ -13,7 +13,7 @@
     <assets>
         <icon>icon.png</icon>
     </assets>
-</addon><addon id="plugin.video.dokumenty.tv" name="Dokumenty.tv" provider-name="cache-sk" version="1.0.1">
+</addon><addon id="plugin.video.dokumenty.tv" name="Dokumenty.tv" provider-name="cache-sk" version="1.0.2">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
         <import addon="script.module.resolveurl" version="5.0.00" />
@@ -25,11 +25,16 @@
         <provides>video</provides>
     </extension>
     <extension point="xbmc.addon.metadata">
-        <summary lang="en">Dokumenty.tv</summary>
-        <description lang="en">Documentary videos from Dokumenty.tv page</description>
-        <description lang="sk">Dokumentárne videá zo stránky Dokumenty.tv</description>
-        <description lang="cs">Dokumentární videa ze stránky Dokumenty.tv</description>
+        <summary>Dokumenty.tv</summary>
+        <description lang="en">Simulation dokumenty.tv browser</description>
+        <description lang="sk">Simulácia prehliadača stránky dokumenty.tv</description>
+        <description lang="cs">Simulace prohlížeče stránky dokumenty.tv</description>
+        <disclaimer lang="en">The plugin does not provide any content, it is only a simulation of the browser of a publicly available web site. I am not responsible for the content provided by this site.</disclaimer>
+        <disclaimer lang="sk">Plugin neposkytuje žiaden obsah, je to len simulácia prehliadača verejne dostupnej web stránky. Nie som zodpovedný za obsah, ktorý táto stránka poskytuje.</disclaimer>
+        <disclaimer lang="cz">Plugin neposkytuje žádný obsah, je to jen simulace prohlížeče veřejně dostupné web stránky. Nejsem zodpovědný za obsah, který tato stránka poskytuje.</disclaimer>
         <news>
+[B]1.0.2[/B]
+- disclaimer
 [B]1.0.1[/B]
 - removed unused settings
 [B]1.0.0[/B]
@@ -47,7 +52,7 @@
             <icon>icon.png</icon>
         </assets>
     </extension>
-</addon><addon id="plugin.video.yabop" name="YABoP" provider-name="cache-sk" version="1.2.0">
+</addon><addon id="plugin.video.yabop" name="YABoP" provider-name="cache-sk" version="1.2.1">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
         <import addon="script.module.resolveurl" version="5.0.00" />
@@ -58,10 +63,13 @@
         <provides>video</provides>
     </extension>
     <extension point="xbmc.addon.metadata">
-        <summary lang="en">Yet Another BOmbuj Plugin</summary>
-        <description lang="en">Watch movies and series from Bombuj.eu</description>
-        <description lang="sk">Sledujte filmy a seriály z Bombuj.eu</description>
-        <description lang="cs">Sledujte filmy a seriály z Bombuj.eu</description>
+        <summary>Yet Another BOmbuj Plugin</summary>
+        <description lang="en">Simulation of bombuj.tv browser, or android app</description>
+        <description lang="sk">Simulácia prehliadača, resp. android aplikácie, stránky bombuj.tv</description>
+        <description lang="cs">Simulace prohlížeče, resp. android aplikace, stránky bombuj.tv</description>
+        <disclaimer lang="en">The plugin does not provide any content, it is only a simulation of the browser of a publicly available web site or android app. I am not responsible for the content provided by this site.</disclaimer>
+        <disclaimer lang="sk">Plugin neposkytuje žiaden obsah, je to len simulácia prehliadača verejne dostupnej web stránky resp. android aplikácie. Nie som zodpovedný za obsah, ktorý táto stránka poskytuje.</disclaimer>
+        <disclaimer lang="cz">Plugin neposkytuje žádný obsah, je to jen simulace prohlížeče veřejně dostupné web stránky resp. android aplikace. Nejsem zodpovědný za obsah, který tato stránka poskytuje.</disclaimer>
         <platform>all</platform>
         <forum>https://www.xbmc-kodi.cz/prispevek-yet-another-bombuj-plugin</forum>
         <source>https://github.com/cache-sk/YABoP</source>
@@ -70,6 +78,8 @@
             <fanart>fanart.jpg</fanart>
         </assets>
         <news>
+[B]1.2.1[/B]
+- disclaimer
 [B]1.2.0[/B]
 - update po ukonceni openload a stremango, odstranenie legacy kodu
 - beta rework na resolveri mixdrop.co, filmy ciastocne idu, serialy asi nist
@@ -117,7 +127,7 @@
 - lokalizácia en, sk, cz
         </news>
     </extension>
-</addon><addon id="plugin.video.sktonline" name="SkTonline" provider-name="cache-sk" version="1.0.0">
+</addon><addon id="plugin.video.sktonline" name="SkTonline" provider-name="cache-sk" version="1.0.1">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
         <import addon="script.module.requests" version="2.18.4" />
@@ -128,9 +138,12 @@
     </extension>
     <extension point="xbmc.addon.metadata">
         <summary lang="en">SkTonline</summary>
-        <description lang="en">Watch movies and series from SkTonline</description>
-        <description lang="sk">Sledujte filmy a seriály z SkTonline</description>
-        <description lang="cs">Sledujte filmy a seriály z SkTonline</description>
+        <description lang="en">Simulation of online.sktorrent.eu browser</description>
+        <description lang="sk">Simulácia prehliadača stránky online.sktorrent.eu</description>
+        <description lang="cs">Simulace prohlížeče stránky online.sktorrent.eu</description>
+        <disclaimer lang="en">The plugin does not provide any content, it is only a simulation of the browser of a publicly available web site. I am not responsible for the content provided by this site.</disclaimer>
+        <disclaimer lang="sk">Plugin neposkytuje žiaden obsah, je to len simulácia prehliadača verejne dostupnej web stránky. Nie som zodpovedný za obsah, ktorý táto stránka poskytuje.</disclaimer>
+        <disclaimer lang="cz">Plugin neposkytuje žádný obsah, je to jen simulace prohlížeče veřejně dostupné web stránky. Nejsem zodpovědný za obsah, který tato stránka poskytuje.</disclaimer>
         <platform>all</platform>
         <forum>https://www.xbmc-kodi.cz/prispevek-sktonline</forum>
         <source>https://github.com/cache-sk/SkTonline</source>
@@ -138,11 +151,13 @@
             <icon>icon.png</icon>
         </assets>
         <news>
+[B]1.0.1[/B]
+- disclaimer
 [B]1.0.0[/B]
 - first release
         </news>
     </extension>
-</addon><addon id="plugin.video.topserialy.to" name="Topserialy.to" provider-name="cache-sk" version="0.0.2">
+</addon><addon id="plugin.video.topserialy.to" name="Topserialy.to" provider-name="cache-sk" version="0.0.3">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
         <import addon="script.module.resolveurl" version="5.0.00" />
@@ -153,8 +168,18 @@
         <provides>video</provides>
     </extension>
     <extension point="xbmc.addon.metadata">
-        <summary lang="en">Topserialy.to</summary>
+        <summary>Topserialy.to</summary>
+        <description lang="en">Simulation of topserialy.to browser</description>
+        <description lang="sk">Simulácia prehliadača stránky topserialy.to</description>
+        <description lang="cs">Simulace prohlížeče stránky topserialy.to</description>
+        <disclaimer lang="en">The plugin does not provide any content, it is only a simulation of the browser of a publicly available web site. I am not responsible for the content provided by this site.</disclaimer>
+        <disclaimer lang="sk">Plugin neposkytuje žiaden obsah, je to len simulácia prehliadača verejne dostupnej web stránky. Nie som zodpovedný za obsah, ktorý táto stránka poskytuje.</disclaimer>
+        <disclaimer lang="cz">Plugin neposkytuje žádný obsah, je to jen simulace prohlížeče veřejně dostupné web stránky. Nejsem zodpovědný za obsah, který tato stránka poskytuje.</disclaimer>
         <news>
+[B]0.0.3[/B]
+- disclaimer
+[B]0.0.2[/B]
+- offline message
 [B]0.0.1[/B]
 - first release
         </news>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="plugin.video.sktonline" version="1.0.0" name="SkTonline" provider-name="cache-sk">
+<addon id="plugin.video.sktonline" version="1.0.1" name="SkTonline" provider-name="cache-sk">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
         <import addon="script.module.requests" version="2.18.4"/>
@@ -10,9 +10,12 @@
     </extension>
     <extension point="xbmc.addon.metadata">
         <summary lang="en">SkTonline</summary>
-        <description lang="en">Watch movies and series from SkTonline</description>
-        <description lang="sk">Sledujte filmy a seriály z SkTonline</description>
-        <description lang="cs">Sledujte filmy a seriály z SkTonline</description>
+        <description lang="en">Simulation of online.sktorrent.eu browser</description>
+        <description lang="sk">Simulácia prehliadača stránky online.sktorrent.eu</description>
+        <description lang="cs">Simulace prohlížeče stránky online.sktorrent.eu</description>
+        <disclaimer lang="en">The plugin does not provide any content, it is only a simulation of the browser of a publicly available web site. I am not responsible for the content provided by this site.</disclaimer>
+        <disclaimer lang="sk">Plugin neposkytuje žiaden obsah, je to len simulácia prehliadača verejne dostupnej web stránky. Nie som zodpovedný za obsah, ktorý táto stránka poskytuje.</disclaimer>
+        <disclaimer lang="cz">Plugin neposkytuje žádný obsah, je to jen simulace prohlížeče veřejně dostupné web stránky. Nejsem zodpovědný za obsah, který tato stránka poskytuje.</disclaimer>
         <platform>all</platform>
         <forum>https://www.xbmc-kodi.cz/prispevek-sktonline</forum>
         <source>https://github.com/cache-sk/SkTonline</source>
@@ -20,6 +23,8 @@
             <icon>icon.png</icon>
         </assets>
         <news>
+[B]1.0.1[/B]
+- disclaimer
 [B]1.0.0[/B]
 - first release
         </news>
