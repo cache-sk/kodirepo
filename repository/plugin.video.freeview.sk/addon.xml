@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="plugin.video.freeview.sk" version="0.1.3" name="Živé vysielanie TV na Slovensku" provider-name="cache-sk">
+<addon id="plugin.video.freeview.sk" version="0.1.5" name="Živé vysielanie TV na Slovensku" provider-name="cache-sk">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
         <import addon="script.module.resolveurl" version="5.0.00"/>
@@ -11,6 +11,7 @@
     <extension point="xbmc.python.pluginsource" library="main.py">
         <provides>video</provides>
     </extension>
+    <extension point="xbmc.service" library="service.py"/>
     <extension point="xbmc.addon.metadata">
         <summary lang="en_GB">Playlist a sada resolverov</summary>
         <description lang="en_GB">Všetky tu získavané streamy sú verejne k dispozícii a využívajú ich primárne oficiálne stránky či aplikácie konkrétnych televízií.</description>
@@ -18,6 +19,11 @@
         <forum>not yet</forum>
         <source>https://github.com/cache-sk/plugin.video.freeview.sk</source>
         <news>
+[B]0.1.5[/B]
+- schovanie phazebox z menu
+- zlucenie ct d a ct art do jedneho programu, aby sedel so skylink epg
+[B]0.1.4[/B]
+- generovanie a nastavenie epg zo skylinku
 [B]0.1.3[/B]
 - nastavenie phazebox epg
 [B]0.1.2[/B]
