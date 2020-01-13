@@ -52,7 +52,7 @@
             <icon>icon.png</icon>
         </assets>
     </extension>
-</addon><addon id="plugin.video.yabop" name="YABoP" provider-name="cache-sk" version="1.2.3">
+</addon><addon id="plugin.video.yabop" name="YABoP" provider-name="cache-sk" version="1.2.4">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
         <import addon="script.module.resolveurl" version="5.0.00" />
@@ -78,6 +78,8 @@
             <fanart>fanart.jpg</fanart>
         </assets>
         <news>
+[B]1.2.4[/B]
+- mixdrop quickfix yet again
 [B]1.2.3[/B]
 - mixdrop quickfix
 [B]1.2.2[/B]
@@ -191,7 +193,7 @@
             <icon>logo.png</icon>
         </assets>
     </extension>
-</addon><addon id="plugin.video.freeview.sk" name="Živé vysielanie TV na Slovensku" provider-name="cache-sk" version="0.1.6">
+</addon><addon id="plugin.video.freeview.sk" name="Živé vysielanie TV na Slovensku" provider-name="cache-sk" version="0.1.7">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
         <import addon="script.module.resolveurl" version="5.0.00" />
@@ -211,6 +213,8 @@
         <forum>not yet</forum>
         <source>https://github.com/cache-sk/plugin.video.freeview.sk</source>
         <news>
+[B]0.1.7[/B]
+- Jojko
 [B]0.1.6[/B]
 - Trojka, zatial bez alt streamu a bez epg
 [B]0.1.5[/B]

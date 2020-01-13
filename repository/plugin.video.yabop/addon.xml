@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="plugin.video.yabop" version="1.2.3" name="YABoP" provider-name="cache-sk">
+<addon id="plugin.video.yabop" version="1.2.4" name="YABoP" provider-name="cache-sk">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
         <import addon="script.module.resolveurl" version="5.0.00"/>
@@ -25,6 +25,8 @@
             <fanart>fanart.jpg</fanart>
         </assets>
         <news>
+[B]1.2.4[/B]
+- mixdrop quickfix yet again
 [B]1.2.3[/B]
 - mixdrop quickfix
 [B]1.2.2[/B]
