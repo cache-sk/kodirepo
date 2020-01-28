@@ -52,7 +52,7 @@
             <icon>icon.png</icon>
         </assets>
     </extension>
-</addon><addon id="plugin.video.yabop" name="YABoP" provider-name="cache-sk" version="1.2.4">
+</addon><addon id="plugin.video.yabop" name="YABoP" provider-name="cache-sk" version="1.2.5">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
         <import addon="script.module.resolveurl" version="5.0.00" />
@@ -78,6 +78,8 @@
             <fanart>fanart.jpg</fanart>
         </assets>
         <news>
+[B]1.2.5[/B]
+- mixdrop quickfix yet again
 [B]1.2.4[/B]
 - mixdrop quickfix yet again
 [B]1.2.3[/B]
