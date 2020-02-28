@@ -165,37 +165,7 @@
 - first release
         </news>
     </extension>
-</addon><addon id="plugin.video.topserialy.to" name="Topserialy.to" provider-name="cache-sk" version="0.0.3">
-    <requires>
-        <import addon="xbmc.python" version="2.19.0" />
-        <import addon="script.module.resolveurl" version="5.0.00" />
-        <import addon="script.module.requests" version="2.18.4" />
-        <import addon="script.module.beautifulsoup4" version="4.5.0" />
-    </requires>
-    <extension library="main.py" point="xbmc.python.pluginsource">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary>Topserialy.to</summary>
-        <description lang="en">Simulation of topserialy.to browser</description>
-        <description lang="sk">Simulácia prehliadača stránky topserialy.to</description>
-        <description lang="cs">Simulace prohlížeče stránky topserialy.to</description>
-        <disclaimer lang="en">The plugin does not provide any content, it is only a simulation of the browser of a publicly available web site. I am not responsible for the content provided by this site.</disclaimer>
-        <disclaimer lang="sk">Plugin neposkytuje žiaden obsah, je to len simulácia prehliadača verejne dostupnej web stránky. Nie som zodpovedný za obsah, ktorý táto stránka poskytuje.</disclaimer>
-        <disclaimer lang="cz">Plugin neposkytuje žádný obsah, je to jen simulace prohlížeče veřejně dostupné web stránky. Nejsem zodpovědný za obsah, který tato stránka poskytuje.</disclaimer>
-        <news>
-[B]0.0.3[/B]
-- disclaimer
-[B]0.0.2[/B]
-- offline message
-[B]0.0.1[/B]
-- first release
-        </news>
-        <assets>
-            <icon>logo.png</icon>
-        </assets>
-    </extension>
-</addon><addon id="plugin.video.freeview.sk" name="Živé vysielanie TV na Slovensku" provider-name="cache-sk" version="0.1.7">
+</addon><addon id="plugin.video.freeview.sk" name="Živé vysielanie TV na Slovensku" provider-name="cache-sk" version="0.1.8">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
         <import addon="script.module.resolveurl" version="5.0.00" />
@@ -215,6 +185,9 @@
         <forum>not yet</forum>
         <source>https://github.com/cache-sk/plugin.video.freeview.sk</source>
         <news>
+[B]0.1.8[/B]
+- Nova zmenila lokality svojich streamov, kym neziskam nove zmiznu programy z playlistu.
+- Jojko ma zaseknuty stream, chyba je na strane JOJ
 [B]0.1.7[/B]
 - Jojko
 [B]0.1.6[/B]
