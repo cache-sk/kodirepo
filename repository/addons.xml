@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<addons><addon id="repository.cache-sk" name="Kodi cache-sk Addons" provider-name="cache-sk" version="1.0.1">
+<addons><addon id="repository.cache-sk" name="Kodi cache-sk Addons" provider-name="cache-sk" version="1.0.2">
     <extension name="Kodi cache-sk Addons" point="xbmc.addon.repository">
         <info compressed="false">https://raw.githubusercontent.com/cache-sk/kodirepo/master/repository/addons.xml</info>
         <checksum>https://raw.githubusercontent.com/cache-sk/kodirepo/master/repository/addons.xml.md5</checksum>
