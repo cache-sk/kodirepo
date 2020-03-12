@@ -12,7 +12,8 @@ PLUGINS = ['repository.cache-sk',
 
 EXTERNAL = [#'https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/zips/repository.tva.common/repository.tva.common-2.0.0.zip',
             'https://github.com/jsergio123/zips/raw/master/repository.jsergio/repository.jsergio-1.0.4.zip',
-            'https://repo.xbmc-kodi.cz/posledni.php']
+            'https://repo.xbmc-kodi.cz/posledni.php',
+            'https://kodi-czsk.github.io/repository/repo/repository.kodi-czsk/repository.kodi-czsk-1.0.2.zip']
 
 def delete_all_files(folder,skip):
     print('processing '+folder)
