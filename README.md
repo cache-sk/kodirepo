@@ -9,8 +9,10 @@ https://github.com/cache-sk/kodirepo/tree/master/repository/repository.cache-sk
 
 
 
-Zvacsa potrebuju resolvery z tejto repository:
+Niektore potrebuju resolvery, ktore su uz vlozene aj do tejto repo, odporucam si ale pridat aj xbmc-kodi repository.
 
-https://github.com/tvaddonsco/tva-resolvers-repo/tree/master/zips/repository.tva.common
+https://repo.xbmc-kodi.cz
 
 Je mozne ju nainstalovat aj priamo z mojej repozitory.
+
+Nepouzivajte TVADDONS repository, nakolko pribaluje ako povinnu dependency Indigo plugin.

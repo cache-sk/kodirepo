@@ -1,10 +1,16 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<addons><addon id="repository.cache-sk" name="Kodi cache-sk Addons" provider-name="cache-sk" version="1.0.0">
+<addons><addon id="repository.cache-sk" name="Kodi cache-sk Addons" provider-name="cache-sk" version="1.0.1">
     <extension name="Kodi cache-sk Addons" point="xbmc.addon.repository">
         <info compressed="false">https://raw.githubusercontent.com/cache-sk/kodirepo/master/repository/addons.xml</info>
         <checksum>https://raw.githubusercontent.com/cache-sk/kodirepo/master/repository/addons.xml.md5</checksum>
-        <datadir zip="true">https://raw.githubusercontent.com/cache-sk/kodirepo/master/repository//</datadir>
+        <datadir zip="true">https://raw.githubusercontent.com/cache-sk/kodirepo/master/repository/</datadir>
+        
     </extension>
+    <dir>
+        <info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/jsergio123/zips/master/</datadir>
+	</dir>
     <extension point="xbmc.addon.metadata">
         <summary>Kodi cache-sk Addons</summary>
         <description>Kodi cache-sk Addons</description>
@@ -254,26 +260,56 @@
             <icon>logo.png</icon>
         </assets>
     </extension>
-</addon><addon id="repository.tva.common" name="TVADDONS.CO Resolvers Repository" provider-name="tvaddons" version="2.0.0">
-    <extension name="TVADDONS.CO Resolvers Repository" point="xbmc.addon.repository">
-        <info compressed="false">https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/addons.xml</info>
-        <checksum>https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/addons.xml.md5</checksum>
-        <datadir zip="true">https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/zips/</datadir>
+</addon><addon id="script.module.urlresolver" name="URLResolver" provider-name="tvaddons" version="5.0.56">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0" />
+        <import addon="plugin.video.youtube" optional="true" />
+        <import addon="script.module.python.twitch" optional="true" />
+        <import addon="script.module.cryptopy" optional="true" version="1.2.6" />
+        <import addon="plugin.video.gdrive" optional="true" />
+    </requires>
+    <extension library="lib" point="xbmc.python.module" />
+    <extension library="lib/default.py" point="xbmc.python.pluginsource" />
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en">Resolve common video host URL's to be playable in XBMC/Kodi.</summary>
+        <summary lang="es">Resolver enlaces a videos de sitios populares para poder reproducirlos en XBMC/Kodi.</summary>
+        <summary lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju.</summary>
+        <summary lang="el">Επίλυση συνδέσμων κοινών εξυπηρετητών σε μορφή βίντεο ικανό για αναπαραγωγή στο XBMC/Kodi.</summary>
+        <description lang="en">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
+        <description lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju, pojednostavnjuje razvoj priključaka za video dodatke koji zahtjevaju višestruke video izvore.</description>
+        <forum>https://www.tvaddons.co/forums</forum>
+        <website>https://www.tvaddons.co</website>
+    </extension>
+</addon><addon id="script.module.resolveurl" name="ResolveURL" provider-name="jsergio" version="5.0.38">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0" />
+        <import addon="plugin.video.youtube" optional="true" />
+        <import addon="script.module.python.twitch" optional="true" />
+        <import addon="script.module.cryptopy" optional="true" version="1.2.6" />
+        <import addon="plugin.video.gdrive" optional="true" />
+    </requires>
+    <extension library="lib" point="xbmc.python.module" />
+    <extension library="lib/default.py" point="xbmc.python.pluginsource" />
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en">Resolve common video host URL's to be playable in XBMC/Kodi.</summary>
+        <summary lang="es">Resolver enlaces a videos de sitios populares para poder reproducirlos en XBMC/Kodi.</summary>
+        <summary lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju.</summary>
+        <summary lang="el">Επίλυση συνδέσμων κοινών εξυπηρετητών σε μορφή βίντεο ικανό για αναπαραγωγή στο XBMC/Kodi.</summary>
+        <description lang="en">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
+        <description lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju, pojednostavnjuje razvoj priključaka za video dodatke koji zahtjevaju višestruke video izvore.</description>
+    </extension>
+</addon><addon id="repository.xbmc-kodi.cz" name="XBMC-Kodi CZ/SK repozitář" provider-name="XBMC-Kodi.cz" version="1.0.2"> 
+    <extension point="xbmc.addon.repository">
+        <info>https://repo.xbmc-kodi.cz/addons/addons.xml.gz</info>
+        <checksum verify="sha256">https://repo.xbmc-kodi.cz/addons/addons.xml.gz?sha256</checksum>
+        <datadir zip="true">https://repo.xbmc-kodi.cz/addons/</datadir>
+        <hashes>sha256</hashes>
     </extension>
     <extension point="xbmc.addon.metadata">
-        <summary>Unofficial Resolvers for the Kodi Media Center</summary>
-        <description>Unofficial Resolvers for the Kodi Media Center. Please visit www.tvaddons.co for support!</description>
+        <summary>Česko-slovenská komunita fanoušků XBMC/Kodi</summary>
+        <description>Repozitář pro česko-slovenskou komunitu fanoušků XBMC/Kodi</description>
         <platform>all</platform>
     </extension>
-</addon><addon id="repository.jsergio" name="jsergio repo" provider-name="jsergio" version="1.0.4">
-	<extension name="jsergio repo" point="xbmc.addon.repository">
-        <info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
-        <checksum>https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml.md5</checksum>
-        <datadir zip="true">https://raw.githubusercontent.com/jsergio123/zips/master/</datadir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>Repo for jsergio Add-ons</summary>
-		<description>Repo for jsergio Add-ons</description>
-		<platform>all</platform>
-	</extension>
 </addon></addons>

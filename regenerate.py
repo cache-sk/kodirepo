@@ -6,10 +6,13 @@ PLUGINS = ['repository.cache-sk',
            'https://github.com/cache-sk/SkTonline.git#master:plugin.video.sktonline',
            #'https://github.com/cache-sk/plugin.video.topserialy.to',
            'https://github.com/cache-sk/plugin.video.freeview.sk',
-           'https://github.com/cache-sk/plugin.video.rebit.tv']
+           'https://github.com/cache-sk/plugin.video.rebit.tv',
+           'https://github.com/xbmc-kodi-cz/script.module.urlresolver',
+           'https://github.com/xbmc-kodi-cz/script.module.resolveurl']
 
-EXTERNAL = ['https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/zips/repository.tva.common/repository.tva.common-2.0.0.zip',
-            'https://github.com/jsergio123/zips/raw/master/repository.jsergio/repository.jsergio-1.0.4.zip']
+EXTERNAL = [#'https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/zips/repository.tva.common/repository.tva.common-2.0.0.zip',
+            #'https://github.com/jsergio123/zips/raw/master/repository.jsergio/repository.jsergio-1.0.4.zip',
+            'https://repo.xbmc-kodi.cz/posledni.php']
 
 def delete_all_files(folder,skip):
     print('processing '+folder)
