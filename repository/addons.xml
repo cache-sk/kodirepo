@@ -58,7 +58,7 @@
             <icon>icon.png</icon>
         </assets>
     </extension>
-</addon><addon id="plugin.video.yabop" name="YABoP" provider-name="cache-sk" version="1.2.5">
+</addon><addon id="plugin.video.yabop" name="YABoP" provider-name="cache-sk" version="1.2.6">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
         <import addon="script.module.resolveurl" version="5.0.00" />
@@ -84,6 +84,9 @@
             <fanart>fanart.jpg</fanart>
         </assets>
         <news>
+[B]1.2.6[/B]
+- mixdrop quickfix yet again
+- upozornujem, ze plugin bude zanedlho deprecated, hlavny dovod je ze uz aj mixdrop zrejme zacal zapracovavat recaptchu a zatial som nevidel, ze by niekde recaptchu v3 prekonali
 [B]1.2.5[/B]
 - mixdrop quickfix yet again
 [B]1.2.4[/B]
@@ -260,7 +263,7 @@
             <icon>logo.png</icon>
         </assets>
     </extension>
-</addon><addon id="script.module.urlresolver" name="URLResolver" provider-name="tvaddons" version="5.0.56">
+</addon><addon id="script.module.urlresolver" name="URLResolver" provider-name="tvaddons" version="5.0.61">
     <requires>
         <import addon="xbmc.python" version="2.1.0" />
         <import addon="plugin.video.youtube" optional="true" />
@@ -281,7 +284,7 @@
         <forum>https://www.tvaddons.co/forums</forum>
         <website>https://www.tvaddons.co</website>
     </extension>
-</addon><addon id="script.module.resolveurl" name="ResolveURL" provider-name="jsergio" version="5.0.38">
+</addon><addon id="script.module.resolveurl" name="ResolveURL" provider-name="jsergio" version="5.0.41">
     <requires>
         <import addon="xbmc.python" version="2.1.0" />
         <import addon="plugin.video.youtube" optional="true" />
