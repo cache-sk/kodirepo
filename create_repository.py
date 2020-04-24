@@ -284,6 +284,7 @@ def fetch_addon_from_zip(raw_addon_location, target_folder):
 
 
 def fetch_addon(addon_location, target_folder, result_slot):
+    print "Processing "+addon_location
     try:
         if is_url(addon_location):
             addon_metadata = fetch_addon_from_git(
