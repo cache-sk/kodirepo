@@ -265,7 +265,7 @@
             <icon>logo.png</icon>
         </assets>
     </extension>
-</addon><addon id="plugin.video.yawsp" name="YAWsP" provider-name="cache-sk" version="0.0.2">
+</addon><addon id="plugin.video.yawsp" name="YAWsP" provider-name="cache-sk" version="0.0.3">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
         <import addon="script.module.requests" version="2.18.4" />
