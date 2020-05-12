@@ -174,7 +174,7 @@
 - first release
         </news>
     </extension>
-</addon><addon id="plugin.video.freeview.sk" name="Živé vysielanie TV na Slovensku" provider-name="cache-sk" version="0.3.1">
+</addon><addon id="plugin.video.freeview.sk" name="freeview.sk" provider-name="cache-sk" version="0.3.2">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
         <import addon="script.module.resolveurl" version="5.0.00" />
@@ -194,6 +194,8 @@
         <forum>not yet</forum>
         <source>https://github.com/cache-sk/plugin.video.freeview.sk</source>
         <news>
+[B]0.3.2[/B]
+- encoding fix
 [B]0.3.1[/B]
 - zdrojove kody iprima proxy
 - pi-hole fix :)
@@ -263,7 +265,33 @@
             <icon>logo.png</icon>
         </assets>
     </extension>
-</addon><addon id="script.module.urlresolver" name="URLResolver" provider-name="tvaddons" version="5.0.63">
+</addon><addon id="plugin.video.yawsp" name="YAWsP" provider-name="cache-sk" version="0.0.2">
+    <requires>
+        <import addon="xbmc.python" version="2.19.0" />
+        <import addon="script.module.requests" version="2.18.4" />
+    </requires>
+    <extension library="main.py" point="xbmc.python.pluginsource">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Yet Another Webhare Plugin - play content from web storage</summary>
+        <summary lang="sk_SK">Yet Another Webshare Plugin - prehrávanie obsahu z webového úložiska</summary>
+        <summary lang="cs_CZ">Yet Another Webshare Plugin - přehrávání obsahu z webového úložiště</summary>
+        <description lang="en_GB" />
+        <language />
+        <platform>all</platform>
+        <license>AGPL 3.0</license>
+        <website />
+        <source />
+        <news />
+        <assets>
+            <icon>resources/icon.png</icon>
+        </assets>
+        <disclaimer lang="en_GB">The plugin does not provide any content, it is only a simulation of the browser of a publicly available web site. I am not responsible for the content provided by this site.</disclaimer>
+        <disclaimer lang="sk_SK">Plugin neposkytuje žiaden obsah, je to len simulácia prehliadača verejne dostupnej web stránky. Nie som zodpovedný za obsah, ktorý táto stránka poskytuje.</disclaimer>
+        <disclaimer lang="cs_CZ">Plugin neposkytuje žádný obsah, je to jen simulace prohlížeče veřejně dostupné web stránky. Nejsem zodpovědný za obsah, který tato stránka poskytuje.</disclaimer>
+    </extension>
+</addon><addon id="script.module.urlresolver" name="URLResolver" provider-name="tvaddons" version="5.0.65">
     <requires>
         <import addon="xbmc.python" version="2.1.0" />
         <import addon="plugin.video.youtube" optional="true" />
@@ -284,7 +312,7 @@
         <forum>https://www.tvaddons.co/forums</forum>
         <website>https://www.tvaddons.co</website>
     </extension>
-</addon><addon id="script.module.resolveurl" name="ResolveURL" provider-name="jsergio" version="5.0.42">
+</addon><addon id="script.module.resolveurl" name="ResolveURL" provider-name="jsergio, gujal" version="5.0.46">
     <requires>
         <import addon="xbmc.python" version="2.1.0" />
         <import addon="plugin.video.youtube" optional="true" />

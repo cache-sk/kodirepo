@@ -7,6 +7,7 @@ PLUGINS = ['repository.cache-sk',
            #'https://github.com/cache-sk/plugin.video.topserialy.to',
            'https://github.com/cache-sk/plugin.video.freeview.sk',
            'https://github.com/cache-sk/plugin.video.rebit.tv',
+           'https://github.com/cache-sk/plugin.video.yawsp',
            'https://github.com/tvaddonsco/script.module.urlresolver',
            'https://github.com/jsergio123/script.module.resolveurl']
 
