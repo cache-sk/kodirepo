@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="plugin.video.freeview.sk" version="0.3.2" name="freeview.sk" provider-name="cache-sk">
+<addon id="plugin.video.freeview.sk" version="0.3.3" name="freeview.sk" provider-name="cache-sk">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
         <import addon="script.module.resolveurl" version="5.0.00"/>
@@ -19,6 +19,8 @@
         <forum>not yet</forum>
         <source>https://github.com/cache-sk/plugin.video.freeview.sk</source>
         <news>
+[B]0.3.3[/B]
+- lame fix
 [B]0.3.2[/B]
 - encoding fix
 [B]0.3.1[/B]
