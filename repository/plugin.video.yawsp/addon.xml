@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.yawsp" name="YAWsP" version="0.0.4" provider-name="cache-sk">
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="plugin.video.yawsp" name="YAWsP" version="0.1.0" provider-name="cache-sk">
     <requires>
         <import addon="xbmc.python" version="2.19.0"/>
         <import addon="script.module.requests" version="2.18.4"/>
@@ -8,21 +8,22 @@
         <provides>video</provides>
     </extension>
     <extension point="xbmc.addon.metadata">
-        <summary lang="en_GB">Yet Another Webhare Plugin - play content from web storage</summary>
-        <summary lang="sk_SK">Yet Another Webshare Plugin - prehrávanie obsahu z webového úložiska</summary>
-        <summary lang="cs_CZ">Yet Another Webshare Plugin - přehrávání obsahu z webového úložiště</summary>
-        <description lang="en_GB"></description>
-        <language></language>
-        <platform>all</platform>
-        <license>AGPL 3.0</license>
-        <website></website>
-        <source></source>
-        <news></news>
-        <assets>
-            <icon>resources/icon.png</icon>
-        </assets>
+        <summary>Yet Another Webshare Plugin</summary>
         <disclaimer lang="en_GB">The plugin does not provide any content, it is only a simulation of the browser of a publicly available web site. I am not responsible for the content provided by this site.</disclaimer>
         <disclaimer lang="sk_SK">Plugin neposkytuje žiaden obsah, je to len simulácia prehliadača verejne dostupnej web stránky. Nie som zodpovedný za obsah, ktorý táto stránka poskytuje.</disclaimer>
         <disclaimer lang="cs_CZ">Plugin neposkytuje žádný obsah, je to jen simulace prohlížeče veřejně dostupné web stránky. Nejsem zodpovědný za obsah, který tato stránka poskytuje.</disclaimer>
+        <platform>all</platform>
+        <license>AGPL 3.0</license>
+        <forum>https://www.xbmc-kodi.cz/prispevek-yet-another-webshare-plugin</forum>
+        <source>https://github.com/cache-sk/plugin.video.yawsp</source>
+        <assets>
+            <icon>resources/icon.png</icon>
+        </assets>
+        <news>
+[B]0.1.0[/B]
+- prvy verejny release
+- TODO stahovanie
+- TODO hladanie pomocou TMDB
+        </news>
     </extension>
 </addon>
