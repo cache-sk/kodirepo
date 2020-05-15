@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="plugin.video.yawsp" name="YAWsP" version="0.1.0" provider-name="cache-sk">
+<addon id="plugin.video.yawsp" name="YAWsP" version="0.1.1" provider-name="cache-sk">
     <requires>
         <import addon="xbmc.python" version="2.19.0"/>
         <import addon="script.module.requests" version="2.18.4"/>
@@ -20,6 +20,8 @@
             <icon>resources/icon.png</icon>
         </assets>
         <news>
+[B]0.1.1[/B]
+- pridane v menu hladania aj vsetky najnovsie a najvacsie (pozor, zobrazuje to aj adult obsah)
 [B]0.1.0[/B]
 - prvy verejny release
 - TODO stahovanie
