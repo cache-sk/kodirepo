@@ -189,10 +189,11 @@
             <icon>logo.png</icon>
         </assets>
     </extension>
-</addon><addon id="plugin.video.yawsp" name="YAWsP" provider-name="cache-sk" version="0.1.1">
+</addon><addon id="plugin.video.yawsp" name="YAWsP" provider-name="cache-sk" version="0.1.2">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
         <import addon="script.module.requests" version="2.18.4" />
+        <import addon="script.module.unidecode" version="0.4.16" />
     </requires>
     <extension library="main.py" point="xbmc.python.pluginsource">
         <provides>video</provides>
@@ -210,6 +211,8 @@
             <icon>resources/icon.png</icon>
         </assets>
         <news>
+[B]0.1.2[/B]
+- pridane stahovanie
 [B]0.1.1[/B]
 - pridane v menu hladania aj vsetky najnovsie a najvacsie (pozor, zobrazuje to aj adult obsah)
 [B]0.1.0[/B]
@@ -218,7 +221,7 @@
 - TODO hladanie pomocou TMDB
         </news>
     </extension>
-</addon><addon id="script.module.urlresolver" name="URLResolver" provider-name="tvaddons" version="5.0.66">
+</addon><addon id="script.module.urlresolver" name="URLResolver" provider-name="tvaddons" version="5.0.67">
     <requires>
         <import addon="xbmc.python" version="2.1.0" />
         <import addon="plugin.video.youtube" optional="true" />
@@ -239,7 +242,7 @@
         <forum>https://www.tvaddons.co/forums</forum>
         <website>https://www.tvaddons.co</website>
     </extension>
-</addon><addon id="script.module.resolveurl" name="ResolveURL" provider-name="jsergio, gujal" version="5.0.46">
+</addon><addon id="script.module.resolveurl" name="ResolveURL" provider-name="jsergio, gujal" version="5.0.47">
     <requires>
         <import addon="xbmc.python" version="2.1.0" />
         <import addon="plugin.video.youtube" optional="true" />
