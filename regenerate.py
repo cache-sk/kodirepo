@@ -5,8 +5,8 @@ PLUGINS = ['repository.cache-sk',
            'https://github.com/cache-sk/YABoP.git#master:plugin.video.yabop', #fixed 1.2.1 release //master to 495c6f66807360b915da025cf409b46c3f1178ed
            'https://github.com/cache-sk/SkTonline.git#master:plugin.video.sktonline',
            #'https://github.com/cache-sk/plugin.video.topserialy.to', # deprecated
-           'https://github.com/cache-sk/plugin.video.freeview.sk', # temporarily removed
-           'https://github.com/cache-sk/plugin.video.rebit.tv',
+           #'https://github.com/cache-sk/plugin.video.freeview.sk',  temporarily removed
+           #'https://github.com/cache-sk/plugin.video.rebit.tv',
            'https://github.com/cache-sk/plugin.video.yawsp',
            'https://github.com/tvaddonsco/script.module.urlresolver',
            'https://github.com/jsergio123/script.module.resolveurl']
