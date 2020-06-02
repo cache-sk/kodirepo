@@ -1,24 +1,19 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<addons><addon id="repository.cache-sk" name="Kodi cache-sk Addons" provider-name="cache-sk" version="1.0.2">
+<addons><addon id="repository.cache-sk" name="Kodi cache-sk Addons" provider-name="cache-sk" version="1.0.3">
     <extension name="Kodi cache-sk Addons" point="xbmc.addon.repository">
         <info compressed="false">https://raw.githubusercontent.com/cache-sk/kodirepo/master/repository/addons.xml</info>
         <checksum>https://raw.githubusercontent.com/cache-sk/kodirepo/master/repository/addons.xml.md5</checksum>
         <datadir zip="true">https://raw.githubusercontent.com/cache-sk/kodirepo/master/repository/</datadir>
-        
     </extension>
-    <dir>
-        <info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
-        <checksum>https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml.md5</checksum>
-        <datadir zip="true">https://raw.githubusercontent.com/jsergio123/zips/master/</datadir>
-	</dir>
     <extension point="xbmc.addon.metadata">
         <summary>Kodi cache-sk Addons</summary>
         <description>Kodi cache-sk Addons</description>
         <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
     </extension>
-    <assets>
-        <icon>icon.png</icon>
-    </assets>
+    <extension library="announcements.py" point="xbmc.service" />
 </addon><addon id="plugin.video.dokumenty.tv" name="Dokumenty.tv" provider-name="cache-sk" version="1.0.2">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
@@ -326,7 +321,7 @@
         <forum>https://www.tvaddons.co/forums</forum>
         <website>https://www.tvaddons.co</website>
     </extension>
-</addon><addon id="script.module.resolveurl" name="ResolveURL" provider-name="jsergio, gujal" version="5.0.47">
+</addon><addon id="script.module.resolveurl" name="ResolveURL" provider-name="jsergio, gujal" version="5.0.48">
     <requires>
         <import addon="xbmc.python" version="2.1.0" />
         <import addon="plugin.video.youtube" optional="true" />
