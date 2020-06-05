@@ -68,6 +68,7 @@ import xml.etree.ElementTree
 import zipfile
 import platform
 import stat
+import traceback
 
 
 AddonMetadata = collections.namedtuple(
@@ -80,7 +81,8 @@ AddonWorker = collections.namedtuple('AddonWorker', ('thread', 'result_slot'))
 INFO_BASENAME = 'addon.xml'
 METADATA_BASENAMES = (
     INFO_BASENAME,
-    'icon.png',
+    'icon.png','icon.jpg',
+    'logo.png','logo.jpg',
     'fanart.jpg',
     'LICENSE.txt')
 
@@ -203,6 +205,8 @@ def fetch_addon_from_git(addon_location, target_folder):
 
         copy_metadata_files(
             clone_source_folder, addon_target_folder, addon_metadata)
+        copy_metadata_files(
+            os.path.join(clone_source_folder, 'resources'), addon_target_folder, addon_metadata)
 
         return addon_metadata
     finally:
@@ -237,7 +241,9 @@ def fetch_addon_from_folder(raw_addon_location, target_folder):
     if not samefile:
         copy_metadata_files(
             addon_location, addon_target_folder, addon_metadata)
-
+        copy_metadata_files(
+            os.path.join(addon_location, 'resources'), addon_target_folder, addon_metadata)
+    
     return addon_metadata
 
 
@@ -264,8 +270,12 @@ def fetch_addon_from_zip(raw_addon_location, target_folder):
         for (source_basename, target_basename) in get_metadata_basenames(
                 addon_metadata):
             try:
-                source_file = archive.open(os.path.join(root, source_basename))
+                source_file = archive.open(root + '/' + source_basename)
             except KeyError:
+                try:
+                    source_file = archive.open(root + '/resources/' + source_basename)
+                except KeyError:
+                    continue
                 continue
             with open(
                     os.path.join(addon_target_folder, target_basename),
