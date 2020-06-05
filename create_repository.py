@@ -155,14 +155,16 @@ def issamefile(filea, fileb):
 
     return samefile
 
-def copy_metadata_files(source_folder, addon_target_folder, addon_metadata):
+def copy_metadata_files(source_folder, addon_target_folder, addon_metadata, subfolder = None):
     for (source_basename, target_basename) in get_metadata_basenames(
             addon_metadata):
-        source_path = os.path.join(source_folder, source_basename)
+        source_path = os.path.join(source_folder if subfolder is None else os.path.join(source_folder,subfolder), source_basename)
         if os.path.isfile(source_path):
+            if subfolder is not None and not os.path.isdir(os.path.join(addon_target_folder, subfolder)):
+                os.mkdir(os.path.join(addon_target_folder, subfolder))
             shutil.copyfile(
                 source_path,
-                os.path.join(addon_target_folder, target_basename))
+                os.path.join(addon_target_folder, target_basename) if subfolder is None else os.path.join(addon_target_folder, subfolder, target_basename))
 
 def del_rw(action, name, exc):
     os.chmod(name, stat.S_IWRITE)
@@ -206,7 +208,7 @@ def fetch_addon_from_git(addon_location, target_folder):
         copy_metadata_files(
             clone_source_folder, addon_target_folder, addon_metadata)
         copy_metadata_files(
-            os.path.join(clone_source_folder, 'resources'), addon_target_folder, addon_metadata)
+            clone_source_folder, addon_target_folder, addon_metadata, 'resources')
 
         return addon_metadata
     finally:
@@ -242,7 +244,7 @@ def fetch_addon_from_folder(raw_addon_location, target_folder):
         copy_metadata_files(
             addon_location, addon_target_folder, addon_metadata)
         copy_metadata_files(
-            os.path.join(addon_location, 'resources'), addon_target_folder, addon_metadata)
+            addon_location, addon_target_folder, addon_metadata, 'resources')
     
     return addon_metadata
 
@@ -272,10 +274,6 @@ def fetch_addon_from_zip(raw_addon_location, target_folder):
             try:
                 source_file = archive.open(root + '/' + source_basename)
             except KeyError:
-                try:
-                    source_file = archive.open(root + '/resources/' + source_basename)
-                except KeyError:
-                    continue
                 continue
             with open(
                     os.path.join(addon_target_folder, target_basename),
