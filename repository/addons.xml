@@ -249,7 +249,7 @@
             <icon>icon.jpg</icon>
         </assets>
     </extension>
-</addon><addon id="plugin.video.rebit.tv" name="rebit.tv" provider-name="cache-sk" version="0.0.2">
+</addon><addon id="plugin.video.rebit.tv" name="rebit.tv" provider-name="cache-sk" version="0.0.3">
     <requires>
         <import addon="xbmc.python" version="2.26.0" />
         <import addon="script.module.resolveurl" version="5.0.00" />
@@ -302,9 +302,10 @@
 - TODO hladanie pomocou TMDB
         </news>
     </extension>
-</addon><addon id="script.module.urlresolver" name="URLResolver" provider-name="tvaddons" version="5.0.67">
+</addon><addon id="script.module.urlresolver" name="URLResolver" provider-name="tvaddons" version="5.1.0">
     <requires>
-        <import addon="xbmc.python" version="2.1.0" />
+        
+        <import addon="script.module.six" version="0.0.1" />
         <import addon="plugin.video.youtube" optional="true" />
         <import addon="script.module.python.twitch" optional="true" />
         <import addon="script.module.cryptopy" optional="true" version="1.2.6" />
@@ -323,9 +324,10 @@
         <forum>https://www.tvaddons.co/forums</forum>
         <website>https://www.tvaddons.co</website>
     </extension>
-</addon><addon id="script.module.resolveurl" name="ResolveURL" provider-name="jsergio, gujal" version="5.0.48">
+</addon><addon id="script.module.resolveurl" name="ResolveURL" provider-name="gujal" version="5.1.0">
     <requires>
-        <import addon="xbmc.python" version="2.1.0" />
+        
+        <import addon="script.module.six" version="0.0.1" />
         <import addon="plugin.video.youtube" optional="true" />
         <import addon="script.module.python.twitch" optional="true" />
         <import addon="script.module.cryptopy" optional="true" version="1.2.6" />
@@ -341,6 +343,10 @@
         <summary lang="el">Επίλυση συνδέσμων κοινών εξυπηρετητών σε μορφή βίντεο ικανό για αναπαραγωγή στο XBMC/Kodi.</summary>
         <description lang="en">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
         <description lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju, pojednostavnjuje razvoj priključaka za video dodatke koji zahtjevaju višestruke video izvore.</description>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
     </extension>
 </addon><addon id="repository.jsergio" name="jsergio repo" provider-name="jsergio" version="1.0.4">
 	<extension name="jsergio repo" point="xbmc.addon.repository">
