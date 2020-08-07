@@ -171,7 +171,7 @@
 - first release
         </news>
     </extension>
-</addon><addon id="plugin.video.freeview.sk" name="freeview.sk" provider-name="cache-sk" version="0.3.4">
+</addon><addon id="plugin.video.freeview.sk" name="freeview.sk" provider-name="cache-sk" version="0.3.5">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
         <import addon="script.module.requests" version="2.18.4" />
@@ -189,7 +189,12 @@
         <license>AGPL</license>
         <forum>not yet</forum>
         <source>https://github.com/cache-sk/plugin.video.freeview.sk</source>
+        <assets>
+            <icon>icon.jpg</icon>
+        </assets>
         <news>
+[B]0.3.5[/B]
+- fix epg nahladu (skylink)
 [B]0.3.4[/B]
 - remove unused import
 - upravene info
@@ -247,9 +252,6 @@
 [B]0.0.1[/B]
 - inicialna verzia
         </news>
-        <assets>
-            <icon>icon.jpg</icon>
-        </assets>
     </extension>
 </addon><addon id="plugin.video.rebit.tv" name="rebit.tv" provider-name="cache-sk" version="0.0.3">
     <requires>
