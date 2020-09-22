@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="plugin.video.freeview.sk" version="0.3.6" name="freeview.sk" provider-name="cache-sk">
+<addon id="plugin.video.freeview.sk" version="0.3.7" name="freeview.sk" provider-name="cache-sk">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
         <import addon="script.module.requests" version="2.18.4"/>
@@ -21,6 +21,8 @@
             <icon>icon.jpg</icon>
         </assets>
         <news>
+[B]0.3.7[/B]
+- disable rtvs alternative
 [B]0.3.6[/B]
 - jojko 360p backup
 [B]0.3.5[/B]
