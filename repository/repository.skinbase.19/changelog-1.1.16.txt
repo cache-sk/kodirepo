@@ -1,0 +1,6 @@
+Release v 2.0.1
+v. 2.0.1 Kodiman 26.06.2017
+Release v 3.0.
+v. 3.0.0 Guido 24.07.2017
+Release v 3.0.
+v. 3.2.72 Guido 24.09.2018
