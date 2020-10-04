@@ -421,4 +421,85 @@
         <description>Repozitář pro česko-slovenskou komunitu fanoušků XBMC/Kodi</description>
         <platform>all</platform>
     </extension>
+</addon><addon id="repository.hacky" name="Hacky's repository" provider-name="Hacky" version="1.0.6">
+  <extension name="Hackyho repo" point="xbmc.addon.repository">
+    <dir>
+      <info compressed="false">https://repo.sc2.zone/repo/addons.xml</info>
+      <checksum>https://repo.sc2.zone/repo/addons.xml.md5</checksum>
+      <datadir zip="true">https://repo.sc2.zone/repo/</datadir>
+    </dir>
+    <dir minversion="18.9.0">
+      <info compressed="false">https://repo.sc2.zone/repo-v19/addons.xml</info>
+      <checksum>https://repo.sc2.zone/repo-v19/addons.xml.md5</checksum>
+      <datadir zip="true">https://repo.sc2.zone/repo-v19/</datadir>
+    </dir>
+    <dir maxversion="18.9.0" minversion="17.9.0">
+      <info compressed="false">https://repo.sc2.zone/repo-v18/addons.xml</info>
+      <checksum>https://repo.sc2.zone/repo-v18/addons.xml.md5</checksum>
+      <datadir zip="true">https://repo.sc2.zone/repo-v18/</datadir>
+    </dir>
+    <dir maxversion="17.9.0" minversion="16.9.0">
+      <info compressed="false">https://repo.sc2.zone/repo-v17/addons.xml</info>
+      <checksum>https://repo.sc2.zone/repo-v17/addons.xml.md5</checksum>
+      <datadir zip="true">https://repo.sc2.zone/repo-v17/</datadir>
+    </dir>
+    <dir maxversion="16.9.0" minversion="15.9.0">
+      <info compressed="false">https://repo.sc2.zone/repo-v16/addons.xml</info>
+      <checksum>https://repo.sc2.zone/repo-v16/addons.xml.md5</checksum>
+      <datadir zip="true">https://repo.sc2.zone/repo-v16/</datadir>
+    </dir>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Hacky's repository</summary>
+    <description>
+      Contains Stream Cinema 2.0 dependencies
+      - author of this repository is not responsible for the Stream Cinema 2 addon 
+      or for any damages caused by using Stream Cinema 2 addon.
+      - all updates are fully automatic via git.hotshot.sk 
+      - author of this repository is in no way connected to the git.hotshot.sk 
+      or Stream Cinema 2 addon
+    </description>
+    <description lang="cs">
+      Obsahuje zavislosti pro Stream Cinema 2.0
+      - autor repozitare nenese zadnou odpovednost za tento doplnek, ani za 
+      skody zpusobene jeho pouzivanim
+      - veskere aktualizace jsou automaticke  
+    </description>
+    <platform>all</platform>
+    <language>en cs sk</language>
+  </extension>
+</addon><addon id="repository.saros" name="Kodi Saros Addons" provider-name="Sároš" version="1.0.0">
+	<extension name="repozitář doplňků" point="xbmc.addon.repository">
+		<info compressed="false">http://saros.wz.cz/repo/addons.xml</info>
+		<checksum>http://saros.wz.cz/repo/addons.xml.md5</checksum>
+		<datadir zip="true">http://saros.wz.cz/repo/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Kodi Saros Addons</summary>
+		<description>Kodi Saros Addons</description>
+
+		<platform>all</platform>
+	</extension>
+</addon><addon id="repository.repoczsk" name="[B]Repo CZ/SK[/B]" provider-name="Zdenci22" version="1.0.0">
+	
+
+   <extension name="Repo CZ/SK" point="xbmc.addon.repository">
+    <dir>
+		<info compressed="false">http://repoczsk.wz.sk/repo/addons.xml</info>	
+		<checksum>http://repoczsk.wz.sk/repo/addons.xml.md5</checksum>
+		<datadir zip="true">http://repoczsk.wz.sk/repo/</datadir>
+	</dir>
+	<dir minversion="18.0.0">
+      <info compressed="false">http://kodi.anonymouz.eu/repo-v18/addons.xml</info>
+      <checksum>http://kodi.anonymouz.eu/repo-v18/addons.xml.md5</checksum>
+      <datadir zip="true">http://kodi.anonymouz.eu/repo-v18/</datadir>
+    </dir>
+    
+   </extension>
+    
+	  <extension point="xbmc.addon.metadata">
+		<summary lang="en">Repo CZ/SK</summary>
+		<description lang="en">Najlepšie CZ/SK doplnky</description>
+		<platform>all</platform>
+	  </extension>
 </addon></addons>

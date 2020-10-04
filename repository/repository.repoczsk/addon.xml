@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.repoczsk" name="[B]Repo CZ/SK[/B]" version="1.0.0" provider-name="Zdenci22">
+	
+
+   <extension point="xbmc.addon.repository" name="Repo CZ/SK">
+    <dir>
+		<info compressed="false">http://repoczsk.wz.sk/repo/addons.xml</info>	
+		<checksum>http://repoczsk.wz.sk/repo/addons.xml.md5</checksum>
+		<datadir zip="true">http://repoczsk.wz.sk/repo/</datadir>
+	</dir>
+	<dir minversion="18.0.0">
+      <info compressed="false">http://kodi.anonymouz.eu/repo-v18/addons.xml</info>
+      <checksum>http://kodi.anonymouz.eu/repo-v18/addons.xml.md5</checksum>
+      <datadir zip="true">http://kodi.anonymouz.eu/repo-v18/</datadir>
+    </dir>
+    
+   </extension>
+    
+	  <extension point="xbmc.addon.metadata">
+		<summary lang="en">Repo CZ/SK</summary>
+		<description lang="en">Najlepšie CZ/SK doplnky</description>
+		<platform>all</platform>
+	  </extension>
+</addon>
