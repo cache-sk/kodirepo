@@ -317,7 +317,7 @@
 - TODO hladanie pomocou TMDB
         </news>
     </extension>
-</addon><addon id="script.module.urlresolver" name="URLResolver" provider-name="tvaddons" version="5.1.9">
+</addon><addon id="script.module.urlresolver" name="URLResolver" provider-name="tvaddons" version="5.1.10">
     <requires>
         
         <import addon="script.module.six" version="0.0.1" />
@@ -421,7 +421,7 @@
         <description>Repozitář pro česko-slovenskou komunitu fanoušků XBMC/Kodi</description>
         <platform>all</platform>
     </extension>
-</addon><addon id="repository.hacky" name="Hacky's repository" provider-name="Hacky" version="1.0.6">
+</addon><addon id="repository.hacky" name="Hacky's repository" provider-name="Hacky" version="1.0.7">
   <extension name="Hackyho repo" point="xbmc.addon.repository">
     <dir>
       <info compressed="false">https://repo.sc2.zone/repo/addons.xml</info>
@@ -502,19 +502,19 @@
 		<description lang="en">Najlepšie CZ/SK doplnky</description>
 		<platform>all</platform>
 	  </extension>
-</addon><addon id="repository.skinbase.19" name="[COLOR orange]G[/COLOR]UIDO[COLOR orange]S[/COLOR] [COLOR orange]S[/COLOR]KINBAS[COLOR orange]E[/COLOR] Only Skins for 19" provider-name="[COLOR orange]GUIDO[/COLOR] | [COLOR skyblue]Kodiman[/COLOR] | [COLOR orange]HSK-DE[/COLOR]" version="1.1.16">
+</addon><addon id="repository.skinbase.18" name="[COLOR orange]G[/COLOR]UIDO[COLOR orange]S[/COLOR] [COLOR orange]S[/COLOR]KINBAS[COLOR orange]E[/COLOR] Only Skins for 18" provider-name="[COLOR orange]GUIDO[/COLOR] | [COLOR skyblue]Kodiman[/COLOR] | [COLOR orange]HSK-DE[/COLOR]" version="1.1.16">
 	<extension name="GUIDOS SKINBASE REPO" point="xbmc.addon.repository">
 	<dir>
-		<info compressed="false">https://downloads.guidos-skinbase.de/skins19/addons.xml</info>
-		<checksum>https://downloads.guidos-skinbase.de/skins19/addons.xml.md5</checksum>
-		<datadir zip="true">https://downloads.guidos-skinbase.de/skins19/</datadir>
+		<info compressed="false">https://downloads.guidos-skinbase.de/skins18/addons.xml</info>
+		<checksum>https://downloads.guidos-skinbase.de/skins18/addons.xml.md5</checksum>
+		<datadir zip="true">https://downloads.guidos-skinbase.de/skins18/</datadir>
 	</dir>
 	<dir>
-		<info compressed="false">https://downloads.guidos-skinbase.de/addons19/addons.xml</info>
-		<checksum>https://downloads.guidos-skinbase.de/addons19/addons.xml.md5</checksum>
-		<datadir zip="true">https://downloads.guidos-skinbase.de/addons19/</datadir>
+		<info compressed="false">https://downloads.guidos-skinbase.de/addons18/addons.xml</info>
+		<checksum>https://downloads.guidos-skinbase.de/addons18/addons.xml.md5</checksum>
+		<datadir zip="true">https://downloads.guidos-skinbase.de/addons18/</datadir>
 	</dir>
-		<dir>
+	<dir>
 		<info compressed="false">https://downloads.guidos-skinbase.de/repos/addons.xml</info>
 		<checksum>https://downloads.guidos-skinbase.de/repos/addons.xml.md5</checksum>
 		<datadir zip="true">https://downloads.guidos-skinbase.de/repos/</datadir>
@@ -528,7 +528,6 @@ Die SkinBase wird ständig erweitert und verbessert. Hinzugekommen sind Skins mi
 		<description lang="en_GB">In Guidos SKINBASE you will find skins for the Kodi versions from 16 to 19 from all over the world.
 The skins are color-coded for the respective Kodi versions. Furthermore, you will also find other repos and all addons dependencies in the repo that are required for the skins.
 The SkinBase is constantly being expanded and improved. Added to this are skins with Topics Loader, these are EXTRA with red letters and allow you to change countless themes or background images with one skin. Guido and the SKINBASE TEAM wish you lots of fun.</description>
-        <platform>all</platform>
         <platform>all</platform>
 		<assets>
 			<icon>resources/icon.png</icon>
@@ -544,5 +543,7 @@ The SkinBase is constantly being expanded and improved. Added to this are skins 
 			<screenshot>resources/screenshot-09.jpg</screenshot>
 			<screenshot>resources/screenshot-10.jpg</screenshot>
 		</assets>
+        <forum>https://www.facebook.com/groups/716337198478240/</forum>
+        <website>https://www.facebook.com/groups/716337198478240/</website>
 	</extension>
 </addon></addons>
