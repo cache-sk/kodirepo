@@ -261,7 +261,7 @@
 - inicialna verzia
         </news>
     </extension>
-</addon><addon id="plugin.video.rebit.tv" name="rebit.tv" provider-name="cache-sk" version="0.0.3">
+</addon><addon id="plugin.video.rebit.tv" name="rebit.tv" provider-name="cache-sk" version="0.1.0">
     <requires>
         <import addon="xbmc.python" version="2.26.0" />
         <import addon="script.module.resolveurl" version="5.0.00" />
@@ -271,6 +271,7 @@
     <extension library="main.py" point="xbmc.python.pluginsource">
         <provides>video</provides>
     </extension>
+    <extension library="service.py" point="xbmc.service" />
     <extension point="xbmc.addon.metadata">
         <assets>
             <icon>logo.png</icon>
