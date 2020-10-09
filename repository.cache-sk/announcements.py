@@ -5,9 +5,13 @@
 
 import time
 import xbmc, xbmcaddon, xbmcgui
-import urllib
 import json
 import traceback
+
+try:
+    from urllib import urlopen
+except ImportError:
+    from urllib.request import urlopen
 
 INTERVAL =  24 * 60 * 60 
 ANNOUNCEMENTS = 'https://raw.githubusercontent.com/cache-sk/kodirepo/master/announcements.json'
@@ -18,7 +22,7 @@ if __name__ == '__main__':
     
     while not monitor.abortRequested():
         try:
-            response = urllib.urlopen(ANNOUNCEMENTS)
+            response = urlopen(ANNOUNCEMENTS)
             data = json.loads(response.read())
             data = sorted(data.items())
             addon = xbmcaddon.Addon()
@@ -26,8 +30,8 @@ if __name__ == '__main__':
             last_ann = 0 if not last_ann else int(last_ann)
             for ann in data:
                 ikey = int(ann[0])
-                print str(ikey)
-                print str(last_ann)
+                print(str(ikey))
+                print(str(last_ann))
                 if ikey > last_ann:
                     last_ann = ikey
                     xbmcgui.Dialog().textviewer(addon.getAddonInfo('name'), ann[1])
