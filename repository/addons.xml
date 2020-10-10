@@ -143,7 +143,7 @@
 - lokalizácia en, sk, cz
         </news>
     </extension>
-</addon><addon id="plugin.video.sktonline" name="SkTonline" provider-name="cache-sk" version="1.0.2">
+</addon><addon id="plugin.video.sktonline" name="SkTonline" provider-name="cache-sk" version="1.0.3">
     <requires>
         <import addon="script.module.requests" version="2.18.4" />
         <import addon="script.module.beautifulsoup4" version="4.5.0" />
@@ -166,6 +166,10 @@
             <icon>icon.png</icon>
         </assets>
         <news>
+[B]1.0.3[/B]
+- kompatibilita s Kodi 19 Matrix Alpha
+[B]1.0.2[/B]
+- zviditelnenie v Kodi 19 Matrix Alpha
 [B]1.0.1[/B]
 - disclaimer
 [B]1.0.0[/B]
