@@ -18,8 +18,8 @@ EXTERNAL = [#{'name':'repository_tva_common','url':'https://github.com/tvaddonsc
             {'name':'repository_cder','url':'https://cder.sk/repository.cder.sk-1.0.2.zip'},
             {'name':'repository_hacky','url':'http://repo.sc2.zone/hacky/repository.hacky.zip'},
             {'name':'repository_saros','url':'http://saros.wz.cz/repo/repository.saros-1.0.0.zip'},
-            {'name':'repository_zdenci22','url':'http://repoczsk.wz.sk/repository.repoczsk-1.0.0.zip'},
-            {'name':'repository_skinbase','url':'https://github.com/kaffepausse71/Guidos-SKINBASE/raw/master/repository.skinbase.18/repository.skinbase.18-1.1.16.zip'}]
+            {'name':'repository_zdenci22','url':'http://repoczsk.wz.sk/repository.repoczsk-1.0.0.zip'}]#,
+            #{'name':'repository_skinbase','url':'https://github.com/kaffepausse71/Guidos-SKINBASE/raw/master/repository.skinbase.18/repository.skinbase.18-1.1.16.zip'}]
 
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"
 class MyOpener(urllib.FancyURLopener):
