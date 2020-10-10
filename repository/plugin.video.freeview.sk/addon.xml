@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="plugin.video.freeview.sk" version="0.3.8" name="freeview.sk" provider-name="cache-sk">
+<addon id="plugin.video.freeview.sk" version="0.4.0" name="freeview.sk" provider-name="cache-sk">
     <requires>
-        <import addon="xbmc.python" version="2.19.0" />
         <import addon="script.module.requests" version="2.18.4"/>
         <import addon="script.module.beautifulsoup4" version="4.5.0"/>
         <import addon="inputstream.adaptive" version="2.3.13"/>
@@ -21,6 +20,8 @@
             <icon>icon.jpg</icon>
         </assets>
         <news>
+[B]0.4.0[/B]
+- kompatibilita s kodi 19 alpha
 [B]0.3.8[/B]
 - cnn prima news
 [B]0.3.7[/B]
