@@ -264,10 +264,8 @@
 - inicialna verzia
         </news>
     </extension>
-</addon><addon id="plugin.video.rebit.tv" name="rebit.tv" provider-name="cache-sk" version="0.1.0">
+</addon><addon id="plugin.video.rebit.tv" name="rebit.tv" provider-name="cache-sk" version="0.1.1">
     <requires>
-        <import addon="xbmc.python" version="2.26.0" />
-        <import addon="script.module.resolveurl" version="5.0.00" />
         <import addon="script.module.requests" version="2.18.4" />
         <import addon="inputstream.adaptive" version="2.3.13" />
     </requires>
@@ -276,9 +274,21 @@
     </extension>
     <extension library="service.py" point="xbmc.service" />
     <extension point="xbmc.addon.metadata">
+        <summary lang="en">rebit.tv iptv simple klient</summary>
+        <description lang="en">generator m3u a epg pre rebit.tv</description>
+        <disclaimer lang="en">generator m3u a epg pre rebit.tv</disclaimer>
+        <platform>all</platform>
+        <forum>https://github.com/cache-sk/plugin.video.rebit.tv</forum>
+        <source>https://github.com/cache-sk/plugin.video.rebit.tv</source>
         <assets>
             <icon>logo.png</icon>
         </assets>
+        <news>
+[B]0.1.1[/B]
+- kompatibilita s kodi 19
+[B]0.1.0[/B]
+- epg a m3u generovane sluzbou (pozor, pomaly proces!)
+        </news>
     </extension>
 </addon><addon id="plugin.video.yawsp" name="YAWsP" provider-name="cache-sk" version="0.1.6">
     <requires>
