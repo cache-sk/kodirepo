@@ -265,7 +265,7 @@
 - inicialna verzia
         </news>
     </extension>
-</addon><addon id="plugin.video.rebit.tv" name="rebit.tv" provider-name="cache-sk" version="0.1.1">
+</addon><addon id="plugin.video.rebit.tv" name="rebit.tv" provider-name="cache-sk" version="0.1.2">
     <requires>
         <import addon="script.module.requests" version="2.18.4" />
         <import addon="inputstream.adaptive" version="2.3.13" />
@@ -285,6 +285,8 @@
             <icon>logo.png</icon>
         </assets>
         <news>
+[B]0.1.2[/B]
+- možnosť reštartu PISC po generovani
 [B]0.1.1[/B]
 - kompatibilita s kodi 19
 [B]0.1.0[/B]
