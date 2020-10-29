@@ -1,12 +1,13 @@
-Version 5.1.10 (September 25, 2020)
+Version 5.1.12 (October 26, 2020)
 - Code Base Changes:
-    - LOGNOTICE deprecated in Matrix
+    - None
 
 - Resolvers Added:
-    - None
+    - ElUpload
  
 - Resolvers Fixed/Updated:
-    - Linksnappy
+    - MP4Upload
+    - Vidia
 
 - Resolvers Removed
     - None

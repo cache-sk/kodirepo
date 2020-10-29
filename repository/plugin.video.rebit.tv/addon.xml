@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="plugin.video.rebit.tv" version="0.1.2" name="rebit.tv" provider-name="cache-sk">
+<addon id="plugin.video.rebit.tv" version="0.1.3" name="rebit.tv" provider-name="cache-sk">
     <requires>
         <import addon="script.module.requests" version="2.18.4"/>
         <import addon="inputstream.adaptive" version="2.3.13"/>
@@ -19,6 +19,8 @@
             <icon>logo.png</icon>
         </assets>
         <news>
+[B]0.1.3[/B]
+- fix ak je privela zariadeni
 [B]0.1.2[/B]
 - možnosť reštartu PISC po generovani
 [B]0.1.1[/B]
