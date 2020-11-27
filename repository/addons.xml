@@ -14,6 +14,18 @@
         </assets>
     </extension>
     <extension library="announcements.py" point="xbmc.service" />
+</addon><addon id="repository.xbmc-kodi.cz" name="XBMC-Kodi CZ/SK repozitář" provider-name="XBMC-Kodi.cz" version="1.1.1"> 
+    <extension point="xbmc.addon.repository">
+        <info>https://mirror.xbmc-kodi.cz/addons/addons.xml.gz</info>
+        <checksum verify="sha256">https://mirror.xbmc-kodi.cz/addons/addons.xml.gz?sha256</checksum>
+        <datadir zip="true">https://mirror.xbmc-kodi.cz/addons/</datadir>
+        <hashes>sha256</hashes>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Česko-slovenská komunita fanoušků XBMC/Kodi</summary>
+        <description>Repozitář pro česko-slovenskou komunitu fanoušků XBMC/Kodi</description>
+        <platform>all</platform>
+    </extension>
 </addon><addon id="plugin.video.dokumenty.tv" name="Dokumenty.tv" provider-name="cache-sk" version="1.0.2">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
@@ -336,14 +348,15 @@
 - TODO hladanie pomocou TMDB
         </news>
     </extension>
-</addon><addon id="script.module.urlresolver" name="URLResolver" provider-name="tvaddons" version="5.1.11">
+</addon><addon id="script.module.urlresolver" name="URLResolver" provider-name="tvaddons" version="5.1.13">
     <requires>
         
-        <import addon="script.module.six" version="0.0.1" />
+        <import addon="script.module.six" />
+        <import addon="script.module.kodi-six" />
         <import addon="plugin.video.youtube" optional="true" />
         <import addon="script.module.python.twitch" optional="true" />
         <import addon="script.module.cryptopy" optional="true" version="1.2.6" />
-        <import addon="plugin.video.gdrive" optional="true" />
+        <import addon="plugin.googledrive" optional="true" />
     </requires>
     <extension library="lib" point="xbmc.python.module" />
     <extension library="lib/default.py" point="xbmc.python.pluginsource" />
@@ -361,14 +374,15 @@
         <forum>https://www.tvaddons.co/forums</forum>
         <website>https://www.tvaddons.co</website>
     </extension>
-</addon><addon id="script.module.resolveurl" name="ResolveURL" provider-name="gujal" version="5.1.12">
+</addon><addon id="script.module.resolveurl" name="ResolveURL" provider-name="gujal" version="5.1.14">
     <requires>
         
-        <import addon="script.module.six" version="0.0.1" />
+        <import addon="script.module.six" />
+        <import addon="script.module.kodi-six" />
         <import addon="plugin.video.youtube" optional="true" />
         <import addon="script.module.python.twitch" optional="true" />
         <import addon="script.module.cryptopy" optional="true" version="1.2.6" />
-        <import addon="plugin.video.gdrive" optional="true" />
+        <import addon="plugin.googledrive" optional="true" />
     </requires>
     <extension library="lib" point="xbmc.python.module" />
     <extension library="lib/default.py" point="xbmc.python.pluginsource" />
@@ -399,18 +413,6 @@
 		<description>Repo for jsergio Add-ons</description>
 		<platform>all</platform>
 	</extension>
-</addon><addon id="repository.xbmc-kodi.cz" name="XBMC-Kodi CZ/SK repozitář" provider-name="XBMC-Kodi.cz" version="1.1.1"> 
-    <extension point="xbmc.addon.repository">
-        <info>https://mirror.xbmc-kodi.cz/addons/addons.xml.gz</info>
-        <checksum verify="sha256">https://mirror.xbmc-kodi.cz/addons/addons.xml.gz?sha256</checksum>
-        <datadir zip="true">https://mirror.xbmc-kodi.cz/addons/</datadir>
-        <hashes>sha256</hashes>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary>Česko-slovenská komunita fanoušků XBMC/Kodi</summary>
-        <description>Repozitář pro česko-slovenskou komunitu fanoušků XBMC/Kodi</description>
-        <platform>all</platform>
-    </extension>
 </addon><addon id="repository.kodi-czsk" name="Kodi CZ &amp; SK Doplňky" provider-name="Kodi CZSK" version="1.0.2">
   <extension name="repozitář českých a slovenských doplňků" point="xbmc.addon.repository">
     <info compressed="false">http://kodi-czsk.github.io/repository/repo/addons.xml</info>
