@@ -14,11 +14,11 @@
         </assets>
     </extension>
     <extension library="announcements.py" point="xbmc.service" />
-</addon><addon id="repository.xbmc-kodi.cz" name="XBMC-Kodi CZ/SK repozitář" provider-name="XBMC-Kodi.cz" version="1.1.1"> 
+</addon><addon id="repository.xbmc-kodi.cz" name="XBMC-Kodi CZ/SK repozitář" provider-name="XBMC-Kodi.cz" version="1.1.2"> 
     <extension point="xbmc.addon.repository">
-        <info>https://mirror.xbmc-kodi.cz/addons/addons.xml.gz</info>
-        <checksum verify="sha256">https://mirror.xbmc-kodi.cz/addons/addons.xml.gz?sha256</checksum>
-        <datadir zip="true">https://mirror.xbmc-kodi.cz/addons/</datadir>
+        <info>https://mirror.xbmc-kodi.cz/addons/leia/addons.xml.gz</info>
+        <checksum verify="sha256">https://mirror.xbmc-kodi.cz/addons/leia/addons.xml.gz?sha256</checksum>
+        <datadir zip="true">https://mirror.xbmc-kodi.cz/addons/leia</datadir>
         <hashes>sha256</hashes>
     </extension>
     <extension point="xbmc.addon.metadata">
@@ -378,7 +378,7 @@
         <forum>https://www.tvaddons.co/forums</forum>
         <website>https://www.tvaddons.co</website>
     </extension>
-</addon><addon id="script.module.resolveurl" name="ResolveURL" provider-name="gujal" version="5.1.19">
+</addon><addon id="script.module.resolveurl" name="ResolveURL" provider-name="gujal" version="5.1.20">
     <requires>
         
         <import addon="script.module.six" />
@@ -406,6 +406,90 @@
             <fanart>fanart.jpg</fanart>
         </assets>
     </extension>
+</addon><addon id="plugin.video.sl" name="Skylink Live TV" provider-name="Sorien, cache-sk" version="1.7.1">
+<requires>
+  <import addon="xbmc.python" version="2.26.0" />
+  <import addon="script.module.requests" version="2.18.4" />
+  <import addon="script.module.inputstreamhelper" version="0.3.3" />
+</requires>
+<extension library="main.py" point="xbmc.python.pluginsource">
+  <provides>video</provides>
+</extension>
+<extension library="service.py" point="xbmc.service" />
+<extension point="xbmc.addon.metadata">
+  <reuselanguageinvoker>true</reuselanguageinvoker>
+  <summary lang="en">Skylink Live TV Addon</summary>
+  <description lang="en">PVR playlist and EPG generator for Skylink Live TV Service</description>
+  <description lang="sk_SK">PVR playlist a EPG generátor pre službu Skylink Live TV</description>
+  <description lang="cs_CZ">Plugin vytváří PVR playlist a EPG pro službu Skylink Live TV</description>
+  <license>MIT</license>
+  <forum>https://www.xbmc-kodi.cz/prispevek-skylink-livetv-addon-beta</forum>
+  <source>https://github.com/Sorien/plugin.video.sl</source>
+  <news>
+[B]1.7.1[/B]
+- generovanie epg aj do minulosti pre catchup, default 0
+- blokovanie upravy skinu pre Matrix
+- umoznenie preskakovania prvych troch minut pri pouziti "prehraj odtialto" v klasickom archive, default true
+- kategorie v kniznici
+[B]1.7.0[/B]
+- podpora Kodi 19, vratane catchup, vdaka panda7789
+[B]1.6.7[/B]
+- fix generovania kategorie v EPG
+- fix url na nahlady relacii
+[B]1.6.6[/B]
+- pridanie seriesNo/episodeNo do xmltv
+[B]1.6.5[/B]
+- kolmpatibilita s Kodi Matrix a Python 3.x
+[B]1.6.3[/B]
+- moznost automatickeho nastavenia PVR IPTV Simple Client-a z nastaveni pluinu
+[B]1.6.2[/B]
+- fix chyby pri expirovanom predplatnom
+- optimalizovany archiv (predlzenie o posledne programy)
+[B]1.6.1[/B]
+- alfa verzia kniznice
+[B]1.6.0[/B]
+- zmena api nazad na sl domenu
+- drobne fixy s nahladmi
+- pridanie prototypu kniznice
+[B]1.5.0[/B]
+- pridanie actor/writer/producer/director do xmltv
+[B]1.4.1[/B]
+- upravy pre novu verziu Solocoo API
+[B]1.3.0[/B]
+- pridana funkcionalita na skopirovanie a upravu skinu Estuary a Confluence v nastaveniach
+- pridanie kratkeho epg aj do listu live vo video doplnku
+- presunutie video doplnku, aby sa zobrazoval nie v sluzbach ale vo video doplnkoch
+[B]1.2.4[/B]
+- pridane zanre
+- oprava casu v EPG
+[B]1.2.2[/B]
+- Live TV aj ako sucast video doplnku (pre ludi, ktorym blbne/nejde/nechce cez m3u a iptv simple), treba zapnut cez nastavenia, improvizovane EPG cez "plot"
+- moznost vypnut generovanie M3U - nezastavi service ako taky, len nebude nic generovat
+[B]1.2.1[/B]
+- Tuning loga stanic - moznosti nastavenia pre archiv, moznost pouzit loga zo stranky live, aj pre live playlist
+- Moznost obmedzenia vyberu zariadeni len na prehliadace (aby to neodhlasovalo z telefonu ci TV)
+- Moznost nastavenia aby negenerovalo / nezobrazovalo stanice ktore su pin protected
+- Pytanie PIN kodu na staniciach, ktore su pin protected
+- Fix vyberu zariadeni v archive
+- Fix lokalizacnych unicode chyb pri hlaskach
+- Fix neulozenia nastaveni, ked je service v prevadzke
+
+[B]1.2.0[/B]
+- Pridanie archivu vo video doplnkoch
+
+[B]1.0.1[/B]
+- Pridanie moznosti pouzit najstarsie zariadenie ak ziadne zariadenie nie je dostupne
+
+[B]1.0.0[/B]
+- Opravy
+  </news>
+  <assets>
+    <icon>icon.png</icon>
+    <screenshot>resources\screenshots\1.jpg</screenshot>
+    <screenshot>resources\screenshots\2.jpg</screenshot>
+    <screenshot>resources\screenshots\3.jpg</screenshot>
+  </assets>
+</extension>
 </addon><addon id="repository.jsergio" name="jsergio repo" provider-name="jsergio" version="1.0.4">
 	<extension name="jsergio repo" point="xbmc.addon.repository">
         <info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
