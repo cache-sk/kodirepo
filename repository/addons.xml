@@ -192,7 +192,7 @@
 - first release
         </news>
     </extension>
-</addon><addon id="plugin.video.freeview.sk" name="freeview.sk" provider-name="cache-sk" version="0.4.3">
+</addon><addon id="plugin.video.freeview.sk" name="freeview.sk" provider-name="cache-sk" version="0.4.4">
     <requires>
         <import addon="script.module.requests" version="2.18.4" />
         <import addon="script.module.beautifulsoup4" version="4.5.0" />
@@ -213,6 +213,8 @@
             <icon>icon.jpg</icon>
         </assets>
         <news>
+[B]0.4.4[/B]
+- matrix fix
 [B]0.4.3[/B]
 - moznost nastavit ako casto a kolko generovat epg
 [B]0.4.2[/B]
