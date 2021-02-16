@@ -65,7 +65,7 @@
             <icon>icon.png</icon>
         </assets>
     </extension>
-</addon><addon id="plugin.video.yabop" name="YABoP" provider-name="cache-sk" version="1.2.9">
+</addon><addon id="plugin.video.yabop" name="YABoP" provider-name="cache-sk" version="1.2.10">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
         <import addon="script.module.resolveurl" version="5.0.00" />
@@ -91,6 +91,8 @@
             <fanart>fanart.jpg</fanart>
         </assets>
         <news>
+[B]1.2.10[/B]
+- pridanie streamtape.com
 [B]1.2.9[/B]
 - zmena domeny
 [B]1.2.8[/B]
@@ -190,7 +192,7 @@
 - first release
         </news>
     </extension>
-</addon><addon id="plugin.video.freeview.sk" name="freeview.sk" provider-name="cache-sk" version="0.4.2">
+</addon><addon id="plugin.video.freeview.sk" name="freeview.sk" provider-name="cache-sk" version="0.4.3">
     <requires>
         <import addon="script.module.requests" version="2.18.4" />
         <import addon="script.module.beautifulsoup4" version="4.5.0" />
@@ -211,6 +213,8 @@
             <icon>icon.jpg</icon>
         </assets>
         <news>
+[B]0.4.3[/B]
+- moznost nastavit ako casto a kolko generovat epg
 [B]0.4.2[/B]
 - epg dumb fix :D
 [B]0.4.1[/B]
@@ -283,7 +287,7 @@
 - inicialna verzia
         </news>
     </extension>
-</addon><addon id="plugin.video.rebit.tv" name="rebit.tv" provider-name="cache-sk" version="0.9.1">
+</addon><addon id="plugin.video.rebit.tv" name="rebit.tv" provider-name="cache-sk" version="0.9.2">
     <requires>
         <import addon="script.module.requests" version="2.18.4" />
         <import addon="inputstream.adaptive" version="2.3.13" />
@@ -303,6 +307,8 @@
             <icon>logo.png</icon>
         </assets>
         <news>
+[B]0.9.2[/B]
+- moznost nastavenia na kolko a ako casto generovat epg/playlist
 [B]0.9.1[/B]
 - nove funkcionality a moznosti
 [B]0.9.0[/B]
