@@ -26,9 +26,9 @@
         <description>Repozitář pro česko-slovenskou komunitu fanoušků XBMC/Kodi</description>
         <platform>all</platform>
     </extension>
-</addon><addon id="plugin.video.dokumenty.tv" name="Dokumenty.tv" provider-name="cache-sk" version="1.0.2">
+</addon><addon id="plugin.video.dokumenty.tv" name="Dokumenty.tv" provider-name="cache-sk" version="1.0.3">
     <requires>
-        <import addon="xbmc.python" version="2.19.0" />
+        
         <import addon="script.module.resolveurl" version="5.0.00" />
         <import addon="script.module.urlresolver" version="5.0.00" />
         <import addon="script.module.requests" version="2.18.4" />
@@ -46,6 +46,8 @@
         <disclaimer lang="sk">Plugin neposkytuje žiaden obsah, je to len simulácia prehliadača verejne dostupnej web stránky. Nie som zodpovedný za obsah, ktorý táto stránka poskytuje.</disclaimer>
         <disclaimer lang="cz">Plugin neposkytuje žádný obsah, je to jen simulace prohlížeče veřejně dostupné web stránky. Nejsem zodpovědný za obsah, který tato stránka poskytuje.</disclaimer>
         <news>
+[B]1.0.3[/B]
+- matrix
 [B]1.0.2[/B]
 - disclaimer
 [B]1.0.1[/B]
@@ -392,14 +394,13 @@
         <forum>https://www.tvaddons.co/forums</forum>
         <website>https://www.tvaddons.co</website>
     </extension>
-</addon><addon id="script.module.resolveurl" name="ResolveURL" provider-name="gujal" version="5.1.24">
+</addon><addon id="script.module.resolveurl" name="ResolveURL" provider-name="gujal" version="5.1.25">
     <requires>
         
         <import addon="script.module.six" />
         <import addon="script.module.kodi-six" />
         <import addon="plugin.video.youtube" optional="true" />
         <import addon="script.module.python.twitch" optional="true" />
-        <import addon="script.module.cryptopy" optional="true" version="1.2.6" />
         <import addon="plugin.googledrive" optional="true" />
     </requires>
     <extension library="lib" point="xbmc.python.module" />

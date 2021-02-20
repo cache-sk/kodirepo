@@ -2,10 +2,9 @@ import os, tempfile, urllib
 
 PLUGINS = ['repository.cache-sk',
            'https://github.com/xbmc-kodi-cz/repository.xbmc-kodi.cz#leia',
-           'https://github.com/cache-sk/plugin.video.dokumenty.tv.git',
-           'https://github.com/cache-sk/YABoP.git#master:plugin.video.yabop', #fixed 1.2.1 release //master to 495c6f66807360b915da025cf409b46c3f1178ed
+           'https://github.com/cache-sk/plugin.video.dokumenty.tv.git#uni',
+           'https://github.com/cache-sk/YABoP.git#master:plugin.video.yabop',
            'https://github.com/cache-sk/SkTonline.git#master:plugin.video.sktonline',
-           #'https://github.com/cache-sk/plugin.video.topserialy.to', # deprecated
            'https://github.com/cache-sk/plugin.video.freeview.sk',
            'https://github.com/cache-sk/plugin.video.rebit.tv',
            'https://github.com/cache-sk/plugin.video.yawsp',
@@ -13,9 +12,7 @@ PLUGINS = ['repository.cache-sk',
            'https://github.com/jsergio123/script.module.resolveurl',
            'https://github.com/Sorien/plugin.video.sl#leia']
 
-EXTERNAL = [#{'name':'repository_tva_common','url':'https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/zips/repository.tva.common/repository.tva.common-2.0.0.zip'},
-            {'name':'repository_jsergio','url':'https://github.com/jsergio123/zips/raw/master/repository.jsergio/repository.jsergio-1.0.4.zip'},
-            #{'name':'repository_xbmc_kodi_cz','url':'https://repo.xbmc-kodi.cz/posledni.php'},
+EXTERNAL = [{'name':'repository_jsergio','url':'https://github.com/jsergio123/zips/raw/master/repository.jsergio/repository.jsergio-1.0.4.zip'},
             {'name':'repository_kodi_czsk','url':'https://kodi-czsk.github.io/repository/repo/repository.kodi-czsk/repository.kodi-czsk-1.0.2.zip'},
             {'name':'repository_cder','url':'https://cder.sk/repository.cder.sk-1.0.2.zip'},
             {'name':'repository_hacky','url':'http://repo.sc2.zone/hacky/repository.hacky.zip'},
