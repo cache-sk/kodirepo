@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="plugin.video.yawsp" name="YAWsP" version="0.1.6" provider-name="cache-sk">
+<addon id="plugin.video.yawsp" name="YAWsP" version="0.1.7" provider-name="cache-sk">
     <requires>
-        <import addon="xbmc.python" version="2.19.0"/>
+        <!--import addon="xbmc.python" version="2.19.0"/-->
         <import addon="script.module.requests" version="2.18.4"/>
         <import addon="script.module.unidecode" version="0.4.16"/>
     </requires>
@@ -21,6 +21,8 @@
             <icon>resources/icon.png</icon>
         </assets>
         <news>
+[B]0.1.7[/B]
+- matrix pt1
 [B]0.1.6[/B]
 - experimenty s uuid/headermi aby neukladalo historiu viac krat - nepomohlo..
 - uuid je generovane
