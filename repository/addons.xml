@@ -327,7 +327,7 @@
 - epg a m3u generovane sluzbou (pozor, pomaly proces!)
         </news>
     </extension>
-</addon><addon id="plugin.video.yawsp" name="YAWsP" provider-name="cache-sk" version="0.1.8">
+</addon><addon id="plugin.video.yawsp" name="YAWsP" provider-name="cache-sk" version="0.1.9">
     <requires>
         
         <import addon="script.module.requests" version="2.18.4" />
@@ -349,6 +349,8 @@
             <icon>resources/icon.png</icon>
         </assets>
         <news>
+[B]0.1.9[/B]
+- matrix compatibility pt3
 [B]0.1.8[/B]
 - matrix compatibility pt2
 [B]0.1.7[/B]
