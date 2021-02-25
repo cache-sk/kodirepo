@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="plugin.video.sktonline" version="1.0.4" name="SkTonline" provider-name="cache-sk">
+<addon id="plugin.video.sktonline" version="1.0.5" name="SkTonline" provider-name="cache-sk">
     <requires>
-        <!--import addon="script.module.requests" version="2.18.4"/-->
+        <import addon="script.module.requests" version="2.18.4"/>
         <import addon="script.module.beautifulsoup4" version="4.5.0"/>
     </requires>
     <extension point="xbmc.python.pluginsource" library="main.py">
@@ -22,6 +22,8 @@
             <icon>icon.png</icon>
         </assets>
         <news>
+[B]1.0.5[/B]
+- i am an idiot fix
 [B]1.0.4[/B]
 - matrix fix
 [B]1.0.3[/B]

@@ -163,9 +163,9 @@
 - lokalizácia en, sk, cz
         </news>
     </extension>
-</addon><addon id="plugin.video.sktonline" name="SkTonline" provider-name="cache-sk" version="1.0.4">
+</addon><addon id="plugin.video.sktonline" name="SkTonline" provider-name="cache-sk" version="1.0.5">
     <requires>
-        
+        <import addon="script.module.requests" version="2.18.4" />
         <import addon="script.module.beautifulsoup4" version="4.5.0" />
     </requires>
     <extension library="main.py" point="xbmc.python.pluginsource">
@@ -186,6 +186,8 @@
             <icon>icon.png</icon>
         </assets>
         <news>
+[B]1.0.5[/B]
+- i am an idiot fix
 [B]1.0.4[/B]
 - matrix fix
 [B]1.0.3[/B]
