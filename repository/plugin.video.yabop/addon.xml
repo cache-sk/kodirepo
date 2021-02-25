@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="plugin.video.yabop" version="1.2.10" name="YABoP" provider-name="cache-sk">
+<addon id="plugin.video.yabop" version="1.2.11" name="YABoP" provider-name="cache-sk">
     <requires>
-        <import addon="xbmc.python" version="2.19.0" />
+        <!-- import addon="xbmc.python" version="2.19.0" /-->
         <import addon="script.module.resolveurl" version="5.0.00"/>
         <import addon="script.module.requests" version="2.18.4"/>
         <import addon="script.module.unidecode" version="0.4.16"/>
@@ -25,6 +25,8 @@
             <fanart>fanart.jpg</fanart>
         </assets>
         <news>
+[B]1.2.11[/B]
+- matrix
 [B]1.2.10[/B]
 - pridanie streamtape.com
 [B]1.2.9[/B]
