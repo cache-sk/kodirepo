@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.program.cache-sk.kodi.tools" name="Cache-sk Kodi Tools" version="0.0.1" provider-name="cache-sk">
+	<requires>
+		<!--import addon="xbmc.python" version="2.25.0"/-->
+	</requires>
+	<extension point="xbmc.python.script" library="main.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_GB">Tools</summary>
+		<description lang="en_GB">Tools</description>
+		<platform>all</platform>
+		<license>AGPL 3.0</license>
+		<forum>todo</forum>
+		<source>todo</source>
+		<assets>
+			<icon>icon.png</icon>
+		</assets>
+		<news>todo</news>
+	</extension>
+</addon>

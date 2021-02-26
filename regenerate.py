@@ -1,13 +1,14 @@
 import os, tempfile, urllib
 
 PLUGINS = ['repository.cache-sk',
-           'https://github.com/xbmc-kodi-cz/repository.xbmc-kodi.cz#leia',
+           'https://github.com/cache-sk/plugin.program.cache-sk.kodi.tools.git',
            'https://github.com/cache-sk/plugin.video.dokumenty.tv.git#uni',
            'https://github.com/cache-sk/YABoP.git#master:plugin.video.yabop',
            'https://github.com/cache-sk/SkTonline.git#master:plugin.video.sktonline',
            'https://github.com/cache-sk/plugin.video.freeview.sk',
            'https://github.com/cache-sk/plugin.video.rebit.tv',
            'https://github.com/cache-sk/plugin.video.yawsp',
+           'https://github.com/xbmc-kodi-cz/repository.xbmc-kodi.cz#leia',
            'https://github.com/tvaddonsco/script.module.urlresolver',
            'https://github.com/jsergio123/script.module.resolveurl']
 

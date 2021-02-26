@@ -14,18 +14,25 @@
         </assets>
     </extension>
     <extension library="announcements.py" point="xbmc.service" />
-</addon><addon id="repository.xbmc-kodi.cz" name="XBMC-Kodi CZ/SK repozitář" provider-name="XBMC-Kodi.cz" version="1.1.2"> 
-    <extension point="xbmc.addon.repository">
-        <info>https://mirror.xbmc-kodi.cz/addons/leia/addons.xml.gz</info>
-        <checksum verify="sha256">https://mirror.xbmc-kodi.cz/addons/leia/addons.xml.gz?sha256</checksum>
-        <datadir zip="true">https://mirror.xbmc-kodi.cz/addons/leia</datadir>
-        <hashes>sha256</hashes>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary>Česko-slovenská komunita fanoušků XBMC/Kodi</summary>
-        <description>Repozitář pro česko-slovenskou komunitu fanoušků XBMC/Kodi</description>
-        <platform>all</platform>
-    </extension>
+</addon><addon id="plugin.program.cache-sk.kodi.tools" name="Cache-sk Kodi Tools" provider-name="cache-sk" version="0.0.1">
+	<requires>
+		
+	</requires>
+	<extension library="main.py" point="xbmc.python.script">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_GB">Tools</summary>
+		<description lang="en_GB">Tools</description>
+		<platform>all</platform>
+		<license>AGPL 3.0</license>
+		<forum>todo</forum>
+		<source>todo</source>
+		<assets>
+			<icon>icon.png</icon>
+		</assets>
+		<news>todo</news>
+	</extension>
 </addon><addon id="plugin.video.dokumenty.tv" name="Dokumenty.tv" provider-name="cache-sk" version="1.0.3">
     <requires>
         
@@ -383,6 +390,18 @@
 - TODO stahovanie
 - TODO hladanie pomocou TMDB
         </news>
+    </extension>
+</addon><addon id="repository.xbmc-kodi.cz" name="XBMC-Kodi CZ/SK repozitář" provider-name="XBMC-Kodi.cz" version="1.1.2"> 
+    <extension point="xbmc.addon.repository">
+        <info>https://mirror.xbmc-kodi.cz/addons/leia/addons.xml.gz</info>
+        <checksum verify="sha256">https://mirror.xbmc-kodi.cz/addons/leia/addons.xml.gz?sha256</checksum>
+        <datadir zip="true">https://mirror.xbmc-kodi.cz/addons/leia</datadir>
+        <hashes>sha256</hashes>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Česko-slovenská komunita fanoušků XBMC/Kodi</summary>
+        <description>Repozitář pro česko-slovenskou komunitu fanoušků XBMC/Kodi</description>
+        <platform>all</platform>
     </extension>
 </addon><addon id="script.module.urlresolver" name="URLResolver" provider-name="tvaddons" version="5.1.22">
     <requires>
