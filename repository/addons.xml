@@ -14,7 +14,7 @@
         </assets>
     </extension>
     <extension library="announcements.py" point="xbmc.service" />
-</addon><addon id="plugin.program.cache-sk.kodi.tools" name="Cache-sk Kodi Tools" provider-name="cache-sk" version="0.0.1">
+</addon><addon id="plugin.program.cache-sk.kodi.tools" name="Cache-sk Kodi Tools" provider-name="cache-sk" version="0.0.2">
 	<requires>
 		
 	</requires>
@@ -27,11 +27,16 @@
 		<platform>all</platform>
 		<license>AGPL 3.0</license>
 		<forum>todo</forum>
-		<source>todo</source>
+		<source>https://github.com/cache-sk/plugin.program.cache-sk.kodi.tools</source>
 		<assets>
 			<icon>icon.png</icon>
 		</assets>
-		<news>todo</news>
+		<news>
+[B]0.0.2[/B]
+- pocitanie velkosti adresarov
+[B]0.0.1[/B]
+- prvy pokus, mazanie packages a thumbnails
+        </news>
 	</extension>
 </addon><addon id="plugin.video.dokumenty.tv" name="Dokumenty.tv" provider-name="cache-sk" version="1.0.3">
     <requires>
