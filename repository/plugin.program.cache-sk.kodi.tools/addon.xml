@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.program.cache-sk.kodi.tools" name="Cache-sk Kodi Tools" version="0.0.2" provider-name="cache-sk">
+<addon id="plugin.program.cache-sk.kodi.tools" name="Cache-sk Kodi Tools" version="0.0.3" provider-name="cache-sk">
 	<requires>
 		<!--import addon="xbmc.python" version="2.25.0"/-->
 	</requires>
@@ -17,6 +17,8 @@
 			<icon>icon.png</icon>
 		</assets>
 		<news>
+[B]0.0.3[/B]
+- mazanie thumbnails nemaze foldre = netreba restart
 [B]0.0.2[/B]
 - pocitanie velkosti adresarov
 [B]0.0.1[/B]

@@ -14,7 +14,7 @@
         </assets>
     </extension>
     <extension library="announcements.py" point="xbmc.service" />
-</addon><addon id="plugin.program.cache-sk.kodi.tools" name="Cache-sk Kodi Tools" provider-name="cache-sk" version="0.0.2">
+</addon><addon id="plugin.program.cache-sk.kodi.tools" name="Cache-sk Kodi Tools" provider-name="cache-sk" version="0.0.3">
 	<requires>
 		
 	</requires>
@@ -32,6 +32,8 @@
 			<icon>icon.png</icon>
 		</assets>
 		<news>
+[B]0.0.3[/B]
+- mazanie thumbnails nemaze foldre = netreba restart
 [B]0.0.2[/B]
 - pocitanie velkosti adresarov
 [B]0.0.1[/B]
@@ -311,7 +313,7 @@
 - inicialna verzia
         </news>
     </extension>
-</addon><addon id="plugin.video.rebit.tv" name="rebit.tv" provider-name="cache-sk" version="0.9.3">
+</addon><addon id="plugin.video.rebit.tv" name="rebit.tv" provider-name="cache-sk" version="0.9.4">
     <requires>
         <import addon="script.module.requests" version="2.18.4" />
         <import addon="inputstream.adaptive" version="2.3.13" />
@@ -331,6 +333,8 @@
             <icon>logo.png</icon>
         </assets>
         <news>
+[B]0.9.4[/B]
+- epg utc fix
 [B]0.9.3[/B]
 - epg fix
 [B]0.9.2[/B]
