@@ -400,19 +400,26 @@
 - TODO hladanie pomocou TMDB
         </news>
     </extension>
-</addon><addon id="repository.xbmc-kodi.cz" name="XBMC-Kodi CZ/SK repozitář" provider-name="XBMC-Kodi.cz" version="1.1.2"> 
+</addon><addon id="repository.xbmc-kodi.cz" name="XBMC-Kodi CZ/SK repozitář" provider-name="XBMC-Kodi.cz" version="1.2.0"> 
+    <requires>
+        <import addon="xbmc.addon" version="18.9.701" />
+    </requires>
     <extension point="xbmc.addon.repository">
-        <info>https://mirror.xbmc-kodi.cz/addons/leia/addons.xml.gz</info>
-        <checksum verify="sha256">https://mirror.xbmc-kodi.cz/addons/leia/addons.xml.gz?sha256</checksum>
-        <datadir zip="true">https://mirror.xbmc-kodi.cz/addons/leia</datadir>
+        <info>https://mirror.xbmc-kodi.cz/addons/matrix/addons.xml.gz</info>
+        <checksum verify="sha256">https://mirror.xbmc-kodi.cz/addons/matrix/addons.xml.gz?sha256</checksum>
+        <datadir>https://mirror.xbmc-kodi.cz/addons/matrix/</datadir>
+		<artdir>https://mirror.xbmc-kodi.cz/addons/matrix/</artdir>
         <hashes>sha256</hashes>
     </extension>
     <extension point="xbmc.addon.metadata">
-        <summary>Česko-slovenská komunita fanoušků XBMC/Kodi</summary>
-        <description>Repozitář pro česko-slovenskou komunitu fanoušků XBMC/Kodi</description>
+        <summary lang="cs_CZ">Česko-slovenská komunita fanoušků XBMC/Kodi</summary>
+        <description lang="cs_CZ">Repozitář pro česko-slovenskou komunitu fanoušků XBMC/Kodi</description>
         <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
     </extension>
-</addon><addon id="script.module.urlresolver" name="URLResolver" provider-name="tvaddons" version="6.0.0">
+</addon><addon id="script.module.urlresolver" name="URLResolver" provider-name="tvaddons" version="6.0.01">
     <requires>
         
         <import addon="script.module.six" />
@@ -437,7 +444,7 @@
         <forum>https://www.tvaddons.co/forums</forum>
         <website>https://www.tvaddons.co</website>
     </extension>
-</addon><addon id="script.module.resolveurl" name="ResolveURL" provider-name="gujal" version="5.1.27">
+</addon><addon id="script.module.resolveurl" name="ResolveURL" provider-name="gujal" version="5.1.29">
     <requires>
         
         <import addon="script.module.six" />

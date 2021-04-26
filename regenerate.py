@@ -8,7 +8,7 @@ PLUGINS = ['repository.cache-sk',
            'https://github.com/cache-sk/plugin.video.freeview.sk',
            'https://github.com/cache-sk/plugin.video.rebit.tv',
            'https://github.com/cache-sk/plugin.video.yawsp',
-           'https://github.com/xbmc-kodi-cz/repository.xbmc-kodi.cz#leia',
+           'https://github.com/xbmc-kodi-cz/repository.xbmc-kodi.cz',
            'https://github.com/tvaddonsco/script.module.urlresolver',
            'https://github.com/jsergio123/script.module.resolveurl']
 
