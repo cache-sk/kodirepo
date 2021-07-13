@@ -1,4 +1,10 @@
-import os, tempfile, urllib
+import os, tempfile, urllib.request
+
+try:
+    from urllib import FancyURLopener
+except ImportError:
+    from urllib.request import FancyURLopener
+
 
 PLUGINS = ['repository.cache-sk',
            'https://github.com/cache-sk/plugin.program.cache-sk.kodi.tools.git',
@@ -23,7 +29,7 @@ EXTERNAL = [{'name':'repository_jsergio','url':'https://github.com/jsergio123/zi
             #https://github.com/kaffepausse71/Guidos-SKINBASE/raw/master/repository.master.skinbase/repository.master.skinbase-3.3.44.zip
 
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"
-class MyOpener(urllib.FancyURLopener):
+class MyOpener(FancyURLopener):
     version = UA
 urlretrieve = MyOpener().retrieve
 
@@ -52,7 +58,7 @@ for ext in EXTERNAL:
     tmpf = tempfile.NamedTemporaryFile()
     tempname = tmpf.name + '_' + ext['name'] + '.zip'
     tmpf.close
-    print "Downloading "+ext['url']
+    print("Downloading "+ext['url'])
     urlretrieve(ext['url'],tempname) 
     externals.append(tempname)
 

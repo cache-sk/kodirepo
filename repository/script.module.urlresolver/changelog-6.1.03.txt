@@ -1,3 +1,65 @@
+Version 6.1.03 (June 10, 2021)
+- Code Base Changes:
+    - drop to tls1.1 if necessary for cloudflaressl
+- Resolvers Added:
+    - itemfix
+    - steamcommunity
+    - vidmx
+- Resolvers Fixed/Updated:
+    - clicknupload
+    - cocoscope
+    - daxab
+    - doodstream
+    - k2s
+    - lbry
+    - playtube
+- Resolvers Removed
+    - liveleak
+- Languages Added/Updated
+    - none
+
+Version 6.1.02 (May 24, 2021)
+- Code Base Changes:
+    - helpers update
+- Resolvers Added:
+    - none
+- Resolvers Fixed/Updated:
+    - cocoscope
+    - daxab
+    - googlevideo
+    - lbry
+    - playtube
+    - sbembed
+- Resolvers Removed
+    - none
+- Languages Added/Updated
+    - none
+
+Version 6.1.00 (May 4, 2021)
+- Code Base Changes:
+    - update jsunpack to handle non ascii strings
+    - update user agents
+- Resolvers Added:
+    - sendfox
+    - sbembed
+    - rumble
+    - userload
+- Resolvers Fixed/Updated:
+    - userload
+    - aparat
+    - clipwatching
+    - cocoscope
+    - hdvid
+    - lbry
+    - mixdrop
+    - ninjastream
+    - streamz
+    - videobin
+- Resolvers Removed
+    - none
+- Languages Added/Updated
+    - none
+
 Version 6.0.01 (April 6, 2021)
 - Code Base Changes:
     - HostedMediaFile add __bool__ for python 3

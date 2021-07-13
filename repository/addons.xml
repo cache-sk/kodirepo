@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<addons><addon id="repository.cache-sk" name="Kodi cache-sk Addons" provider-name="cache-sk" version="1.0.4">
-    <extension name="Kodi cache-sk Addons" point="xbmc.addon.repository">
+<addons><addon id="repository.cache-sk" name="Kodi cache-sk Addons" version="1.0.4" provider-name="cache-sk">
+    <extension point="xbmc.addon.repository" name="Kodi cache-sk Addons">
         <info compressed="false">https://raw.githubusercontent.com/cache-sk/kodirepo/master/repository/addons.xml</info>
         <checksum>https://raw.githubusercontent.com/cache-sk/kodirepo/master/repository/addons.xml.md5</checksum>
         <datadir zip="true">https://raw.githubusercontent.com/cache-sk/kodirepo/master/repository/</datadir>
@@ -13,12 +13,12 @@
             <icon>icon.png</icon>
         </assets>
     </extension>
-    <extension library="announcements.py" point="xbmc.service" />
-</addon><addon id="plugin.program.cache-sk.kodi.tools" name="Cache-sk Kodi Tools" provider-name="cache-sk" version="0.0.3">
+    <extension point="xbmc.service" library="announcements.py" />
+</addon><addon id="plugin.program.cache-sk.kodi.tools" name="Cache-sk Kodi Tools" version="0.0.3" provider-name="cache-sk">
 	<requires>
 		
 	</requires>
-	<extension library="main.py" point="xbmc.python.script">
+	<extension point="xbmc.python.script" library="main.py">
 		<provides>executable</provides>
 	</extension>
 	<extension point="xbmc.addon.metadata">
@@ -40,7 +40,7 @@
 - prvy pokus, mazanie packages a thumbnails
         </news>
 	</extension>
-</addon><addon id="plugin.video.dokumenty.tv" name="Dokumenty.tv" provider-name="cache-sk" version="1.0.3">
+</addon><addon id="plugin.video.dokumenty.tv" version="1.0.3" name="Dokumenty.tv" provider-name="cache-sk">
     <requires>
         
         <import addon="script.module.resolveurl" version="5.0.00" />
@@ -48,7 +48,7 @@
         <import addon="script.module.requests" version="2.18.4" />
         <import addon="script.module.beautifulsoup4" version="4.5.0" />
     </requires>
-    <extension library="main.py" point="xbmc.python.pluginsource">
+    <extension point="xbmc.python.pluginsource" library="main.py">
         <provides>video</provides>
     </extension>
     <extension point="xbmc.addon.metadata">
@@ -81,14 +81,14 @@
             <icon>icon.png</icon>
         </assets>
     </extension>
-</addon><addon id="plugin.video.yabop" name="YABoP" provider-name="cache-sk" version="1.2.11">
+</addon><addon id="plugin.video.yabop" version="1.2.11" name="YABoP" provider-name="cache-sk">
     <requires>
         
         <import addon="script.module.resolveurl" version="5.0.00" />
         <import addon="script.module.requests" version="2.18.4" />
         <import addon="script.module.unidecode" version="0.4.16" />
     </requires>
-    <extension library="main.py" point="xbmc.python.pluginsource">
+    <extension point="xbmc.python.pluginsource" library="main.py">
         <provides>video</provides>
     </extension>
     <extension point="xbmc.addon.metadata">
@@ -177,12 +177,12 @@
 - lokalizácia en, sk, cz
         </news>
     </extension>
-</addon><addon id="plugin.video.sktonline" name="SkTonline" provider-name="cache-sk" version="1.0.5">
+</addon><addon id="plugin.video.sktonline" version="1.0.5" name="SkTonline" provider-name="cache-sk">
     <requires>
         <import addon="script.module.requests" version="2.18.4" />
         <import addon="script.module.beautifulsoup4" version="4.5.0" />
     </requires>
-    <extension library="main.py" point="xbmc.python.pluginsource">
+    <extension point="xbmc.python.pluginsource" library="main.py">
         <provides>video</provides>
     </extension>
     <extension point="xbmc.addon.metadata">
@@ -214,17 +214,17 @@
 - first release
         </news>
     </extension>
-</addon><addon id="plugin.video.freeview.sk" name="freeview.sk" provider-name="cache-sk" version="0.4.5">
+</addon><addon id="plugin.video.freeview.sk" version="0.4.5" name="freeview.sk" provider-name="cache-sk">
     <requires>
         <import addon="script.module.requests" version="2.18.4" />
         <import addon="script.module.beautifulsoup4" version="4.5.0" />
         <import addon="inputstream.adaptive" version="2.3.13" />
         <import addon="script.module.m3u8" version="0.3.7" />
     </requires>
-    <extension library="main.py" point="xbmc.python.pluginsource">
+    <extension point="xbmc.python.pluginsource" library="main.py">
         <provides>video</provides>
     </extension>
-    <extension library="service.py" point="xbmc.service" />
+    <extension point="xbmc.service" library="service.py" />
     <extension point="xbmc.addon.metadata">
         <summary lang="en_GB">Playlist a sada resolverov</summary>
         <description lang="en_GB">Všetky tu získavané streamy sú verejne k dispozícii a využívajú ich primárne oficiálne stránky či aplikácie konkrétnych televízií.</description>
@@ -313,15 +313,15 @@
 - inicialna verzia
         </news>
     </extension>
-</addon><addon id="plugin.video.rebit.tv" name="rebit.tv" provider-name="cache-sk" version="0.9.4">
+</addon><addon id="plugin.video.rebit.tv" version="0.9.4" name="rebit.tv" provider-name="cache-sk">
     <requires>
         <import addon="script.module.requests" version="2.18.4" />
         <import addon="inputstream.adaptive" version="2.3.13" />
     </requires>
-    <extension library="main.py" point="xbmc.python.pluginsource">
+    <extension point="xbmc.python.pluginsource" library="main.py">
         <provides>video</provides>
     </extension>
-    <extension library="service.py" point="xbmc.service" />
+    <extension point="xbmc.service" library="service.py" />
     <extension point="xbmc.addon.metadata">
         <summary lang="en">rebit.tv iptv simple klient</summary>
         <description lang="en">generator m3u a epg pre rebit.tv</description>
@@ -353,13 +353,13 @@
 - epg a m3u generovane sluzbou (pozor, pomaly proces!)
         </news>
     </extension>
-</addon><addon id="plugin.video.yawsp" name="YAWsP" provider-name="cache-sk" version="0.1.9">
+</addon><addon id="plugin.video.yawsp" name="YAWsP" version="0.1.9" provider-name="cache-sk">
     <requires>
         
         <import addon="script.module.requests" version="2.18.4" />
         <import addon="script.module.unidecode" version="0.4.16" />
     </requires>
-    <extension library="main.py" point="xbmc.python.pluginsource">
+    <extension point="xbmc.python.pluginsource" library="main.py">
         <provides>video</provides>
     </extension>
     <extension point="xbmc.addon.metadata">
@@ -400,7 +400,7 @@
 - TODO hladanie pomocou TMDB
         </news>
     </extension>
-</addon><addon id="repository.xbmc-kodi.cz" name="XBMC-Kodi CZ/SK repozitář" provider-name="XBMC-Kodi.cz" version="1.2.0"> 
+</addon><addon id="repository.xbmc-kodi.cz" name="XBMC-Kodi CZ/SK repozitář" version="1.2.0" provider-name="XBMC-Kodi.cz"> 
     <requires>
         <import addon="xbmc.addon" version="18.9.701" />
     </requires>
@@ -419,7 +419,7 @@
             <icon>icon.png</icon>
         </assets>
     </extension>
-</addon><addon id="script.module.urlresolver" name="URLResolver" provider-name="tvaddons" version="6.0.01">
+</addon><addon id="script.module.urlresolver" name="URLResolver" version="6.1.03" provider-name="tvaddons">
     <requires>
         
         <import addon="script.module.six" />
@@ -428,8 +428,8 @@
         <import addon="script.module.python.twitch" optional="true" />
         <import addon="plugin.googledrive" optional="true" />
     </requires>
-    <extension library="lib" point="xbmc.python.module" />
-    <extension library="lib/default.py" point="xbmc.python.pluginsource" />
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.python.pluginsource" library="lib/default.py" />
     <extension point="xbmc.addon.metadata">
         <platform>all</platform>
         <summary lang="en_GB">Resolve common video host URL's to be playable in XBMC/Kodi.</summary>
@@ -444,7 +444,7 @@
         <forum>https://www.tvaddons.co/forums</forum>
         <website>https://www.tvaddons.co</website>
     </extension>
-</addon><addon id="script.module.resolveurl" name="ResolveURL" provider-name="gujal" version="5.1.29">
+</addon><addon id="script.module.resolveurl" name="ResolveURL" version="5.1.35" provider-name="gujal">
     <requires>
         
         <import addon="script.module.six" />
@@ -453,8 +453,8 @@
         <import addon="script.module.python.twitch" optional="true" />
         <import addon="plugin.googledrive" optional="true" />
     </requires>
-    <extension library="lib" point="xbmc.python.module" />
-    <extension library="lib/default.py" point="xbmc.python.pluginsource" />
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.python.pluginsource" library="lib/default.py" />
     <extension point="xbmc.addon.metadata">
         <platform>all</platform>
         <summary lang="en_GB">Resolve common video host URL's to be playable in XBMC/Kodi.</summary>
@@ -471,8 +471,8 @@
             <fanart>fanart.jpg</fanart>
         </assets>
     </extension>
-</addon><addon id="repository.jsergio" name="jsergio repo" provider-name="jsergio" version="1.0.4">
-	<extension name="jsergio repo" point="xbmc.addon.repository">
+</addon><addon id="repository.jsergio" name="jsergio repo" version="1.0.4" provider-name="jsergio">
+	<extension point="xbmc.addon.repository" name="jsergio repo">
         <info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
         <checksum>https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml.md5</checksum>
         <datadir zip="true">https://raw.githubusercontent.com/jsergio123/zips/master/</datadir>
@@ -482,8 +482,8 @@
 		<description>Repo for jsergio Add-ons</description>
 		<platform>all</platform>
 	</extension>
-</addon><addon id="repository.kodi-czsk" name="Kodi CZ &amp; SK Doplňky" provider-name="Kodi CZSK" version="1.0.2">
-  <extension name="repozitář českých a slovenských doplňků" point="xbmc.addon.repository">
+</addon><addon id="repository.kodi-czsk" version="1.0.2" name="Kodi CZ &amp; SK Doplňky" provider-name="Kodi CZSK">
+  <extension point="xbmc.addon.repository" name="repozitář českých a slovenských doplňků">
     <info compressed="false">http://kodi-czsk.github.io/repository/repo/addons.xml</info>
     <checksum>http://kodi-czsk.github.io/repository/repo/addons.xml.md5</checksum>
     <datadir zip="true">http://kodi-czsk.github.io/repository/repo/</datadir>
@@ -499,7 +499,7 @@
     <platform>all</platform>
     <language>cs sk</language>
   </extension>
-</addon><addon id="repository.cder.sk" name="cder.sk" provider-name="cder.sk" version="1.0.2"> 
+</addon><addon id="repository.cder.sk" name="cder.sk" version="1.0.2" provider-name="cder.sk"> 
     <extension point="xbmc.addon.repository">
         <info>https://cder.sk/addons/addons.xml.gz</info>
         <checksum verify="sha256">https://cder.sk/addons/addons.xml.gz?sha256</checksum>
@@ -511,8 +511,8 @@
         <description>Repozitář pro česko-slovenskou komunitu fanoušků XBMC/Kodi</description>
         <platform>all</platform>
     </extension>
-</addon><addon id="repository.hacky" name="Hacky's repository" provider-name="Hacky" version="1.0.8">
-  <extension name="Hackyho repo" point="xbmc.addon.repository">
+</addon><addon id="repository.hacky" version="1.0.8" name="Hacky's repository" provider-name="Hacky">
+  <extension point="xbmc.addon.repository" name="Hackyho repo">
     <dir>
       <info compressed="false">https://repo.sc2.zone/repo/addons.xml</info>
       <checksum>https://repo.sc2.zone/repo/addons.xml.md5</checksum>
@@ -523,17 +523,17 @@
       <checksum>https://repo.sc2.zone/repo-v19/addons.xml.md5</checksum>
       <datadir zip="true">https://repo.sc2.zone/repo-v19/</datadir>
     </dir>
-    <dir maxversion="18.9.0" minversion="17.9.0">
+    <dir minversion="17.9.0" maxversion="18.9.0">
       <info compressed="false">https://repo.sc2.zone/repo-v18/addons.xml</info>
       <checksum>https://repo.sc2.zone/repo-v18/addons.xml.md5</checksum>
       <datadir zip="true">https://repo.sc2.zone/repo-v18/</datadir>
     </dir>
-    <dir maxversion="17.9.0" minversion="16.9.0">
+    <dir minversion="16.9.0" maxversion="17.9.0">
       <info compressed="false">https://repo.sc2.zone/repo-v17/addons.xml</info>
       <checksum>https://repo.sc2.zone/repo-v17/addons.xml.md5</checksum>
       <datadir zip="true">https://repo.sc2.zone/repo-v17/</datadir>
     </dir>
-    <dir maxversion="16.9.0" minversion="15.9.0">
+    <dir minversion="15.9.0" maxversion="16.9.0">
       <info compressed="false">https://repo.sc2.zone/repo-v16/addons.xml</info>
       <checksum>https://repo.sc2.zone/repo-v16/addons.xml.md5</checksum>
       <datadir zip="true">https://repo.sc2.zone/repo-v16/</datadir>
@@ -558,8 +558,8 @@
     <platform>all</platform>
     <language>en cs sk</language>
   </extension>
-</addon><addon id="repository.saros" name="Kodi Saros Addons" provider-name="Sároš" version="1.0.0">
-	<extension name="repozitář doplňků" point="xbmc.addon.repository">
+</addon><addon id="repository.saros" name="Kodi Saros Addons" version="1.0.0" provider-name="Sároš">
+	<extension point="xbmc.addon.repository" name="repozitář doplňků">
 		<info compressed="false">http://saros.wz.cz/repo/addons.xml</info>
 		<checksum>http://saros.wz.cz/repo/addons.xml.md5</checksum>
 		<datadir zip="true">http://saros.wz.cz/repo/</datadir>
@@ -570,10 +570,10 @@
 
 		<platform>all</platform>
 	</extension>
-</addon><addon id="repository.repoczsk" name="[B]Repo CZ/SK[/B]" provider-name="Zdenci22" version="1.0.0">
+</addon><addon id="repository.repoczsk" name="[B]Repo CZ/SK[/B]" version="1.0.0" provider-name="Zdenci22">
 	
 
-   <extension name="Repo CZ/SK" point="xbmc.addon.repository">
+   <extension point="xbmc.addon.repository" name="Repo CZ/SK">
     <dir>
 		<info compressed="false">http://repoczsk.wz.sk/repo/addons.xml</info>	
 		<checksum>http://repoczsk.wz.sk/repo/addons.xml.md5</checksum>
@@ -592,8 +592,8 @@
 		<description lang="en">Najlepšie CZ/SK doplnky</description>
 		<platform>all</platform>
 	  </extension>
-</addon><addon id="repository.master.skinbase" name="[COLOR orange]G[/COLOR]UIDO[COLOR orange]S[/COLOR] Master [COLOR orange]S[/COLOR]KINBAS[COLOR orange]E[/COLOR]" provider-name="[COLOR orange]GUIDO[/COLOR] | [COLOR skyblue]Kodiman[/COLOR] | [COLOR orange]HSK-DE[/COLOR]" version="3.3.50">
-	<extension name="GUIDOS SKINBASE REPO" point="xbmc.addon.repository">
+</addon><addon id="repository.master.skinbase" name="[COLOR orange]G[/COLOR]UIDO[COLOR orange]S[/COLOR] Master [COLOR orange]S[/COLOR]KINBAS[COLOR orange]E[/COLOR]" version="3.3.50" provider-name="[COLOR orange]GUIDO[/COLOR] | [COLOR skyblue]Kodiman[/COLOR] | [COLOR orange]HSK-DE[/COLOR]">
+	<extension point="xbmc.addon.repository" name="GUIDOS SKINBASE REPO">
 	<dir>
 		<info compressed="false">https://downloads.guidos-skinbase.de/skins16/addons.xml</info>
 		<checksum>https://downloads.guidos-skinbase.de/skins16/addons.xml.md5</checksum>
