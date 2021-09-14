@@ -318,7 +318,7 @@
 - inicialna verzia
         </news>
     </extension>
-</addon><addon id="plugin.video.rebit.tv" version="0.9.4" name="rebit.tv" provider-name="cache-sk">
+</addon><addon id="plugin.video.rebit.tv" version="0.9.5" name="rebit.tv" provider-name="cache-sk">
     <requires>
         <import addon="script.module.requests" version="2.18.4" />
         <import addon="inputstream.adaptive" version="2.3.13" />
@@ -338,6 +338,9 @@
             <icon>logo.png</icon>
         </assets>
         <news>
+[B]0.9.5[/B]
+- session lost fix (heartbeat)
+- prvy nastrel archivu
 [B]0.9.4[/B]
 - epg utc fix
 [B]0.9.3[/B]
@@ -449,7 +452,7 @@
         <forum>https://www.tvaddons.co/forums</forum>
         <website>https://www.tvaddons.co</website>
     </extension>
-</addon><addon id="script.module.resolveurl" name="ResolveURL" version="5.1.39" provider-name="gujal">
+</addon><addon id="script.module.resolveurl" name="ResolveURL" version="5.1.41" provider-name="gujal">
     <requires>
         
         <import addon="script.module.six" />
