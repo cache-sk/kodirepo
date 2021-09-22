@@ -1,13 +1,13 @@
-Version 5.1.41 (Sep 09, 2021)
+Version 5.1.43 (Sep 20, 2021)
 - Code Base Changes:
     - None
-
 - Resolvers Added:
     - None
  
 - Resolvers Fixed/Updated:
-    - StreamTape
-    - UpVideo
+    - doodstream
+    - streamtape
+    - vidcloud9
 
 - Resolvers Removed
     - None

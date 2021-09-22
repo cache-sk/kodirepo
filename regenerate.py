@@ -24,9 +24,10 @@ EXTERNAL = [{'name':'repository_jsergio','url':'https://github.com/jsergio123/zi
             {'name':'repository_hacky','url':'http://repo.sc2.zone/hacky/repository.hacky.zip'},
             {'name':'repository_saros','url':'http://saros.wz.cz/repo/repository.saros-1.0.0.zip'},
             {'name':'repository_zdenci22','url':'http://repoczsk.wz.sk/repository.repoczsk-1.0.0.zip'},
-            {'name':'repository_skinbase','url':'https://downloads.guidos-skinbase.de/repos/repository.master.skinbase/repository.master.skinbase-3.3.50.zip'}]
+            {'name':'repository_skinbase','url':'https://downloads.guidos-skinbase.de/repos/repository.master.skinbase/repository.master.skinbase-3.3.50.zip'},
             #https://github.com/kaffepausse71/Guidos-SKINBASE/raw/master/repository.skinbase.18/repository.skinbase.18-1.1.16.zip
             #https://github.com/kaffepausse71/Guidos-SKINBASE/raw/master/repository.master.skinbase/repository.master.skinbase-3.3.44.zip
+            {'name':'repository_zachmorris','url':'https://github.com/zach-morris/repository.zachmorris/raw/master/repository.zachmorris/repository.zachmorris-1.0.0.zip'}]
 
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"
 class MyOpener(FancyURLopener):
