@@ -1,13 +1,15 @@
-Version 5.1.43 (Sep 20, 2021)
+Version 5.1.47 (Oct 17, 2021)
 - Code Base Changes:
     - None
+
 - Resolvers Added:
     - None
  
 - Resolvers Fixed/Updated:
-    - doodstream
-    - streamtape
-    - vidcloud9
+    - debridlink
+    - fembed
+    - streamsb
+    - vidcloud
 
 - Resolvers Removed
     - None
