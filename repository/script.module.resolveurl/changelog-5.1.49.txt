@@ -1,15 +1,16 @@
-Version 5.1.47 (Oct 17, 2021)
+Version 5.1.49 (Oct 28, 2021)
 - Code Base Changes:
     - None
 
 - Resolvers Added:
-    - None
+    - videoo
  
 - Resolvers Fixed/Updated:
-    - debridlink
     - fembed
-    - streamsb
-    - vidcloud
+    - streamingcommunity
+    - streamtape
+    - streamz
+    - youdbox
 
 - Resolvers Removed
     - None
