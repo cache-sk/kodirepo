@@ -1,16 +1,19 @@
-Version 5.1.49 (Oct 28, 2021)
+Version 5.1.54 (Dec 12, 2021)
 - Code Base Changes:
     - None
 
 - Resolvers Added:
-    - videoo
+    - hexupload
+    - hxfile
+    - racaty
  
 - Resolvers Fixed/Updated:
     - fembed
+    - myfeminist
     - streamingcommunity
-    - streamtape
-    - streamz
-    - youdbox
+    - streamsb
+    - vidbom
+    - vlalanet
 
 - Resolvers Removed
     - None

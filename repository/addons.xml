@@ -216,7 +216,7 @@
 - first release
         </news>
     </extension>
-</addon><addon id="plugin.video.freeview.sk" version="0.5.1" name="freeview.sk" provider-name="cache-sk">
+</addon><addon id="plugin.video.freeview.sk" version="0.5.2" name="freeview.sk" provider-name="cache-sk">
     <requires>
         <import addon="script.module.requests" version="2.18.4" />
         <import addon="script.module.beautifulsoup4" version="4.5.0" />
@@ -237,6 +237,8 @@
             <icon>icon.jpg</icon>
         </assets>
         <news>
+[B]0.5.2[/B]
+- nova fun, nova lady, fashion tv
 [B]0.5.1[/B]
 - iprima fix
 [B]0.5.0[/B]
@@ -433,11 +435,12 @@
             <icon>icon.png</icon>
         </assets>
     </extension>
-</addon><addon id="script.module.urlresolver" name="URLResolver" version="6.1.04" provider-name="tvaddons">
+</addon><addon id="script.module.urlresolver" name="URLResolver" version="7.0.00" provider-name="tvaddons">
     <requires>
         
         <import addon="script.module.six" />
         <import addon="script.module.kodi-six" />
+        <import addon="script.module.certifi" />
         <import addon="plugin.video.youtube" optional="true" />
         <import addon="script.module.python.twitch" optional="true" />
         <import addon="plugin.googledrive" optional="true" />
@@ -458,7 +461,7 @@
         <forum>https://www.tvaddons.co/forums</forum>
         <website>https://www.tvaddons.co</website>
     </extension>
-</addon><addon id="script.module.resolveurl" name="ResolveURL" version="5.1.49" provider-name="gujal">
+</addon><addon id="script.module.resolveurl" name="ResolveURL" version="5.1.54" provider-name="gujal">
     <requires>
         
         <import addon="script.module.six" />
