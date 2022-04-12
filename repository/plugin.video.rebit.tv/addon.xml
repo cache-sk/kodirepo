@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="plugin.video.rebit.tv" version="0.9.7" name="rebit.tv" provider-name="cache-sk">
+<addon id="plugin.video.rebit.tv" version="0.9.8" name="rebit.tv" provider-name="cache-sk">
     <requires>
         <import addon="script.module.requests" version="2.18.4"/>
         <import addon="inputstream.adaptive" version="2.3.13"/>
@@ -19,6 +19,8 @@
             <icon>logo.png</icon>
         </assets>
         <news>
+[B]0.9.8[/B]
+- catchup podla TS podla ziadosti
 [B]0.9.7[/B]
 - catchup prototyp
 [B]0.9.6[/B]

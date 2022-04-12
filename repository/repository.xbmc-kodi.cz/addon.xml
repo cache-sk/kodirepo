@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.xbmc-kodi.cz"
-        name="XBMC-Kodi CZ/SK repozitář" 
-        version="1.2.0"
-        provider-name="XBMC-Kodi.cz"> 
+<addon id="repository.xbmc-kodi.cz" name="XBMC-Kodi CZ/SK repozitář" version="1.3.0" provider-name="XBMC-Kodi.cz">
     <requires>
-        <import addon="xbmc.addon" version="18.9.701"/>
+        <import addon="xbmc.addon" version="12.0.0"/>
     </requires>
     <extension point="xbmc.addon.repository">
-        <info>https://mirror.xbmc-kodi.cz/addons/matrix/addons.xml.gz</info>
-        <checksum verify="sha256">https://mirror.xbmc-kodi.cz/addons/matrix/addons.xml.gz?sha256</checksum>
-        <datadir>https://mirror.xbmc-kodi.cz/addons/matrix/</datadir>
-		<artdir>https://mirror.xbmc-kodi.cz/addons/matrix/</artdir>
-        <hashes>sha256</hashes>
+        <dir>
+            <info>https://mirror.xbmc-kodi.cz/addons/matrix/addons.xml.gz</info>
+            <checksum verify="sha256">https://mirror.xbmc-kodi.cz/addons/matrix/addons.xml.gz?sha256</checksum>
+            <datadir>https://mirror.xbmc-kodi.cz/addons/matrix/</datadir>
+            <artdir>https://mirror.xbmc-kodi.cz/addons/matrix/</artdir>
+            <hashes>sha256</hashes>
+        </dir>
     </extension>
     <extension point="xbmc.addon.metadata">
         <summary lang="cs_CZ">Česko-slovenská komunita fanoušků XBMC/Kodi</summary>
