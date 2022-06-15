@@ -216,7 +216,7 @@
 - first release
         </news>
     </extension>
-</addon><addon id="plugin.video.freeview.sk" version="0.5.4" name="freeview.sk" provider-name="cache-sk">
+</addon><addon id="plugin.video.freeview.sk" version="0.5.5" name="freeview.sk" provider-name="cache-sk">
     <requires>
         <import addon="script.module.requests" version="2.18.4" />
         <import addon="script.module.beautifulsoup4" version="4.5.0" />
@@ -237,6 +237,8 @@
             <icon>icon.jpg</icon>
         </assets>
         <news>
+[B]0.5.5[/B]
+- premenovanie trojky na :24, pridanie krimi
 [B]0.5.4[/B]
 - rtvs sport, joj sport (thnx to Chinark), vsetky Nova kanaly (thnx to HereIronman7746/ParrotDevelopers)
 [B]0.5.3[/B]
@@ -328,7 +330,7 @@
 - inicialna verzia
         </news>
     </extension>
-</addon><addon id="plugin.video.rebit.tv" version="0.9.8" name="rebit.tv" provider-name="cache-sk">
+</addon><addon id="plugin.video.rebit.tv" version="0.9.9" name="rebit.tv" provider-name="cache-sk">
     <requires>
         <import addon="script.module.requests" version="2.18.4" />
         <import addon="inputstream.adaptive" version="2.3.13" />
@@ -348,6 +350,8 @@
             <icon>logo.png</icon>
         </assets>
         <news>
+[B]0.9.9[/B]
+- pridanie moznosti nevkladat loga do playlistu by Sorien
 [B]0.9.8[/B]
 - catchup podla TS podla ziadosti
 [B]0.9.7[/B]
@@ -537,7 +541,12 @@
       <checksum>https://repo.sc2.zone/repo/addons.xml.md5</checksum>
       <datadir zip="true">https://repo.sc2.zone/repo/</datadir>
     </dir>
-    <dir minversion="18.9.0">
+    <dir minversion="19.9.0">
+      <info compressed="false">https://repo.sc2.zone/repo-v20/addons.xml</info>
+      <checksum>https://repo.sc2.zone/repo-v20/addons.xml.md5</checksum>
+      <datadir zip="true">https://repo.sc2.zone/repo-v20/</datadir>
+    </dir>
+    <dir minversion="18.9.0" maxversion="19.9.0">
       <info compressed="false">https://repo.sc2.zone/repo-v19/addons.xml</info>
       <checksum>https://repo.sc2.zone/repo-v19/addons.xml.md5</checksum>
       <datadir zip="true">https://repo.sc2.zone/repo-v19/</datadir>
@@ -562,17 +571,17 @@
     <summary>Hacky's repository</summary>
     <description>
       Contains Stream Cinema 2.0 dependencies
-      - author of this repository is not responsible for the Stream Cinema 2 addon 
+      - author of this repository is not responsible for the Stream Cinema 2 addon
       or for any damages caused by using Stream Cinema 2 addon.
-      - all updates are fully automatic via git.hotshot.sk 
-      - author of this repository is in no way connected to the git.hotshot.sk 
+      - all updates are fully automatic via git.hotshot.sk
+      - author of this repository is in no way connected to the git.hotshot.sk
       or Stream Cinema 2 addon
     </description>
     <description lang="cs">
       Obsahuje zavislosti pro Stream Cinema 2.0
-      - autor repozitare nenese zadnou odpovednost za tento doplnek, ani za 
+      - autor repozitare nenese zadnou odpovednost za tento doplnek, ani za
       skody zpusobene jeho pouzivanim
-      - veskere aktualizace jsou automaticke  
+      - veskere aktualizace jsou automaticke
     </description>
     <platform>all</platform>
     <language>en cs sk</language>

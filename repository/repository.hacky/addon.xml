@@ -10,7 +10,12 @@
       <checksum>https://repo.sc2.zone/repo/addons.xml.md5</checksum>
       <datadir zip="true">https://repo.sc2.zone/repo/</datadir>
     </dir>
-    <dir minversion="18.9.0">
+    <dir minversion="19.9.0">
+      <info compressed="false">https://repo.sc2.zone/repo-v20/addons.xml</info>
+      <checksum>https://repo.sc2.zone/repo-v20/addons.xml.md5</checksum>
+      <datadir zip="true">https://repo.sc2.zone/repo-v20/</datadir>
+    </dir>
+    <dir minversion="18.9.0" maxversion="19.9.0">
       <info compressed="false">https://repo.sc2.zone/repo-v19/addons.xml</info>
       <checksum>https://repo.sc2.zone/repo-v19/addons.xml.md5</checksum>
       <datadir zip="true">https://repo.sc2.zone/repo-v19/</datadir>
@@ -35,17 +40,17 @@
     <summary>Hacky's repository</summary>
     <description>
       Contains Stream Cinema 2.0 dependencies
-      - author of this repository is not responsible for the Stream Cinema 2 addon 
+      - author of this repository is not responsible for the Stream Cinema 2 addon
       or for any damages caused by using Stream Cinema 2 addon.
-      - all updates are fully automatic via git.hotshot.sk 
-      - author of this repository is in no way connected to the git.hotshot.sk 
+      - all updates are fully automatic via git.hotshot.sk
+      - author of this repository is in no way connected to the git.hotshot.sk
       or Stream Cinema 2 addon
     </description>
     <description lang="cs">
       Obsahuje zavislosti pro Stream Cinema 2.0
-      - autor repozitare nenese zadnou odpovednost za tento doplnek, ani za 
+      - autor repozitare nenese zadnou odpovednost za tento doplnek, ani za
       skody zpusobene jeho pouzivanim
-      - veskere aktualizace jsou automaticke  
+      - veskere aktualizace jsou automaticke
     </description>
     <platform>all</platform>
     <language>en cs sk</language>
