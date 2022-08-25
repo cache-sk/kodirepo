@@ -17,7 +17,8 @@ PLUGINS = ['repository.cache-sk',
            'https://github.com/xbmc-kodi-cz/repository.xbmc-kodi.cz',
            'https://github.com/xbmc-kodi-cz/script.module.urlresolver',
            #'https://github.com/tvaddonsco/script.module.urlresolver',
-           'https://github.com/jsergio123/script.module.resolveurl']
+           # abandoned 'https://github.com/jsergio123/script.module.resolveurl',
+           'https://github.com/Gujal00/ResolveURL.git#master:script.module.resolveurl']
 
 EXTERNAL = [{'name':'repository_jsergio','url':'https://github.com/jsergio123/zips/raw/master/repository.jsergio/repository.jsergio-1.0.4.zip'},
             {'name':'repository_kodi_czsk','url':'https://kodi-czsk.github.io/repository/repo/repository.kodi-czsk/repository.kodi-czsk-1.0.2.zip'},
