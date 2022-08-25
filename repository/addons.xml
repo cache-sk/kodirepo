@@ -81,7 +81,7 @@
             <icon>icon.png</icon>
         </assets>
     </extension>
-</addon><addon id="plugin.video.yabop" version="1.2.12" name="YABoP" provider-name="cache-sk">
+</addon><addon id="plugin.video.yabop" version="1.2.13" name="YABoP" provider-name="cache-sk">
     <requires>
         
         <import addon="script.module.resolveurl" version="5.0.00" />
@@ -107,6 +107,8 @@
             <fanart>fanart.jpg</fanart>
         </assets>
         <news>
+[B]1.2.13[/B]
+- narychlo naplacany byteshare
 [B]1.2.12[/B]
 - quick fix filmy
 [B]1.2.11[/B]
