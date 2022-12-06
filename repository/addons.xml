@@ -1,9 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<addons><addon id="repository.cache-sk" name="Kodi cache-sk Addons" version="1.0.4" provider-name="cache-sk">
+<addons><addon id="repository.cache-sk" name="Kodi cache-sk Addons" version="1.0.5" provider-name="cache-sk">
     <extension point="xbmc.addon.repository" name="Kodi cache-sk Addons">
-        <info compressed="false">https://raw.githubusercontent.com/cache-sk/kodirepo/master/repository/addons.xml</info>
-        <checksum>https://raw.githubusercontent.com/cache-sk/kodirepo/master/repository/addons.xml.md5</checksum>
-        <datadir zip="true">https://raw.githubusercontent.com/cache-sk/kodirepo/master/repository/</datadir>
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/cache-sk/kodirepo/master/repository/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/cache-sk/kodirepo/master/repository/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/cache-sk/kodirepo/master/repository/</datadir>
+        </dir>
     </extension>
     <extension point="xbmc.addon.metadata">
         <summary>Kodi cache-sk Addons</summary>
@@ -14,7 +16,7 @@
         </assets>
     </extension>
     <extension point="xbmc.service" library="announcements.py" />
-</addon><addon id="plugin.program.cache-sk.kodi.tools" name="Cache-sk Kodi Tools" version="0.0.3" provider-name="cache-sk">
+</addon><addon id="plugin.program.cache-sk.kodi.tools" name="Cache-sk Kodi Tools" version="0.0.4" provider-name="cache-sk">
 	<requires>
 		
 	</requires>
@@ -32,6 +34,8 @@
 			<icon>icon.png</icon>
 		</assets>
 		<news>
+[B]0.0.4[/B]
+- nexus compat
 [B]0.0.3[/B]
 - mazanie thumbnails nemaze foldre = netreba restart
 [B]0.0.2[/B]
@@ -81,7 +85,7 @@
             <icon>icon.png</icon>
         </assets>
     </extension>
-</addon><addon id="plugin.video.yabop" version="1.2.13" name="YABoP" provider-name="cache-sk">
+</addon><addon id="plugin.video.yabop" version="1.2.14" name="YABoP" provider-name="cache-sk">
     <requires>
         
         <import addon="script.module.resolveurl" version="5.0.00" />
@@ -107,6 +111,8 @@
             <fanart>fanart.jpg</fanart>
         </assets>
         <news>
+[B]1.2.13[/B]
+- nexus
 [B]1.2.13[/B]
 - narychlo naplacany byteshare
 [B]1.2.12[/B]
@@ -220,7 +226,7 @@
 - first release
         </news>
     </extension>
-</addon><addon id="plugin.video.freeview.sk" version="0.5.7" name="freeview.sk" provider-name="cache-sk">
+</addon><addon id="plugin.video.freeview.sk" version="0.5.8" name="freeview.sk" provider-name="cache-sk">
     <requires>
         <import addon="script.module.requests" version="2.18.4" />
         <import addon="script.module.beautifulsoup4" version="4.5.0" />
@@ -241,6 +247,8 @@
             <icon>icon.jpg</icon>
         </assets>
         <news>
+[B]0.5.8[/B]
+- nexus translatePath fix
 [B]0.5.7[/B]
 - joj play (thnx Jakubicek222 za tip)
 [B]0.5.6[/B]
@@ -338,7 +346,7 @@
 - inicialna verzia
         </news>
     </extension>
-</addon><addon id="plugin.video.rebit.tv" version="0.9.9" name="rebit.tv" provider-name="cache-sk">
+</addon><addon id="plugin.video.rebit.tv" version="0.9.10" name="rebit.tv" provider-name="cache-sk">
     <requires>
         <import addon="script.module.requests" version="2.18.4" />
         <import addon="inputstream.adaptive" version="2.3.13" />
@@ -358,6 +366,8 @@
             <icon>logo.png</icon>
         </assets>
         <news>
+[B]0.9.10[/B]
+- nexus compat
 [B]0.9.9[/B]
 - pridanie moznosti nevkladat loga do playlistu by Sorien
 [B]0.9.8[/B]
@@ -389,7 +399,7 @@
 - epg a m3u generovane sluzbou (pozor, pomaly proces!)
         </news>
     </extension>
-</addon><addon id="plugin.video.yawsp" name="YAWsP" version="0.1.9" provider-name="cache-sk">
+</addon><addon id="plugin.video.yawsp" name="YAWsP" version="0.2.0" provider-name="cache-sk">
     <requires>
         
         <import addon="script.module.requests" version="2.18.4" />
@@ -411,6 +421,8 @@
             <icon>resources/icon.png</icon>
         </assets>
         <news>
+[B]0.2.0[/B]
+- nexus compatibility
 [B]0.1.9[/B]
 - matrix compatibility pt3
 [B]0.1.8[/B]
