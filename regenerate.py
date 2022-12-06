@@ -25,7 +25,7 @@ EXTERNAL = [{'name':'repository_jsergio','url':'https://github.com/jsergio123/zi
             {'name':'repository_cder','url':'https://cder.sk/repository.cder.sk-1.0.2.zip'},
             {'name':'repository_hacky','url':'http://repo.sc2.zone/hacky/repository.hacky.zip'},
             {'name':'repository_saros','url':'http://saros.wz.cz/repo/repository.saros-1.0.0.zip'},
-            {'name':'repository_zdenci22','url':'http://repoczsk.wz.sk/repository.repoczsk-1.0.2.zip'},
+            {'name':'repository_zdenci22','url':'http://repoczsk.wz.sk/repository.repoczsk-1.0.6.zip'},
             {'name':'repository_skinbase','url':'https://github.com/kaffepausse71/Guidos-SKINBASE/raw/master/repository.skinbase.19/repository.skinbase.19-3.1.34.zip'},
             #https://downloads.guidos-skinbase.de/repos/repository.master.skinbase/repository.master.skinbase-3.3.50.zip
             #https://github.com/kaffepausse71/Guidos-SKINBASE/raw/master/repository.skinbase.18/repository.skinbase.18-1.1.16.zip

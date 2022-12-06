@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon id="repository.repoczsk"
-  version="1.0.2"
+  version="1.0.6"
   name="[B]Repo CZ/SK[/B]"
-  provider-name="Zdenci22">
+  provider-name="Dragonix">
   <extension point="xbmc.addon.repository"
     name="Repo CZ/SK">
     <dir>
@@ -14,6 +14,13 @@
 	  <info compressed="false">http://kodi.lanik.org/_p3repo/addons.xml</info>
         <checksum>http://kodi.lanik.org/_p3repo/addons.xml.md5</checksum>
         <datadir zip="true">http://kodi.lanik.org/_p3repo/</datadir>
+    </dir>
+    <dir>
+    	<info>https://mirror.xbmc-kodi.cz/addons/matrix/addons.xml.gz</info>
+        <checksum verify="sha256">https://mirror.xbmc-kodi.cz/addons/matrix/addons.xml.gz?sha256</checksum>
+        <datadir>https://mirror.xbmc-kodi.cz/addons/matrix/</datadir>
+		<artdir>https://mirror.xbmc-kodi.cz/addons/matrix/</artdir>
+        <hashes>sha256</hashes>
     </dir>
     <dir>
       <info compressed="false">https://repo.sc2.zone/repo/addons.xml</info>

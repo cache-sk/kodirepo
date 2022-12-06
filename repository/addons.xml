@@ -218,7 +218,7 @@
 - first release
         </news>
     </extension>
-</addon><addon id="plugin.video.freeview.sk" version="0.5.6" name="freeview.sk" provider-name="cache-sk">
+</addon><addon id="plugin.video.freeview.sk" version="0.5.7" name="freeview.sk" provider-name="cache-sk">
     <requires>
         <import addon="script.module.requests" version="2.18.4" />
         <import addon="script.module.beautifulsoup4" version="4.5.0" />
@@ -239,6 +239,8 @@
             <icon>icon.jpg</icon>
         </assets>
         <news>
+[B]0.5.7[/B]
+- joj play (thnx Jakubicek222 za tip)
 [B]0.5.6[/B]
 - zakomentovanie nefunkcneho joj sport, pridanie joj24, aktualizacia log markizy
 [B]0.5.5[/B]
@@ -479,7 +481,7 @@
         <forum>https://www.tvaddons.co/forums</forum>
         <website>https://www.tvaddons.co</website>
     </extension>
-</addon><addon id="script.module.resolveurl" name="ResolveURL" version="5.1.82" provider-name="gujal">
+</addon><addon id="script.module.resolveurl" name="ResolveURL" version="5.1.85" provider-name="gujal">
     <requires>
         
         <import addon="script.module.six" />
@@ -610,7 +612,7 @@
 
 		<platform>all</platform>
 	</extension>
-</addon><addon id="repository.repoczsk" version="1.0.2" name="[B]Repo CZ/SK[/B]" provider-name="Zdenci22">
+</addon><addon id="repository.repoczsk" version="1.0.6" name="[B]Repo CZ/SK[/B]" provider-name="Dragonix">
   <extension point="xbmc.addon.repository" name="Repo CZ/SK">
     <dir>
 	  <info compressed="false">http://repoczsk.wz.sk/repo/addons.xml</info>	
@@ -621,6 +623,13 @@
 	  <info compressed="false">http://kodi.lanik.org/_p3repo/addons.xml</info>
         <checksum>http://kodi.lanik.org/_p3repo/addons.xml.md5</checksum>
         <datadir zip="true">http://kodi.lanik.org/_p3repo/</datadir>
+    </dir>
+    <dir>
+    	<info>https://mirror.xbmc-kodi.cz/addons/matrix/addons.xml.gz</info>
+        <checksum verify="sha256">https://mirror.xbmc-kodi.cz/addons/matrix/addons.xml.gz?sha256</checksum>
+        <datadir>https://mirror.xbmc-kodi.cz/addons/matrix/</datadir>
+		<artdir>https://mirror.xbmc-kodi.cz/addons/matrix/</artdir>
+        <hashes>sha256</hashes>
     </dir>
     <dir>
       <info compressed="false">https://repo.sc2.zone/repo/addons.xml</info>
