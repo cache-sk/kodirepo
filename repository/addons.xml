@@ -44,9 +44,8 @@
 - prvy pokus, mazanie packages a thumbnails
         </news>
 	</extension>
-</addon><addon id="plugin.video.dokumenty.tv" version="1.0.3" name="Dokumenty.tv" provider-name="cache-sk">
+</addon><addon id="plugin.video.dokumenty.tv" version="1.0.4" name="Dokumenty.tv" provider-name="cache-sk">
     <requires>
-        
         <import addon="script.module.resolveurl" version="5.0.00" />
         <import addon="script.module.urlresolver" version="5.0.00" />
         <import addon="script.module.requests" version="2.18.4" />
@@ -64,6 +63,8 @@
         <disclaimer lang="sk">Plugin neposkytuje žiaden obsah, je to len simulácia prehliadača verejne dostupnej web stránky. Nie som zodpovedný za obsah, ktorý táto stránka poskytuje.</disclaimer>
         <disclaimer lang="cz">Plugin neposkytuje žádný obsah, je to jen simulace prohlížeče veřejně dostupné web stránky. Nejsem zodpovědný za obsah, který tato stránka poskytuje.</disclaimer>
         <news>
+[B]1.0.4[/B]
+- nexus
 [B]1.0.3[/B]
 - matrix
 [B]1.0.2[/B]
