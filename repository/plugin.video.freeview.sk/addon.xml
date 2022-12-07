@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="plugin.video.freeview.sk" version="0.5.8" name="freeview.sk" provider-name="cache-sk">
+<addon id="plugin.video.freeview.sk" version="0.5.9" name="freeview.sk" provider-name="cache-sk">
     <requires>
         <import addon="script.module.requests" version="2.18.4"/>
         <import addon="script.module.beautifulsoup4" version="4.5.0"/>
@@ -20,6 +20,8 @@
             <icon>icon.jpg</icon>
         </assets>
         <news>
+[B]0.5.9[/B]
+- doplnenie kodov stanic pre epg
 [B]0.5.8[/B]
 - nexus translatePath fix
 [B]0.5.7[/B]
