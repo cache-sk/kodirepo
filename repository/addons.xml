@@ -227,7 +227,7 @@
 - first release
         </news>
     </extension>
-</addon><addon id="plugin.video.freeview.sk" version="0.5.9" name="freeview.sk" provider-name="cache-sk">
+</addon><addon id="plugin.video.freeview.sk" version="0.6.0" name="freeview.sk" provider-name="cache-sk">
     <requires>
         <import addon="script.module.requests" version="2.18.4" />
         <import addon="script.module.beautifulsoup4" version="4.5.0" />
@@ -248,6 +248,8 @@
             <icon>icon.jpg</icon>
         </assets>
         <news>
+[B]0.6.0[/B]
+- divny markizacky hotfix - markiza niekedy vrati iframe so streamom, inokedy iframe s obrazkom..
 [B]0.5.9[/B]
 - doplnenie kodov stanic pre epg
 [B]0.5.8[/B]
@@ -717,14 +719,23 @@ The SkinBase is constantly being expanded and improved. Added to this are skins 
 			<screenshot>resources/screenshot-04.jpg</screenshot>
 		</assets>
 	</extension>
-</addon><addon id="repository.zachmorris" name="Zach Morris Add-ons" version="1.0.0" provider-name="zachmorris">
-    <extension point="xbmc.addon.repository" name="Zach Morris Add-ons">
-        <info compressed="true">https://github.com/zach-morris/repository.zachmorris/raw/master/addons.xml</info>
-        <checksum>https://github.com/zach-morris/repository.zachmorris/raw/master/addons.xml.md5</checksum>
-        <datadir zip="true">https://raw.githubusercontent.com/zach-morris/repository.zachmorris/master/</datadir>
+</addon><addon id="repository.zachmorris" name="Zach Morris Add-ons" version="1.0.3" provider-name="zachmorris">
+    <requires>
+        <import addon="xbmc.addon" version="12.0.0" />
+    </requires>
+    <extension point="xbmc.addon.repository">
+        <dir>
+            <info minversion="18.0.0">https://github.com/zach-morris/repository.zachmorris/raw/master/addons.xml</info>
+            <checksum>https://github.com/zach-morris/repository.zachmorris/raw/master/addons.xml.md5</checksum>
+            <datadir>https://github.com/zach-morris/repository.zachmorris/raw/master/</datadir>
+        </dir>
     </extension>
     <extension point="xbmc.addon.metadata">
-        <summary>Zach Morris Add-ons</summary>
+        <summary lang="en_GB">Zach Morris Add-ons</summary>
         <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
     </extension>
 </addon></addons>
