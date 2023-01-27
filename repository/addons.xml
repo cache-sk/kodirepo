@@ -227,7 +227,7 @@
 - first release
         </news>
     </extension>
-</addon><addon id="plugin.video.freeview.sk" version="0.6.0" name="freeview.sk" provider-name="cache-sk">
+</addon><addon id="plugin.video.freeview.sk" version="0.6.1" name="freeview.sk" provider-name="cache-sk">
     <requires>
         <import addon="script.module.requests" version="2.18.4" />
         <import addon="script.module.beautifulsoup4" version="4.5.0" />
@@ -248,6 +248,8 @@
             <icon>icon.jpg</icon>
         </assets>
         <news>
+[B]0.6.1[/B]
+- markiza dialog - nedostupnost streamu sposobuje zdielane konto
 [B]0.6.0[/B]
 - divny markizacky hotfix - markiza niekedy vrati iframe so streamom, inokedy iframe s obrazkom..
 [B]0.5.9[/B]
@@ -500,7 +502,7 @@
         <forum>https://www.tvaddons.co/forums</forum>
         <website>https://www.tvaddons.co</website>
     </extension>
-</addon><addon id="script.module.resolveurl" name="ResolveURL" version="5.1.85" provider-name="gujal">
+</addon><addon id="script.module.resolveurl" name="ResolveURL" version="5.1.88" provider-name="gujal">
     <requires>
         
         <import addon="script.module.six" />
