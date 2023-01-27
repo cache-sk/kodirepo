@@ -529,40 +529,20 @@
             <fanart>fanart.jpg</fanart>
         </assets>
     </extension>
-</addon><addon id="repository.jsergio" name="jsergio repo" version="1.0.4" provider-name="jsergio">
-	<extension point="xbmc.addon.repository" name="jsergio repo">
-        <info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
-        <checksum>https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml.md5</checksum>
-        <datadir zip="true">https://raw.githubusercontent.com/jsergio123/zips/master/</datadir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>Repo for jsergio Add-ons</summary>
-		<description>Repo for jsergio Add-ons</description>
-		<platform>all</platform>
-	</extension>
-</addon><addon id="repository.kodi-czsk" version="1.0.2" name="Kodi CZ &amp; SK Doplňky" provider-name="Kodi CZSK">
-  <extension point="xbmc.addon.repository" name="repozitář českých a slovenských doplňků">
-    <info compressed="false">http://kodi-czsk.github.io/repository/repo/addons.xml</info>
-    <checksum>http://kodi-czsk.github.io/repository/repo/addons.xml.md5</checksum>
-    <datadir zip="true">http://kodi-czsk.github.io/repository/repo/</datadir>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary>Kodi CZ &amp; SK Doplňky</summary>
-    <description>
-      This repository contains mostly video addons for czech users. [CR] Please send feedback, patches or fire any issues on http://xbmc-doplnky.googlecode.com
-    </description>
-    <description lang="cs">
-      Tento repozitář obsahuje video doplňky pro česky a slovensky mluvící uživatele.[CR] Máte-li jakékoliv poznámky, náměty, doplňky k začlenění nebo chcete nahlásit chybu, navštivte http://xbmc-doplnky.googlecode.com.
-    </description>
-    <platform>all</platform>
-    <language>cs sk</language>
-  </extension>
-</addon><addon id="repository.cder.sk" name="cder.sk" version="1.0.2" provider-name="cder.sk"> 
+</addon><addon id="repository.cder.sk" name="cder.sk" version="1.0.4" provider-name="cder.sk">
     <extension point="xbmc.addon.repository">
-        <info>https://cder.sk/addons/addons.xml.gz</info>
-        <checksum verify="sha256">https://cder.sk/addons/addons.xml.gz?sha256</checksum>
-        <datadir zip="true">https://cder.sk/addons/</datadir>
-        <hashes>sha256</hashes>
+        <dir minversion="18.9.0">
+            <info>https://cder.sk/addons/k19/addons.xml.gz</info>
+            <checksum verify="sha256">https://cder.sk/addons/k19/addons.xml.gz?sha256</checksum>
+            <datadir zip="true">https://cder.sk/addons/k19/</datadir>
+            <hashes>sha256</hashes>
+        </dir>
+        <dir maxversion="18.9.0" minversion="16.0.0">
+            <info>https://cder.sk/addons/addons.xml.gz</info>
+            <checksum verify="sha256">https://cder.sk/addons/addons.xml.gz?sha256</checksum>
+            <datadir zip="true">https://cder.sk/addons/</datadir>
+            <hashes>sha256</hashes>
+        </dir>
     </extension>
     <extension point="xbmc.addon.metadata">
         <summary>Česko-slovenská komunita fanoušků XBMC/Kodi</summary>
@@ -621,18 +601,28 @@
     <platform>all</platform>
     <language>en cs sk</language>
   </extension>
-</addon><addon id="repository.saros" name="Kodi Saros Addons" version="1.0.0" provider-name="Sároš">
-	<extension point="xbmc.addon.repository" name="repozitář doplňků">
-		<info compressed="false">http://saros.wz.cz/repo/addons.xml</info>
-		<checksum>http://saros.wz.cz/repo/addons.xml.md5</checksum>
-		<datadir zip="true">http://saros.wz.cz/repo/</datadir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>Kodi Saros Addons</summary>
-		<description>Kodi Saros Addons</description>
-
-		<platform>all</platform>
-	</extension>
+</addon><addon id="repository.saros" version="1.1.0" name="Kodi Saros Addons" provider-name="Sároš">
+  <extension point="xbmc.addon.repository" name="Repozitář doplňků">
+    <dir minversion="18.9.0">
+      <info compressed="false">http://saros.wz.cz/repo/repo-v19/addons.xml</info>
+      <checksum>http://saros.wz.cz/repo/repo-v19/addons.xml.md5</checksum>
+      <datadir zip="true">http://saros.wz.cz/repo/repo-v19/</datadir>
+    </dir>
+    <dir minversion="17.9.0" maxversion="18.9.0">
+      <info compressed="false">http://saros.wz.cz/repo/addons.xml</info>
+      <checksum>http://saros.wz.cz/repo/addons.xml.md5</checksum>
+      <datadir zip="true">http://saros.wz.cz/repo/</datadir>
+    </dir>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Kodi Saros Addons</summary>
+    <description>Kodi Saros Addons</description>
+    <platform>all</platform>
+    <language>cs</language>
+    <assets>
+        <icon>icon.png</icon>
+    </assets>
+  </extension>
 </addon><addon id="repository.repoczsk" version="1.0.6" name="[B]Repo CZ/SK[/B]" provider-name="Dragonix">
   <extension point="xbmc.addon.repository" name="Repo CZ/SK">
     <dir>

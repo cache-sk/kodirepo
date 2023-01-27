@@ -20,11 +20,11 @@ PLUGINS = ['repository.cache-sk',
            # abandoned 'https://github.com/jsergio123/script.module.resolveurl',
            'https://github.com/Gujal00/ResolveURL.git#master:script.module.resolveurl']
 
-EXTERNAL = [{'name':'repository_jsergio','url':'https://github.com/jsergio123/zips/raw/master/repository.jsergio/repository.jsergio-1.0.4.zip'},
-            {'name':'repository_kodi_czsk','url':'https://kodi-czsk.github.io/repository/repo/repository.kodi-czsk/repository.kodi-czsk-1.0.2.zip'},
-            {'name':'repository_cder','url':'https://cder.sk/repository.cder.sk-1.0.2.zip'},
+EXTERNAL = [#{'name':'repository_jsergio','url':'https://github.com/jsergio123/zips/raw/master/repository.jsergio/repository.jsergio-1.0.4.zip'},
+            #{'name':'repository_kodi_czsk','url':'https://kodi-czsk.github.io/repository/repo/repository.kodi-czsk/repository.kodi-czsk-1.0.2.zip'},
+            {'name':'repository_cder','url':'https://cder.sk/repository.cder.sk-1.0.4.zip'},
             {'name':'repository_hacky','url':'http://repo.sc2.zone/hacky/repository.hacky.zip'},
-            {'name':'repository_saros','url':'http://saros.wz.cz/repo/repository.saros-1.0.0.zip'},
+            {'name':'repository_saros','url':'http://saros.wz.cz/repo/repository.saros-1.1.0.zip'},
             {'name':'repository_zdenci22','url':'http://repoczsk.wz.sk/repository.repoczsk-1.0.6.zip'},
             {'name':'repository_skinbase','url':'https://github.com/kaffepausse71/Guidos-SKINBASE/raw/master/repository.skinbase.19/repository.skinbase.19-3.1.34.zip'},
             #https://downloads.guidos-skinbase.de/repos/repository.master.skinbase/repository.master.skinbase-3.3.50.zip
