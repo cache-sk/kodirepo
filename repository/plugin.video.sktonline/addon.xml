@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="plugin.video.sktonline" version="1.1.0" name="SkTonline" provider-name="cache-sk">
+<addon id="plugin.video.sktonline" version="1.1.1" name="SkTonline" provider-name="cache-sk">
     <requires>
         <import addon="script.module.requests" version="2.18.4"/>
         <import addon="script.module.beautifulsoup4" version="4.5.0"/>
@@ -22,6 +22,8 @@
             <icon>icon.png</icon>
         </assets>
         <news>
+[B]1.1.1[/B]
+- prototyp prihlasenia pre CZ
 [B]1.1.0[/B]
 - upravenie vyberu streamu cez kontextove menu a nie submenu, pridanie naposledy pozeranych, pridanie historie vyhladavania
 [B]1.0.5[/B]
