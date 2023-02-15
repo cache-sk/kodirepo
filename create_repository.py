@@ -115,7 +115,7 @@ def parse_metadata(metadata_file):
         root)
     # Validate the add-on ID.
     if (addon_metadata.id is None or
-            re.search('[^a-z0-9._-]', addon_metadata.id)):
+            re.search('[^a-zA-Z0-9._-]', addon_metadata.id)): #cache - added A-Z to regexp
         raise RuntimeError('Invalid addon ID: {}'.format(addon_metadata.id))
     if (addon_metadata.version is None or
             not re.match(
