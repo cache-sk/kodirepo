@@ -229,7 +229,7 @@
 - first release
         </news>
     </extension>
-</addon><addon id="plugin.video.freeview.sk" version="0.7.0" name="freeview.sk" provider-name="cache-sk">
+</addon><addon id="plugin.video.freeview.sk" version="0.8.0" name="freeview.sk" provider-name="cache-sk">
     <requires>
         <import addon="script.module.requests" version="2.18.4" />
         <import addon="script.module.beautifulsoup4" version="4.5.0" />
@@ -250,6 +250,8 @@
             <icon>icon.jpg</icon>
         </assets>
         <news>
+[B]0.8.0[/B]
+- sfunkcnenie nastaveni pre novy multi-profil PVR Iptv Simple Client
 [B]0.7.0[/B]
 - markiza - nova stranka markizy, treba nove vlastne konto
 - joj family - temporary ignorovanie chyby certifikatu
@@ -508,7 +510,7 @@
         <forum>https://www.tvaddons.co/forums</forum>
         <website>https://www.tvaddons.co</website>
     </extension>
-</addon><addon id="script.module.resolveurl" name="ResolveURL" version="5.1.91" provider-name="gujal">
+</addon><addon id="script.module.resolveurl" name="ResolveURL" version="5.1.97" provider-name="gujal">
     <requires>
         
         <import addon="script.module.six" />
@@ -629,7 +631,7 @@
         <icon>icon.png</icon>
     </assets>
   </extension>
-</addon><addon id="repository.repoczsk" version="1.0.6" name="[B]Repo CZ/SK[/B]" provider-name="Dragonix">
+</addon><addon id="repository.repoczsk" version="1.0.7" name="[B]Repo CZ/SK[/B]" provider-name="Dragonix">
   <extension point="xbmc.addon.repository" name="Repo CZ/SK">
     <dir>
 	  <info compressed="false">http://repoczsk.wz.sk/repo/addons.xml</info>	
@@ -690,22 +692,18 @@
     <platform>all</platform>
     <language>en cs sk</language>
   </extension>
-</addon><addon id="repository.skinbase.19" name="[COLOR orange]G[/COLOR]UIDO[COLOR orange]S[/COLOR] [COLOR orange]S[/COLOR]KINBAS[COLOR orange]E[/COLOR] Only Skins for 19" version="3.1.34" provider-name="[COLOR orange]GUIDO[/COLOR] | [COLOR skyblue]Kodiman[/COLOR] | [COLOR orange]HSK-DE[/COLOR]">
+</addon><addon id="repository.skinbase.nexus" name="[COLOR orange]G[/COLOR]UIDO[COLOR orange]S[/COLOR] [COLOR orange]S[/COLOR]KINBAS[COLOR orange]E[/COLOR] Only Skins for [COLOR orange]Kodi 19+20[/COLOR] " version="3.0.04" provider-name="[COLOR orange]SKINBASE[/COLOR] | [COLOR skyblue]Kodiman[/COLOR] | [COLOR orange]HSK-DE[/COLOR]">
 	<extension point="xbmc.addon.repository" name="GUIDOS SKINBASE REPO">
 	<dir>
-		<info compressed="false">https://raw.github.com/kaffepausse71/SKINBASE19/master/addons.xml</info>
-		<checksum>https://raw.github.com/kaffepausse71/SKINBASE19/master/addons.xml.md5</checksum>
-		<datadir zip="true">https://raw.github.com/kaffepausse71/SKINBASE19/master/</datadir>
+		<info compressed="false">https://raw.github.com/kaffepausse71/SKINBASE.NEXUS/master/addons.xml</info>
+		<checksum>https://raw.github.com/kaffepausse71/SKINBASE.NEXUS/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.github.com/kaffepausse71/SKINBASE20/master/</datadir>
 	</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>[COLOR orange]G[/COLOR]uido[COLOR orange]s[/COLOR] [COLOR orange]S[/COLOR]KINBAS[COLOR orange]E[/COLOR] Repo</summary>
-<description lang="de_DE">In Guidos SKINBASE findet ihr Skins für die Kodi Versionen von 16 bis 19 aus aller Welt.
-Die Skins sind für die jeweiligen Kodi Versionen farblich markiert. Des weiteren findet ihr auch weitere Repos sowie alle Addons Abhängikeiten in der Repo die für die Skins benötigt werden.
-Die SkinBase wird ständig erweitert und verbessert. Hinzugekommen sind Skins mit Topics Loader , diese sind EXTRA mit Roter schrift versehen und ermöglichen mit einem Skin unzählige Themen oder Hintergrundbilder zu wechseln. Viel Spass wünschen euch Guido und sowie das SKINBASE TEAM.</description>
-		<description lang="en_GB">In Guidos SKINBASE you will find skins for the Kodi versions from 16 to 19 from all over the world.
-The skins are color-coded for the respective Kodi versions. Furthermore, you will also find other repos and all addons dependencies in the repo that are required for the skins.
-The SkinBase is constantly being expanded and improved. Added to this are skins with Topics Loader, these are EXTRA with red letters and allow you to change countless themes or background images with one skin. Guido and the SKINBASE TEAM wish you lots of fun.</description>
+        <description lang="de_DE">In Guidos SKINBASE findet ihr Skins ab Kodi Version 16 aus aller Welt. Von den Standard Skins bis hin zu stark Modifizierten. Die Skins sind für die jeweiligen Kodi Versionen farblich markiert.  Viel Spass wünschen euch das SKINBASE TEAM.</description>
+		<description lang="en_GB">In Guido's SKINBASE you will find skins from Kodi version 16 from all over the world. From the standard skins to heavily modified ones. The skins are color coded for the respective Kodi versions. The SKINBASE TEAM wish you a lot of fun.</description>
         <platform>all</platform>
         <platform>all</platform>
 		<assets>
@@ -717,19 +715,17 @@ The SkinBase is constantly being expanded and improved. Added to this are skins 
 			<screenshot>resources/screenshot-04.jpg</screenshot>
 		</assets>
 	</extension>
-</addon><addon id="repository.zachmorris" name="Zach Morris Add-ons" version="1.0.3" provider-name="zachmorris">
-    <requires>
-        <import addon="xbmc.addon" version="12.0.0" />
-    </requires>
-    <extension point="xbmc.addon.repository">
-        <dir>
-            <info minversion="18.0.0">https://github.com/zach-morris/repository.zachmorris/raw/master/addons.xml</info>
+</addon><addon id="repository.zachmorris" name="Zach Morris Add-ons" version="1.0.4" provider-name="zachmorris">
+    <extension point="xbmc.addon.repository" name="Zach Morris Add-ons">
+        <dir minversion="18.0.0">
+            <info compressed="false">https://github.com/zach-morris/repository.zachmorris/raw/master/addons.xml</info>
             <checksum>https://github.com/zach-morris/repository.zachmorris/raw/master/addons.xml.md5</checksum>
-            <datadir>https://github.com/zach-morris/repository.zachmorris/raw/master/</datadir>
+            <datadir zip="true">https://github.com/zach-morris/repository.zachmorris/raw/master/</datadir>
         </dir>
     </extension>
     <extension point="xbmc.addon.metadata">
         <summary lang="en_GB">Zach Morris Add-ons</summary>
+        <description>Zach Morris Add-ons</description>
         <platform>all</platform>
         <assets>
             <icon>icon.png</icon>

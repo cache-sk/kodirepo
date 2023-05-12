@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon id="repository.repoczsk"
-  version="1.0.6"
+  version="1.0.7"
   name="[B]Repo CZ/SK[/B]"
   provider-name="Dragonix">
   <extension point="xbmc.addon.repository"
