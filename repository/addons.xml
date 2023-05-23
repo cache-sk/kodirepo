@@ -559,17 +559,12 @@
     <platform>all</platform>
     <language>en cs sk</language>
   </extension>
-</addon><addon id="repository.saros" version="1.1.0" name="Kodi Saros Addons" provider-name="Sároš">
+</addon><addon id="repository.saros" version="1.4.0" name="Kodi Saros Addons" provider-name="Sároš">
   <extension point="xbmc.addon.repository" name="Repozitář doplňků">
     <dir minversion="18.9.0">
-      <info compressed="false">http://saros.wz.cz/repo/repo-v19/addons.xml</info>
-      <checksum>http://saros.wz.cz/repo/repo-v19/addons.xml.md5</checksum>
-      <datadir zip="true">http://saros.wz.cz/repo/repo-v19/</datadir>
-    </dir>
-    <dir minversion="17.9.0" maxversion="18.9.0">
-      <info compressed="false">http://saros.wz.cz/repo/addons.xml</info>
-      <checksum>http://saros.wz.cz/repo/addons.xml.md5</checksum>
-      <datadir zip="true">http://saros.wz.cz/repo/</datadir>
+      <info compressed="false">https://raw.githubusercontent.com/Saros72/kodirepo/master/repo-19/addons.xml</info>
+      <checksum>https://raw.githubusercontent.com/Saros72/kodirepo/master/repo-19/addons.xml.md5</checksum>
+      <datadir zip="true">https://raw.githubusercontent.com/Saros72/kodirepo/master/repo-19/</datadir>
     </dir>
   </extension>
   <extension point="xbmc.addon.metadata">
