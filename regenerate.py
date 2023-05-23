@@ -12,7 +12,7 @@ PLUGINS = ['repository.cache-sk',
            'https://github.com/cache-sk/YABoP.git#master:plugin.video.yabop',
            'https://github.com/cache-sk/SkTonline.git#master:plugin.video.sktonline',
            'https://github.com/cache-sk/plugin.video.freeview.sk',
-           'https://github.com/cache-sk/plugin.video.rebit.tv',
+           # archived 'https://github.com/cache-sk/plugin.video.rebit.tv',
            'https://github.com/cache-sk/plugin.video.yawsp',
            'https://github.com/xbmc-kodi-cz/repository.xbmc-kodi.cz',
            'https://github.com/xbmc-kodi-cz/script.module.urlresolver',
@@ -26,7 +26,7 @@ EXTERNAL = [#{'name':'repository_jsergio','url':'https://github.com/jsergio123/z
             {'name':'repository_hacky','url':'http://repo.sc2.zone/hacky/repository.hacky.zip'},
             {'name':'repository_saros','url':'http://saros.wz.cz/repo/repository.saros-1.1.0.zip'},
             {'name':'repository_zdenci22','url':'http://repoczsk.wz.sk/repository.repoczsk-1.0.7.zip'},
-            {'name':'repository_skinbase','url':'https://github.com/kaffepausse71/Guidos-SKINBASE/raw/master/repository.skinbase.nexus/repository.skinbase.nexus-3.0.04.zip'},
+            {'name':'repository_skinbase','url':'https://github.com/kaffepausse71/Guidos-SKINBASE/raw/master/repository.skinbase.nexus/repository.skinbase.nexus-3.0.06.zip'},
             #https://downloads.guidos-skinbase.de/repos/repository.master.skinbase/repository.master.skinbase-3.3.50.zip
             #https://github.com/kaffepausse71/Guidos-SKINBASE/raw/master/repository.skinbase.18/repository.skinbase.18-1.1.16.zip
             #https://github.com/kaffepausse71/Guidos-SKINBASE/raw/master/repository.master.skinbase/repository.master.skinbase-3.3.44.zip

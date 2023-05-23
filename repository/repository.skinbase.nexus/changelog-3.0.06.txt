@@ -1,0 +1,4 @@
+Release v 3.0.06
+update Kodi 19 und 20 SKINS
+Release v 3.0.00
+SKINBASE 2023

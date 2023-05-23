@@ -1,3 +1,0 @@
-
-Release v 3.0.00
-SKINBASE 2023
