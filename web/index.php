@@ -12,7 +12,7 @@
 		die;
 	}
 	$contents = file_get_contents("https://github.com/cache-sk/kodirepo/tree/master/repository/repository.cache-sk");
-	preg_match_all('/.*title="repository.cache-sk-([0-9]+.[0-9]+.[0-9]+).zip".*/', $contents, $matches);
+	preg_match_all('/.*"name":"repository.cache-sk-([0-9]+.[0-9]+.[0-9]+).zip".*/', $contents, $matches);
     
     $files = array_filter(scandir($files_prefix), function($item){
         global $files_prefix, $ignore_files;

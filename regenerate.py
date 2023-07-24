@@ -32,7 +32,7 @@ EXTERNAL = [#{'name':'repository_jsergio','url':'https://github.com/jsergio123/z
             #https://github.com/kaffepausse71/Guidos-SKINBASE/raw/master/repository.master.skinbase/repository.master.skinbase-3.3.44.zip
             {'name':'repository_zachmorris','url':'https://github.com/zach-morris/repository.zachmorris/raw/master/repository.zachmorris/repository.zachmorris-1.0.4.zip'},
             {'name':'repository_resolveurl','url':'https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/repository.resolveurl/repository.resolveurl-1.0.0.zip'},
-            {'name':'repository_parrot','url':'http://p.wz.sk/repository.Parrot-1.2.8.zip'}]
+            {'name':'repository_parrot','url':'http://p.wz.sk/repository.Parrot-1.2.9.zip'}]
 
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"
 class MyOpener(FancyURLopener):
