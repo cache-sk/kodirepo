@@ -229,7 +229,7 @@
 - first release
         </news>
     </extension>
-</addon><addon id="plugin.video.freeview.sk" version="0.8.1" name="freeview.sk" provider-name="cache-sk">
+</addon><addon id="plugin.video.freeview.sk" version="0.9.0" name="freeview.sk" provider-name="cache-sk">
     <requires>
         <import addon="script.module.requests" version="2.18.4" />
         <import addon="script.module.beautifulsoup4" version="4.5.0" />
@@ -250,7 +250,11 @@
             <icon>icon.jpg</icon>
         </assets>
         <news>
-
+[B]0.9.0[/B]
+- nova stanice fix (thnx JSebso, nemusel som patrat)
+- nova lady epg
+- joj svet stream, epg zatial nedostupne
+- cnn prima odstranenie lq profilu
 [B]0.8.1[/B]
 - skylink epg hotfix - empty description
 [B]0.8.0[/B]
@@ -460,7 +464,7 @@
         <forum>https://www.tvaddons.co/forums</forum>
         <website>https://www.tvaddons.co</website>
     </extension>
-</addon><addon id="script.module.resolveurl" name="ResolveURL" version="5.1.103" provider-name="gujal">
+</addon><addon id="script.module.resolveurl" name="ResolveURL" version="5.1.106" provider-name="gujal">
     <requires>
         
         <import addon="script.module.six" />
