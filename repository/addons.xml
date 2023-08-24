@@ -229,7 +229,7 @@
 - first release
         </news>
     </extension>
-</addon><addon id="plugin.video.freeview.sk" version="0.9.0" name="freeview.sk" provider-name="cache-sk">
+</addon><addon id="plugin.video.freeview.sk" version="1.0.0" name="freeview.sk" provider-name="cache-sk">
     <requires>
         <import addon="script.module.requests" version="2.18.4" />
         <import addon="script.module.beautifulsoup4" version="4.5.0" />
@@ -250,6 +250,9 @@
             <icon>icon.jpg</icon>
         </assets>
         <news>
+[B]1.0.0[/B]
+- doplnene stanice CT
+- nova stanica Lounge TV
 [B]0.9.0[/B]
 - nova stanice fix (thnx JSebso, nemusel som patrat)
 - nova lady epg
