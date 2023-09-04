@@ -229,12 +229,13 @@
 - first release
         </news>
     </extension>
-</addon><addon id="plugin.video.freeview.sk" version="1.0.0" name="freeview.sk" provider-name="cache-sk">
+</addon><addon id="plugin.video.freeview.sk" version="1.0.1" name="freeview.sk" provider-name="cache-sk">
     <requires>
-        <import addon="script.module.requests" version="2.18.4" />
-        <import addon="script.module.beautifulsoup4" version="4.5.0" />
-        <import addon="inputstream.adaptive" version="2.3.13" />
-        <import addon="script.module.m3u8" version="0.3.7" />
+        <import addon="script.module.requests" />
+        <import addon="script.module.beautifulsoup4" />
+        <import addon="inputstream.adaptive" />
+        <import addon="script.module.m3u8" />
+        <import addon="script.module.dateutil" />
     </requires>
     <extension point="xbmc.python.pluginsource" library="main.py">
         <provides>video</provides>
@@ -250,6 +251,11 @@
             <icon>icon.jpg</icon>
         </assets>
         <news>
+[B]1.0.1[/B]
+- niektore nove loga, premenovanie rtvs stanic
+- dodatkove epg rtvs stanic
+- fix widevine lounge
+- odstranenie joj play streamov
 [B]1.0.0[/B]
 - doplnene stanice CT
 - nova stanica Lounge TV
@@ -467,7 +473,7 @@
         <forum>https://www.tvaddons.co/forums</forum>
         <website>https://www.tvaddons.co</website>
     </extension>
-</addon><addon id="script.module.resolveurl" name="ResolveURL" version="5.1.106" provider-name="gujal">
+</addon><addon id="script.module.resolveurl" name="ResolveURL" version="5.1.108" provider-name="gujal">
     <requires>
         
         <import addon="script.module.six" />
