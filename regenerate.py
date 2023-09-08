@@ -33,7 +33,8 @@ EXTERNAL = [#{'name':'repository_jsergio','url':'https://github.com/jsergio123/z
             {'name':'repository_zachmorris','url':'https://github.com/zach-morris/repository.zachmorris/raw/master/repository.zachmorris/repository.zachmorris-1.0.4.zip'},
             {'name':'repository_resolveurl','url':'https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/repository.resolveurl/repository.resolveurl-1.0.0.zip'},
             {'name':'repository_parrot','url':'http://p.wz.sk/repository.Parrot-1.2.9.zip'},
-            {'name':'speedtest','url':'https://github.com/add-ons/script.speedtester/releases/download/v1.1.3/script.speedtester-1.1.3+matrix.1.zip'}]
+            {'name':'speedtest','url':'https://github.com/add-ons/script.speedtester/releases/download/v1.1.3/script.speedtester-1.1.3+matrix.1.zip'},
+            {'name':'jurialmunkey','url':'https://github.com/jurialmunkey/repository.jurialmunkey/raw/master/repository.jurialmunkey-3.3.zip'}]
 
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"
 class MyOpener(FancyURLopener):

@@ -124,7 +124,7 @@ def parse_metadata(metadata_file):
                 # http://kodi.wiki/index.php?title=Addon.xml&oldid=128873#How_versioning_works
                 # adds a twist by recommending a tilde instead of a hyphen.
                 # (?:0|[1-9]\d*)(?:\.(?:0|[1-9]\d*)){2}(?:[-~][0-9A-Za-z-]+(?:\.[0-9A-Za-z-]+)*)?(?:\+[0-9A-Za-z-]+(?:\.[0-9A-Za-z-]+)*)?\Z
-                r'(?:0|[1-9]\d*)(?:\.(?:[0-9]\d*)){2}(?:[-~][0-9A-Za-z-]+(?:\.[0-9A-Za-z-]+)*)?(?:\+[0-9A-Za-z-]+(?:\.[0-9A-Za-z-]+)*)?\Z',
+                r'(?:0|[1-9]\d*)(?:\.(?:[0-9]\d*)){0,2}(?:[-~][0-9A-Za-z-]+(?:\.[0-9A-Za-z-]+)*)?(?:\+[0-9A-Za-z-]+(?:\.[0-9A-Za-z-]+)*)?\Z',
                 addon_metadata.version)):
         raise RuntimeError(
             'Invalid addon verson: {}'.format(addon_metadata.version))
