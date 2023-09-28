@@ -19,6 +19,7 @@ PLUGINS = ['repository.cache-sk',
            #'https://github.com/tvaddonsco/script.module.urlresolver',
            # abandoned 'https://github.com/jsergio123/script.module.resolveurl',
            'https://github.com/Gujal00/ResolveURL.git#master:script.module.resolveurl']
+           #too big!'https://github.com/CastagnaIT/repository.castagnait.git#kodi:repository.castagnait'
 
 EXTERNAL = [#{'name':'repository_jsergio','url':'https://github.com/jsergio123/zips/raw/master/repository.jsergio/repository.jsergio-1.0.4.zip'},
             #{'name':'repository_kodi_czsk','url':'https://kodi-czsk.github.io/repository/repo/repository.kodi-czsk/repository.kodi-czsk-1.0.2.zip'},
@@ -34,7 +35,8 @@ EXTERNAL = [#{'name':'repository_jsergio','url':'https://github.com/jsergio123/z
             {'name':'repository_resolveurl','url':'https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/repository.resolveurl/repository.resolveurl-1.0.0.zip'},
             {'name':'repository_parrot','url':'http://p.wz.sk/repository.Parrot-1.2.9.zip'},
             {'name':'speedtest','url':'https://github.com/add-ons/script.speedtester/releases/download/v1.1.3/script.speedtester-1.1.3+matrix.1.zip'},
-            {'name':'jurialmunkey','url':'https://github.com/jurialmunkey/repository.jurialmunkey/raw/master/repository.jurialmunkey-3.3.zip'}]
+            {'name':'jurialmunkey','url':'https://github.com/jurialmunkey/repository.jurialmunkey/raw/master/repository.jurialmunkey-3.3.zip'},
+            {'name':'castagnait','url':'https://github.com/castagnait/repository.castagnait/raw/kodi/repository.castagnait-2.0.0.zip'}]
 
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"
 class MyOpener(FancyURLopener):
