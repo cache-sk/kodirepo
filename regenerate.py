@@ -79,12 +79,12 @@ for tempname in externals:
     os.unlink(tempname)
 
 print("Creating index with listing")
-with open("index.html", "w") as index:
+with open(os.path.join("docs","index.html"), "w") as index:
     index.write("<html><body>")
     repofolder = os.path.join("repository","repository.cache-sk")
     files = [f for f in os.listdir(repofolder) if os.path.isfile(os.path.join(repofolder,f)) and f.endswith(".zip")]
     for f in files:
-        shutil.copy(os.path.join(repofolder,f),".")
+        shutil.copy(os.path.join(repofolder,f),"docs")
         index.write('<a href="'+f+'">'+f+'</a>')
         print("Processed file "+f)
     index.write("</body></html>")
