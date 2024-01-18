@@ -1,4 +1,4 @@
-import os, tempfile, urllib.request
+import os, tempfile, urllib.request, shutil
 
 try:
     from urllib import FancyURLopener
@@ -77,3 +77,15 @@ os.system("python create_repository.py --no-parallel --datadir repository " + " 
 
 for tempname in externals:
     os.unlink(tempname)
+
+print("Creating index with listing")
+with open("index.html", "w") as index:
+    index.write("<html><body>")
+    repofolder = os.path.join("repository","repository.cache-sk")
+    files = [f for f in os.listdir(repofolder) if os.path.isfile(os.path.join(repofolder,f)) and f.endswith(".zip")]
+    for f in files:
+        shutil.copy(os.path.join(repofolder,f),".")
+        index.write('<a href="'+f+'">'+f+'</a>')
+        print("Processed file "+f)
+    index.write("</body></html>")
+print("Index with listing created")
