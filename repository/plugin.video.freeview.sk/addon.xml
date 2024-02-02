@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="plugin.video.freeview.sk" version="1.0.6" name="freeview.sk" provider-name="cache-sk">
+<addon id="plugin.video.freeview.sk" version="1.0.7" name="freeview.sk" provider-name="cache-sk">
     <requires>
         <import addon="script.module.requests"/>
         <import addon="script.module.beautifulsoup4"/>
@@ -21,6 +21,8 @@
             <icon>icon.jpg</icon>
         </assets>
         <news>
+[B]1.0.7[/B]
+- obnovenie prima cez endora hosting
 [B]1.0.6[/B]
 - odmazane kanaly prima, snad docasne, bohuzial webzdarma bez varovania zmazal domenu p.xf.cz
 [B]1.0.5[/B]
