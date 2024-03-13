@@ -1,4 +1,4 @@
-<?
+<?php
     $repo_prefix = 'repository.cache-sk-';
     $files_prefix = './files/';
     $ignore_files = array('.htaccess','.gitkeep','index.php');
@@ -23,7 +23,7 @@
 <html>
 <body>
 <a href="repository.cache-sk-<?=$matches[1][0]?>.zip">repository.cache-sk-<?=$matches[1][0]?>.zip</a><br/>
-<?
+<?php
     foreach ($files as $fname){
         echo("<a href=\"$fname\">$fname</a><br/>\n");
     }
