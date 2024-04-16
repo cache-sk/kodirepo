@@ -1,14 +1,14 @@
-Version 5.1.128 (Mar 8, 2024)
+Version 5.1.130 (Apr 13, 2024)
 - Code Base Changes:
     - None
 
 - Resolvers Added:
-    - None
+    - bewab
+    - asumanaksoy
 
 - Resolvers Fixed/Updated:
-    - doodstream
-    - veev
-    - voesx
+    - filelions
+    - videooo
 
 - Resolvers Removed
     - None
