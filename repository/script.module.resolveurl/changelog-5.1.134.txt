@@ -1,18 +1,20 @@
-Version 5.1.131 (Apr 18, 2024)
+Version 5.1.134 (May 12, 2024)
 - Code Base Changes:
     - None
 
 - Resolvers Added:
-    - None
+    - bowfile
+    - qiwi
 
 - Resolvers Fixed/Updated:
-    - dembed
-    - duboku
-    - filelions
+    - clicknupload
+    - gofile
+    - mixdrop
     - streamwish
-    - turboviplay
-    - uploadingsite
+    - veev
     - vidguard
+    - vk
+    - upbaam
 
 - Resolvers Removed
     - None
