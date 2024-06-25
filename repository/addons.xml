@@ -231,7 +231,7 @@
 - first release
         </news>
     </extension>
-</addon><addon id="plugin.video.freeview.sk" version="1.1.1" name="freeview.sk" provider-name="cache-sk">
+</addon><addon id="plugin.video.freeview.sk" version="1.1.2" name="freeview.sk" provider-name="cache-sk">
     <requires>
         <import addon="script.module.requests" />
         <import addon="script.module.beautifulsoup4" />
@@ -253,6 +253,9 @@
             <icon>icon.jpg</icon>
         </assets>
         <news>
+[B]1.1.2[/B]
+- odstranene iihf
+- markiza hotfix
 [B]1.1.1[/B]
 - joj iihf - prehadzuju si tie stanice raz tak raz tak, snad to teraz pojde ok
 - pridal som aj extra priame iihf streamy
@@ -503,7 +506,7 @@
         <forum>https://www.tvaddons.co/forums</forum>
         <website>https://www.tvaddons.co</website>
     </extension>
-</addon><addon id="script.module.resolveurl" name="ResolveURL" version="5.1.135" provider-name="gujal">
+</addon><addon id="script.module.resolveurl" name="ResolveURL" version="5.1.139" provider-name="gujal">
     <requires>
         
         <import addon="script.module.six" />
