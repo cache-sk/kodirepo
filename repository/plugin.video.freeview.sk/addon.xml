@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="plugin.video.freeview.sk" version="1.1.2" name="freeview.sk" provider-name="cache-sk">
+<addon id="plugin.video.freeview.sk" version="1.1.3" name="freeview.sk" provider-name="cache-sk">
     <requires>
         <import addon="script.module.requests"/>
         <import addon="script.module.beautifulsoup4"/>
@@ -21,6 +21,10 @@
             <icon>icon.jpg</icon>
         </assets>
         <news>
+[B]1.1.3[/B]
+- Markiza Klasik, zatial bez epg
+- Nova Cinema (na moje prekvapenie) zas ide
+- pridane na ziadost - Tv Doktor a SZTŠ
 [B]1.1.2[/B]
 - odstranene iihf
 - markiza hotfix
