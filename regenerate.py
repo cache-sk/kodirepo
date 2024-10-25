@@ -1,11 +1,5 @@
 import os, tempfile, urllib.request, shutil
 
-try:
-    from urllib import FancyURLopener
-except ImportError:
-    from urllib.request import FancyURLopener
-
-
 PLUGINS = ['repository.cache-sk',
            'https://github.com/cache-sk/plugin.program.cache-sk.kodi.tools.git',
            'https://github.com/cache-sk/plugin.video.dokumenty.tv.git#uni',
@@ -40,9 +34,9 @@ EXTERNAL = [#{'name':'repository_jsergio','url':'https://github.com/jsergio123/z
             #{'name':'netflix','url':'https://github.com/CastagnaIT/plugin.video.netflix/releases/download/v1.22.0/plugin.video.netflix-1.22.0+matrix.1.zip'}]
 
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"
-class MyOpener(FancyURLopener):
-    version = UA
-urlretrieve = MyOpener().retrieve
+opener = urllib.request.build_opener()
+opener.addheaders = [('User-agent', UA)]
+urllib.request.install_opener(opener)
 
 def delete_all_files(folder,skip):
     print('processing '+folder)
@@ -70,7 +64,7 @@ for ext in EXTERNAL:
     tempname = tmpf.name + '_' + ext['name'] + '.zip'
     tmpf.close
     print("Downloading "+ext['url'])
-    urlretrieve(ext['url'],tempname) 
+    urllib.request.urlretrieve(ext['url'],tempname) 
     externals.append(tempname)
 
 os.system("python create_repository.py --no-parallel --datadir repository " + " ".join(PLUGINS) + " " + " ".join(externals))
