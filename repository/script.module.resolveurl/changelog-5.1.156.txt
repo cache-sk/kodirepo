@@ -1,15 +1,21 @@
-Version 5.1.149 (October 16, 2024)
+Version 5.1.156 (December 25, 2024)
 - Code Base Changes:
     - None
 
 - Resolvers Added:
-    - None
+    - bigwarp
 
 - Resolvers Fixed/Updated:
-    - cloudfile
+    - dood
+    - filelions
     - filemoon
+    - kinoger
+    - sendcm
     - streamwish
-    - vixstream
+    - torbox
+    - turboviplay
+    - veev
+    - vidguard
 
 - Resolvers Removed
     - None
