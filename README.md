@@ -2,18 +2,9 @@
 
 Kodi Repository pre moje doplnky.
 
-Zip stahujte tu:
 
-https://github.com/cache-sk/kodirepo/tree/master/repository/repository.cache-sk
+Kedze sa anonymny admin 'Scc' z FB skupiny 'Kodi scc sc kra webshare' rozhodol zlikvidovat moju doterajsiu pracu nasilnym sirenim obsahu tohto repa uplne kazdemu v sirokej verejnosti (nechape pojem komunita), a ja fakt nemam energiu bojovat s veternymi mlynmi, tak svoju doterajsiu pracu tymto uzatvaram.
 
-Alebo si pridajte ako zdroj https://cache-sk.github.io/kodirepo.
+Toto repo sa uz nikdy nenaplni a zanedlho bude kompletne vymazane. Ziadne dalsie opravy uz nebudu.
 
-Pripadne mozte pouzit skratky http://p.xf.cz/r alebo https://p.6f.sk/r, ktore tam presmeruju.
-
-Nezabudajte, ze po instalacii zo ZIP suboru su zakazane automaticke aktualizacie, plati to aj pre repozitare, cize si najdite repozitar ako doplnok a aktualizacie povolte!
-
-Niektore doplnky potrebuju resolvery, ktore su uz vlozene aj do tejto repo, odporucam si ale pridat aj komunitne xbmc-kodi repository.
-
-https://repo.xbmc-kodi.cz
-
-Je mozne ju nainstalovat aj priamo z mojej repozitory.
+Mozte sa mu vklude podakovat.
