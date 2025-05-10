@@ -1,19 +1,22 @@
 import os, tempfile, urllib.request, shutil
 
+REPO_FOLDER = 'docs'
+
 PLUGINS = ['repository.cache-sk',
            'https://github.com/cache-sk/plugin.program.cache-sk.kodi.tools.git',
            'https://github.com/cache-sk/plugin.video.dokumenty.tv.git#uni',
-           'https://github.com/cache-sk/YABoP.git#master:plugin.video.yabop',
-           'https://github.com/cache-sk/SkTonline.git#master:plugin.video.sktonline',
-           'https://github.com/cache-sk/plugin.video.freeview.sk',
+           # archived 'https://github.com/cache-sk/YABoP.git#master:plugin.video.yabop',
+           ##'https://github.com/cache-sk/SkTonline.git#master:plugin.video.sktonline',
+           ##'https://github.com/cache-sk/plugin.video.freeview.sk',
            # archived 'https://github.com/cache-sk/plugin.video.rebit.tv',
-           'https://github.com/cache-sk/plugin.video.yawsp',
+           ##'https://github.com/cache-sk/plugin.video.yawsp',
            'https://github.com/xbmc-kodi-cz/repository.xbmc-kodi.cz',
            'https://github.com/xbmc-kodi-cz/script.module.urlresolver',
            #'https://github.com/tvaddonsco/script.module.urlresolver',
            # abandoned 'https://github.com/jsergio123/script.module.resolveurl',
-           'https://github.com/Gujal00/ResolveURL.git#master:script.module.resolveurl']
+           'https://github.com/Gujal00/ResolveURL.git#master:script.module.resolveurl'
            #too big!'https://github.com/CastagnaIT/repository.castagnait.git#kodi:repository.castagnait'
+           ]
 
 EXTERNAL = [#{'name':'repository_jsergio','url':'https://github.com/jsergio123/zips/raw/master/repository.jsergio/repository.jsergio-1.0.4.zip'},
             #{'name':'repository_kodi_czsk','url':'https://kodi-czsk.github.io/repository/repo/repository.kodi-czsk/repository.kodi-czsk-1.0.2.zip'},
@@ -30,8 +33,9 @@ EXTERNAL = [#{'name':'repository_jsergio','url':'https://github.com/jsergio123/z
             {'name':'repository_parrot','url':'http://p.wz.sk/repository.Parrot-1.2.9.zip'},
             {'name':'speedtest','url':'https://github.com/add-ons/script.speedtester/releases/download/v1.1.3/script.speedtester-1.1.3+matrix.1.zip'},
             {'name':'jurialmunkey','url':'https://github.com/jurialmunkey/repository.jurialmunkey/raw/master/repository.jurialmunkey-3.4.zip'},
-            {'name':'castagnait','url':'https://github.com/CastagnaIT/repository.castagnait/raw/kodi/repository.castagnait-2.0.1.zip'}]
-            #{'name':'netflix','url':'https://github.com/CastagnaIT/plugin.video.netflix/releases/download/v1.22.0/plugin.video.netflix-1.22.0+matrix.1.zip'}]
+            #{'name':'castagnait','url':'https://github.com/CastagnaIT/repository.castagnait/raw/kodi/repository.castagnait-2.0.1.zip'}
+            #{'name':'netflix','url':'https://github.com/CastagnaIT/plugin.video.netflix/releases/download/v1.22.0/plugin.video.netflix-1.22.0+matrix.1.zip'}
+            ]
 
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"
 opener = urllib.request.build_opener()
@@ -39,7 +43,7 @@ opener.addheaders = [('User-agent', UA)]
 urllib.request.install_opener(opener)
 
 def delete_all_files(folder,skip):
-    print('processing '+folder)
+    print('Cleaning '+folder)
     for the_file in os.listdir(folder):
         file_path = os.path.join(folder, the_file)
         #print(file_path)
@@ -57,7 +61,8 @@ def delete_all_files(folder,skip):
         else:
             print('skipping '+file_path)
 
-delete_all_files('repository',[])
+delete_all_files(REPO_FOLDER,[])
+
 externals = []
 for ext in EXTERNAL:
     tmpf = tempfile.NamedTemporaryFile()
@@ -67,19 +72,20 @@ for ext in EXTERNAL:
     urllib.request.urlretrieve(ext['url'],tempname) 
     externals.append(tempname)
 
-os.system("python create_repository.py --no-parallel --datadir repository " + " ".join(PLUGINS) + " " + " ".join(externals))
+os.system(f"python create_repository.py --no-parallel --datadir {REPO_FOLDER} {' '.join(PLUGINS)} {' '.join(externals)}")
 
 for tempname in externals:
     os.unlink(tempname)
 
 print("Creating index with listing")
-with open(os.path.join("docs","index.html"), "w") as index:
+with open(os.path.join(REPO_FOLDER,"index.html"), "w") as index:
     index.write("<html><body>")
-    repofolder = os.path.join("repository","repository.cache-sk")
+    repofolder = os.path.join(REPO_FOLDER,"repository.cache-sk")
     files = [f for f in os.listdir(repofolder) if os.path.isfile(os.path.join(repofolder,f)) and f.endswith(".zip")]
     for f in files:
-        shutil.copy(os.path.join(repofolder,f),"docs")
-        index.write('<a href="'+f+'">'+f+'</a>')
+        index.write(f'<a href="repository.cache-sk/{f}">{f}</a>')
         print("Processed file "+f)
     index.write("</body></html>")
-print("Index with listing created")
+
+print("Copying announcements.json")
+shutil.copy("announcements.json","docs")

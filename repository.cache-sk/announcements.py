@@ -14,7 +14,7 @@ except ImportError:
     from urllib.request import urlopen
 
 INTERVAL =  24 * 60 * 60 
-ANNOUNCEMENTS = 'https://raw.githubusercontent.com/cache-sk/kodirepo/master/announcements.json'
+ANNOUNCEMENTS = 'https://cache-sk.github.io/kodirepo/announcements.json'
 LAST = 'last_ann'
 
 if __name__ == '__main__':
@@ -30,8 +30,6 @@ if __name__ == '__main__':
             last_ann = 0 if not last_ann else int(last_ann)
             for ann in data:
                 ikey = int(ann[0])
-                print(str(ikey))
-                print(str(last_ann))
                 if ikey > last_ann:
                     last_ann = ikey
                     xbmcgui.Dialog().textviewer(addon.getAddonInfo('name'), ann[1])
