@@ -162,26 +162,6 @@
             <fanart>fanart.jpg</fanart>
         </assets>
     </extension>
-</addon><addon id="repository.cder.sk" name="cder.sk" version="1.0.4" provider-name="cder.sk">
-    <extension point="xbmc.addon.repository">
-        <dir minversion="18.9.0">
-            <info>https://cder.sk/addons/k19/addons.xml.gz</info>
-            <checksum verify="sha256">https://cder.sk/addons/k19/addons.xml.gz?sha256</checksum>
-            <datadir zip="true">https://cder.sk/addons/k19/</datadir>
-            <hashes>sha256</hashes>
-        </dir>
-        <dir maxversion="18.9.0" minversion="16.0.0">
-            <info>https://cder.sk/addons/addons.xml.gz</info>
-            <checksum verify="sha256">https://cder.sk/addons/addons.xml.gz?sha256</checksum>
-            <datadir zip="true">https://cder.sk/addons/</datadir>
-            <hashes>sha256</hashes>
-        </dir>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary>Česko-slovenská komunita fanoušků XBMC/Kodi</summary>
-        <description>Repozitář pro česko-slovenskou komunitu fanoušků XBMC/Kodi</description>
-        <platform>all</platform>
-    </extension>
 </addon><addon id="repository.saros" version="1.4.0" name="Kodi Saros Addons" provider-name="Sároš">
   <extension point="xbmc.addon.repository" name="Repozitář doplňků">
     <dir minversion="18.9.0">
@@ -297,34 +277,23 @@
       <fanart>fanart.jpg</fanart>
     </assets> 
   </extension>
-</addon><addon id="repository.Parrot" name="[COLOR cyan]Parrot[/COLOR] [COLOR yellow]Repository[/COLOR]" provider-name="Parrot Developers" version="1.2.9">
+</addon><addon id="repository.Parrot" name="[COLOR cyan]Parrot[/COLOR] [COLOR yellow]Repository[/COLOR]" provider-name="Parrot Developers" version="1.3.1">
 	<extension point="xbmc.addon.repository" name="Parrot Repository">
 			<dir>
-				<info compressed="false">https://repo.parrot-developers.workers.dev/addons.xml</info>
-				<checksum>https://repo.parrot-developers.workers.dev/addons.xml.md5</checksum>
-				<datadir zip="true">https://repo.parrot-developers.workers.dev/zips/</datadir>
+				<info compressed="false">https://parrotrepo.pages.dev/addons.xml</info>
+				<checksum>https://parrotrepo.pages.dev/addons.xml.md5</checksum>
+				<datadir zip="true">https://parrotrepo.pages.dev/zips/</datadir>
 			</dir>
 			<dir>
 				<info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
 				<checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
 				<datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/</datadir>
 			</dir>
-			<dir minversion="19.0.0">
-				<info compressed="false">https://parrotrepodependencies.pages.dev/Kodi19/addons.xml</info>
-				<checksum>https://parrotrepodependencies.pages.dev/Kodi19/addons.xml.md5</checksum>
-				<datadir zip="true">https://parrotrepodependencies.pages.dev/Kodi19/zips/</datadir>
-			</dir>
-			<dir maxversion="18.9.9">
-				<info compressed="false">https://parrotrepodependencies.pages.dev/Kodi18/addons.xml</info>
-				<checksum>https://parrotrepodependencies.pages.dev/Kodi18/addons.xml.md5</checksum>
-				<datadir zip="true">https://parrotrepodependencies.pages.dev/Kodi18/zips/</datadir>
-			</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">[COLOR cyan]Parrot[/COLOR] [COLOR yellow]Repository[/COLOR]</summary>
 		<description lang="en">[COLOR cyan]Parrot[/COLOR] [COLOR yellow]Repository[/COLOR]</description>
 		<platform>all</platform>
-		<license>MIT</license>
 		<disclaimer lang="en">Kodi Addon Repository.</disclaimer>
 		<assets>
 			<icon>icon.jpg</icon>

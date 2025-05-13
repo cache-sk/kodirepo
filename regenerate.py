@@ -20,7 +20,7 @@ PLUGINS = ['repository.cache-sk',
 
 EXTERNAL = [#{'name':'repository_jsergio','url':'https://github.com/jsergio123/zips/raw/master/repository.jsergio/repository.jsergio-1.0.4.zip'},
             #{'name':'repository_kodi_czsk','url':'https://kodi-czsk.github.io/repository/repo/repository.kodi-czsk/repository.kodi-czsk-1.0.2.zip'},
-            {'name':'repository_cder','url':'https://cder.sk/repository.cder.sk-1.0.4.zip'},
+            ##{'name':'repository_cder','url':'https://cder.sk/repository.cder.sk-1.0.4.zip'},
             #{'name':'repository_hacky','url':'http://repo.sc2.zone/hacky/repository.hacky.zip'},
             {'name':'repository_saros','url':'https://github.com/Saros72/kodirepo/raw/main/repo-19/repository.saros/repository.saros-1.4.0.zip'}, #old - http://saros.wz.cz/repo/repository.saros-1.1.0.zip
             {'name':'repository_zdenci22','url':'http://repoczsk.wz.sk/repository.repoczsk-1.0.7.zip'},
@@ -30,7 +30,7 @@ EXTERNAL = [#{'name':'repository_jsergio','url':'https://github.com/jsergio123/z
             #https://github.com/kaffepausse71/Guidos-SKINBASE/raw/master/repository.master.skinbase/repository.master.skinbase-3.3.44.zip
             {'name':'repository_zachmorris','url':'https://github.com/zach-morris/repository.zachmorris/raw/master/repository.zachmorris/repository.zachmorris-1.0.4.zip'},
             {'name':'repository_resolveurl','url':'https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/repository.resolveurl/repository.resolveurl-1.0.0.zip'},
-            {'name':'repository_parrot','url':'http://p.wz.sk/repository.Parrot-1.2.9.zip'},
+            {'name':'repository_parrot','url':'http://p.wz.sk/repository.Parrot-1.3.1.zip'},
             {'name':'speedtest','url':'https://github.com/add-ons/script.speedtester/releases/download/v1.1.3/script.speedtester-1.1.3+matrix.1.zip'},
             {'name':'jurialmunkey','url':'https://github.com/jurialmunkey/repository.jurialmunkey/raw/master/repository.jurialmunkey-3.4.zip'},
             #{'name':'castagnait','url':'https://github.com/CastagnaIT/repository.castagnait/raw/kodi/repository.castagnait-2.0.1.zip'}
