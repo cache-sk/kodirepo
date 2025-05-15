@@ -1,8 +1,9 @@
 import os, tempfile, urllib.request, shutil
 
 REPO_FOLDER = 'docs'
+REPOSITORY = 'repository.cache-sk'
 
-PLUGINS = ['repository.cache-sk',
+PLUGINS = [ REPOSITORY,
            'https://github.com/cache-sk/plugin.program.cache-sk.kodi.tools.git',
            'https://github.com/cache-sk/plugin.video.dokumenty.tv.git#uni',
            # archived 'https://github.com/cache-sk/YABoP.git#master:plugin.video.yabop',
@@ -64,28 +65,30 @@ def delete_all_files(folder,skip):
 delete_all_files(REPO_FOLDER,[])
 
 externals = []
-for ext in EXTERNAL:
-    tmpf = tempfile.NamedTemporaryFile()
-    tempname = tmpf.name + '_' + ext['name'] + '.zip'
-    tmpf.close
-    print("Downloading "+ext['url'])
-    urllib.request.urlretrieve(ext['url'],tempname) 
-    externals.append(tempname)
+try:
+    for ext in EXTERNAL:
+        tmpf = tempfile.NamedTemporaryFile()
+        tempname = tmpf.name + '_' + ext['name'] + '.zip'
+        tmpf.close
+        print("Downloading "+ext['url'])
+        urllib.request.urlretrieve(ext['url'],tempname) 
+        externals.append(tempname)
 
-os.system(f"python create_repository.py --no-parallel --datadir {REPO_FOLDER} {' '.join(PLUGINS)} {' '.join(externals)}")
-
-for tempname in externals:
-    os.unlink(tempname)
+    os.system(f"python create_repository.py --no-parallel --datadir {REPO_FOLDER} {' '.join(PLUGINS)} {' '.join(externals)}")
+except:
+    for tempname in externals:
+        os.unlink(tempname)
 
 print("Creating index with listing")
 with open(os.path.join(REPO_FOLDER,"index.html"), "w") as index:
-    index.write("<html><body>")
-    repofolder = os.path.join(REPO_FOLDER,"repository.cache-sk")
+    index.write('<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">\n<html>\n<body>\n')
+    repofolder = os.path.join(REPO_FOLDER,REPOSITORY)
     files = [f for f in os.listdir(repofolder) if os.path.isfile(os.path.join(repofolder,f)) and f.endswith(".zip")]
     for f in files:
-        index.write(f'<a href="repository.cache-sk/{f}">{f}</a>')
+        index.write(f'<a href="{f}">{f}</a>\n')
+        shutil.copy(os.path.join(repofolder,f),REPO_FOLDER)
         print("Processed file "+f)
-    index.write("</body></html>")
+    index.write("</body>\n</html>\n")
 
 print("Copying announcements.json")
 shutil.copy("announcements.json","docs")
