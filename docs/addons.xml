@@ -162,23 +162,6 @@
             <fanart>fanart.jpg</fanart>
         </assets>
     </extension>
-</addon><addon id="repository.saros" version="1.4.0" name="Kodi Saros Addons" provider-name="Sároš">
-  <extension point="xbmc.addon.repository" name="Repozitář doplňků">
-    <dir minversion="18.9.0">
-      <info compressed="false">https://raw.githubusercontent.com/Saros72/kodirepo/master/repo-19/addons.xml</info>
-      <checksum>https://raw.githubusercontent.com/Saros72/kodirepo/master/repo-19/addons.xml.md5</checksum>
-      <datadir zip="true">https://raw.githubusercontent.com/Saros72/kodirepo/master/repo-19/</datadir>
-    </dir>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary>Kodi Saros Addons</summary>
-    <description>Kodi Saros Addons</description>
-    <platform>all</platform>
-    <language>cs</language>
-    <assets>
-        <icon>icon.png</icon>
-    </assets>
-  </extension>
 </addon><addon id="repository.repoczsk" version="1.0.7" name="[B]Repo CZ/SK[/B]" provider-name="Dragonix">
   <extension point="xbmc.addon.repository" name="Repo CZ/SK">
     <dir>
@@ -277,29 +260,6 @@
       <fanart>fanart.jpg</fanart>
     </assets> 
   </extension>
-</addon><addon id="repository.Parrot" name="[COLOR cyan]Parrot[/COLOR] [COLOR yellow]Repository[/COLOR]" provider-name="Parrot Developers" version="1.3.1">
-	<extension point="xbmc.addon.repository" name="Parrot Repository">
-			<dir>
-				<info compressed="false">https://parrotrepo.pages.dev/addons.xml</info>
-				<checksum>https://parrotrepo.pages.dev/addons.xml.md5</checksum>
-				<datadir zip="true">https://parrotrepo.pages.dev/zips/</datadir>
-			</dir>
-			<dir>
-				<info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
-				<checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
-				<datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/</datadir>
-			</dir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">[COLOR cyan]Parrot[/COLOR] [COLOR yellow]Repository[/COLOR]</summary>
-		<description lang="en">[COLOR cyan]Parrot[/COLOR] [COLOR yellow]Repository[/COLOR]</description>
-		<platform>all</platform>
-		<disclaimer lang="en">Kodi Addon Repository.</disclaimer>
-		<assets>
-			<icon>icon.jpg</icon>
-			<fanart>fanart.jpg</fanart>
-		</assets>
-	</extension>
 </addon><addon id="script.speedtester" name="Speed Tester" version="1.1.3+matrix.1" provider-name="Dr0idGuy, dagwieers">
   <requires>
     <import addon="xbmc.python" version="3.0.0" />
