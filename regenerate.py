@@ -1,4 +1,4 @@
-import os, tempfile, urllib.request, shutil
+import os, tempfile, urllib.request, shutil, traceback
 
 REPO_FOLDER = 'docs'
 REPOSITORY = 'repository.cache-sk'
@@ -7,10 +7,10 @@ PLUGINS = [ REPOSITORY,
            'https://github.com/cache-sk/plugin.program.cache-sk.kodi.tools.git',
            'https://github.com/cache-sk/plugin.video.dokumenty.tv.git#uni',
            # archived 'https://github.com/cache-sk/YABoP.git#master:plugin.video.yabop',
-           ##'https://github.com/cache-sk/SkTonline.git#master:plugin.video.sktonline',
-           ##'https://github.com/cache-sk/plugin.video.freeview.sk',
+           'https://github.com/cache-sk/SkTonline.git#master:plugin.video.sktonline',
+           'https://github.com/cache-sk/plugin.video.freeview.sk',
            # archived 'https://github.com/cache-sk/plugin.video.rebit.tv',
-           ##'https://github.com/cache-sk/plugin.video.yawsp',
+           'https://github.com/cache-sk/plugin.video.yawsp',
            'https://github.com/xbmc-kodi-cz/repository.xbmc-kodi.cz',
            'https://github.com/xbmc-kodi-cz/script.module.urlresolver',
            #'https://github.com/tvaddonsco/script.module.urlresolver',
@@ -21,9 +21,9 @@ PLUGINS = [ REPOSITORY,
 
 EXTERNAL = [#{'name':'repository_jsergio','url':'https://github.com/jsergio123/zips/raw/master/repository.jsergio/repository.jsergio-1.0.4.zip'},
             #{'name':'repository_kodi_czsk','url':'https://kodi-czsk.github.io/repository/repo/repository.kodi-czsk/repository.kodi-czsk-1.0.2.zip'},
-            ##{'name':'repository_cder','url':'https://cder.sk/repository.cder.sk-1.0.4.zip'},
+            {'name':'repository_cder','url':'https://cder.sk/repository.cder.sk-1.0.4.zip'},
             #{'name':'repository_hacky','url':'http://repo.sc2.zone/hacky/repository.hacky.zip'},
-            ##{'name':'repository_saros','url':'https://github.com/Saros72/kodirepo/raw/main/repo-19/repository.saros/repository.saros-1.4.0.zip'}, #old - http://saros.wz.cz/repo/repository.saros-1.1.0.zip
+            {'name':'repository_saros','url':'https://github.com/Saros72/kodirepo/raw/main/repo-19/repository.saros/repository.saros-1.4.0.zip'}, #old - http://saros.wz.cz/repo/repository.saros-1.1.0.zip
             {'name':'repository_zdenci22','url':'http://repoczsk.wz.sk/repository.repoczsk-1.0.7.zip'},
             #{'name':'repository_skinbase','url':'https://github.com/kaffepausse71/Guidos-SKINBASE/raw/master/repository.skinbase.nexus/repository.skinbase.nexus-3.0.06.zip'},
             #https://downloads.guidos-skinbase.de/repos/repository.master.skinbase/repository.master.skinbase-3.3.50.zip
@@ -38,7 +38,8 @@ EXTERNAL = [#{'name':'repository_jsergio','url':'https://github.com/jsergio123/z
             #{'name':'netflix','url':'https://github.com/CastagnaIT/plugin.video.netflix/releases/download/v1.22.0/plugin.video.netflix-1.22.0+matrix.1.zip'}
             ]
 
-UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"
+#UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"
+UA = " Kodi/21.1 (Windows NT 10.0.19045.2965; Win64; x64) App_Bitness/64 Version/21.1-(21.1.0)-Git:20240817-183eb85f10"
 opener = urllib.request.build_opener()
 opener.addheaders = [('User-agent', UA)]
 urllib.request.install_opener(opener)
@@ -76,8 +77,10 @@ try:
 
     os.system(f"python create_repository.py --no-parallel --datadir {REPO_FOLDER} {' '.join(PLUGINS)} {' '.join(externals)}")
 except:
+    traceback.print_exc()
     for tempname in externals:
         os.unlink(tempname)
+    quit()
 
 print("Creating index with listing")
 with open(os.path.join(REPO_FOLDER,"index.html"), "w") as index:
