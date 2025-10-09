@@ -135,7 +135,7 @@
 - first release
         </news>
     </extension>
-</addon><addon id="plugin.video.freeview.sk" version="1.1.7" name="freeview.sk" provider-name="cache-sk">
+</addon><addon id="plugin.video.freeview.sk" version="1.1.8" name="freeview.sk" provider-name="cache-sk">
     <requires>
         <import addon="script.module.requests" />
         <import addon="script.module.beautifulsoup4" />
@@ -157,6 +157,8 @@
             <icon>icon.jpg</icon>
         </assets>
         <news>
+[B]1.1.8[/B]
+- fallback pre joj/plus/wau - web sa zmenil na joj play, zatial len fallback fix, stare streamy zrejme prestanu fungovat
 [B]1.1.7[/B]
 - zablokovany EPG procesing, bohuzial skylink zrejme zmenil / vypol stary protokol
 [B]1.1.6[/B]
@@ -427,7 +429,7 @@
         <forum>https://www.tvaddons.co/forums</forum>
         <website>https://www.tvaddons.co</website>
     </extension>
-</addon><addon id="script.module.resolveurl" name="ResolveURL" version="5.1.175" provider-name="gujal">
+</addon><addon id="script.module.resolveurl" name="ResolveURL" version="5.1.181" provider-name="gujal">
     <requires>
         
         <import addon="script.module.six" />
