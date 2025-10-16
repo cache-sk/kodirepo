@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="plugin.video.freeview.sk" version="1.1.8" name="freeview.sk" provider-name="cache-sk">
+<addon id="plugin.video.freeview.sk" version="1.1.9" name="freeview.sk" provider-name="cache-sk">
     <requires>
         <import addon="script.module.requests"/>
         <import addon="script.module.beautifulsoup4"/>
@@ -21,6 +21,8 @@
             <icon>icon.jpg</icon>
         </assets>
         <news>
+[B]1.1.9[/B]
+- markiza ssl hotfix, joj sport 2
 [B]1.1.8[/B]
 - fallback pre joj/plus/wau - web sa zmenil na joj play, zatial len fallback fix, stare streamy zrejme prestanu fungovat
 [B]1.1.7[/B]

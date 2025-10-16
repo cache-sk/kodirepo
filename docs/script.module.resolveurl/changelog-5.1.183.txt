@@ -1,16 +1,14 @@
-Version 5.1.181 (Oct 03, 2025)
+Version 5.1.183 (Oct 15, 2025)
 - Code Base Changes:
-    - Change test stream method
+    - fix test stream method for Python 2.7
 
 - Resolvers Added:
     - None
 
 - Resolvers Fixed/Updated:
-    - cocleech
-    - filelions
-    - savefiles
-    - streamup
-    - rumble
+    - dailymotion
+    - droplare
+    - vimeo
 
 - Resolvers Removed
     - None
