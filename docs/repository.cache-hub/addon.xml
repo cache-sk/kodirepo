@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.cache-hub" name="Kodi repositories hub" version="1.0.0" provider-name="cache-sk">
+    <extension point="xbmc.addon.repository" name="Kodi repositories hub">
+        <dir>
+            <info compressed="false">https://cache-sk.github.io/repohub/addons.xml</info>
+            <checksum>https://cache-sk.github.io/repohub/addons.xml.md5</checksum>
+            <datadir zip="true">https://cache-sk.github.io/repohub/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Kodi repositories hub</summary>
+        <description>Kodi repositories hub</description>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+    </extension>
+</addon>
