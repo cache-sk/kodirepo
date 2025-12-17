@@ -353,7 +353,7 @@
 - inicialna verzia
         </news>
     </extension>
-</addon><addon id="plugin.video.yawsp" name="YAWsP" version="0.2.1" provider-name="cache-sk">
+</addon><addon id="plugin.video.yawsp" name="YAWsP" version="0.2.2" provider-name="cache-sk">
     <requires>
         
         <import addon="script.module.requests" version="2.18.4" />
@@ -375,6 +375,8 @@
             <icon>resources/icon.png</icon>
         </assets>
         <news>
+[B]0.2.2[/B]
+- fix search pre Kodi 21.3
 [B]0.2.1[/B]
 - format zobrazenia vysledkov
 - vylepseny search - nezobrazi dialog po navrate
@@ -431,7 +433,7 @@
         <forum>https://www.tvaddons.co/forums</forum>
         <website>https://www.tvaddons.co</website>
     </extension>
-</addon><addon id="script.module.resolveurl" name="ResolveURL" version="5.1.187" provider-name="gujal">
+</addon><addon id="script.module.resolveurl" name="ResolveURL" version="5.1.188" provider-name="gujal">
     <requires>
         
         <import addon="script.module.six" />
