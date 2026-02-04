@@ -153,7 +153,7 @@
 - first release
         </news>
     </extension>
-</addon><addon id="plugin.video.freeview.sk" version="1.2.2" name="freeview.sk" provider-name="cache-sk">
+</addon><addon id="plugin.video.freeview.sk" version="1.2.3" name="freeview.sk" provider-name="cache-sk">
     <requires>
         <import addon="script.module.requests" />
         <import addon="script.module.beautifulsoup4" />
@@ -175,6 +175,10 @@
             <icon>icon.jpg</icon>
         </assets>
         <news>
+[B]1.2.3[/B]
+- adopted epg generator by cratos38, source iptv-epg.org
+- streams from new Joj web page
+- overall fixes
 [B]1.2.2[/B]
 - joj daco porobil so starymi streamami, inputstream adaptive s nimi ma problem
 - https://github.com/xbmc/inputstream.adaptive/issues/733
@@ -439,7 +443,7 @@
         <forum>https://www.tvaddons.co/forums</forum>
         <website>https://www.tvaddons.co</website>
     </extension>
-</addon><addon id="script.module.resolveurl" name="ResolveURL" version="5.1.189" provider-name="gujal">
+</addon><addon id="script.module.resolveurl" name="ResolveURL" version="5.1.192" provider-name="gujal">
     <requires>
         
         <import addon="script.module.six" />

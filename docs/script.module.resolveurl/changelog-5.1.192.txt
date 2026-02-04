@@ -1,0 +1,20 @@
+Version 5.1.192 (Feb 02, 2026)
+- Code Base Changes:
+    - None
+
+- Resolvers Added:
+    - buzz
+    - rootz
+    - streamix
+
+- Resolvers Fixed/Updated:
+    - anafasr
+    - byse
+    - vidmoly
+    - voe
+
+- Resolvers Removed
+    - None
+
+- Languages Added/Updated
+    - None
