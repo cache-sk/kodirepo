@@ -6,7 +6,7 @@ REPOSITORY = 'repository.cache-sk'
 PLUGINS = [ REPOSITORY,
            'https://github.com/cache-sk/repohub/#main:repository.cache-hub',
            'https://github.com/cache-sk/plugin.program.cache-sk.kodi.tools.git',
-           'https://github.com/cache-sk/plugin.video.dokumenty.tv.git#uni',
+           # archived 'https://github.com/cache-sk/plugin.video.dokumenty.tv.git#uni',
            # archived 'https://github.com/cache-sk/YABoP.git#master:plugin.video.yabop',
            'https://github.com/cache-sk/SkTonline.git#master:plugin.video.sktonline',
            'https://github.com/cache-sk/plugin.video.freeview.sk',
