@@ -1,24 +1,18 @@
-Version 5.1.193 (Feb 23, 2026)
+Version 5.1.198 (May 03, 2026)
 - Code Base Changes:
-    - None
+    - update net.py to report cloudflare challenge correctly
+    - support using external cloudrequest module
 
 - Resolvers Added:
-    - bunnycdn
-    - filekeeper
+    - abyss
+    - anonmp4
 
 - Resolvers Fixed/Updated:
     - byse
-    - embedojo
+    - dropload
     - hdvid
-    - kinoger
     - mixdrop
-    - savefiles
-    - streamembed
     - streamix
-    - streamwish
-    - uqload
-    - videa
-    - vidnest
     - voe
 
 - Resolvers Removed
