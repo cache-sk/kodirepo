@@ -109,7 +109,7 @@
 - first release
         </news>
     </extension>
-</addon><addon id="plugin.video.freeview.sk" version="1.2.5" name="freeview.sk" provider-name="cache-sk">
+</addon><addon id="plugin.video.freeview.sk" version="1.2.6" name="freeview.sk" provider-name="cache-sk">
     <requires>
         <import addon="script.module.requests" />
         <import addon="script.module.beautifulsoup4" />
@@ -131,6 +131,10 @@
             <icon>icon.jpg</icon>
         </assets>
         <news>
+[B]1.2.6[/B]
+- upravy epg pre jojsport 2 + parser pre tv doktor (kozmali)
+- vantage tv aj s epg
+- loga stvr
 [B]1.2.5[/B]
 - fashion tv skoncilo
 - retro tv upravene na "simple" playlist
@@ -408,11 +412,12 @@
         <forum>https://www.tvaddons.co/forums</forum>
         <website>https://www.tvaddons.co</website>
     </extension>
-</addon><addon id="script.module.resolveurl" name="ResolveURL" version="5.1.198" provider-name="gujal">
+</addon><addon id="script.module.resolveurl" name="ResolveURL" version="5.1.205" provider-name="gujal">
     <requires>
         
         <import addon="script.module.six" />
         <import addon="script.module.kodi-six" />
+        <import addon="script.module.pyqrcode" />
         <import addon="script.module.cloudrequest" optional="true" />
         <import addon="plugin.video.youtube" optional="true" />
         <import addon="script.module.python.twitch" optional="true" />
